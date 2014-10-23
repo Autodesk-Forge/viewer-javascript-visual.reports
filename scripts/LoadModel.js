@@ -149,6 +149,7 @@ function initializeViewerMain() {
             var tmpObj = _viewerMain.model.getNodeById(_curSelSetMain[0]);
             console.debug(tmpObj);
             //_viewerSecondary.select(_curSelSetMain);
+            workaround_2D_select(_curSelSetMain);
         }
     });
 }
