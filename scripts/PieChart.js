@@ -58,9 +58,9 @@ function setupPieDefaults() {
             "location": "bottom-left"
         },
         "size": {
-            "canvasWidth": 590,
-            "pieInnerRadius": "49%",
-            "pieOuterRadius": "81%"
+            //"canvasWidth": 590,
+            "pieInnerRadius": "39%",
+            "pieOuterRadius": "67%"
         },
         "labels": {
             "outer": {
