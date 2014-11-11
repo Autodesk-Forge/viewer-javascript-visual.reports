@@ -179,3 +179,7 @@ label + .select-light {
 svg {
  width: auto;
  height: auto; }
+
+/* show selected bar in barchart */
+.nv-bar.clicked {
+    fill: lightgreen; }
