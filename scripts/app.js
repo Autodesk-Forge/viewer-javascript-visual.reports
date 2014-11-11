@@ -5,3 +5,6 @@ $(function() {
     return false
   });
 });
+
+// seems to be needed by Autodesk's viewer3D.js
+function isTouchDevice() { return false; }
