@@ -174,3 +174,8 @@ label + .select-light {
   display: none; }
   .tab-panel.active {
     display: block; }
+
+/* override the svg dimensions from nvd3.css */
+svg {
+ width: auto;
+ height: auto; }
