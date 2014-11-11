@@ -181,5 +181,10 @@ svg {
  height: auto; }
 
 /* show selected bar in barchart */
-.nv-bar.clicked {
+svg .nv-bar.clicked {
     fill: lightgreen; }
+
+#barChart {
+    width: 100%;
+    height: 400px;
+    margin: 0px; }
