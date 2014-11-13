@@ -127,7 +127,7 @@ function initializeViewerMain() {
     
         // if we already have something loaded, uninitialize and re-init (can't just load a new file!:  ?? is that a bug?)
     if (_viewerMain !== null) {
-        _vieweMain.uninitialize();
+        _viewerMain.uninitialize();
         _viewerMain = null;
         _curSelSetMain = [];
     }
