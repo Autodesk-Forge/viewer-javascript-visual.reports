@@ -17,34 +17,37 @@ var _loadedDocument = null;
 var _views2D = null;
 var _views3D = null;
 
+var _blockEventMain = false;
+var _blockEventSecondary = false;
+
     // setup for STAGING
-var _viewerEnv = "AutodeskStaging";
+/*var _viewerEnv = "AutodeskStaging";
 var _myAuthToken = new MyAuthToken("STG");
 
 var _lmvModelOptions = [
-    { label : "Urban House - NEW DB (Revit)",        urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0NC9VcmJhbiUyMEhvdXNlJTIwLSUyMDIwMTUucnZ0"},
     { label : "Urban House (Revit)",        urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0My9VcmJhbiUyMEhvdXNlJTIwLSUyMDIwMTUucnZ0"},
     { label : "rme-basic-sample (Revit)",   urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0My9ybWVfYmFzaWNfc2FtcGxlX3Byb2plY3QucnZ0"},
     { label : "ViewTest1 (Revit)",          urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0My9WaWV3VGVzdDEucnZ0"},
     { label : "Factory (Navisworks)",       urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0My9Db21wbGV0ZWQlMjBQbGFudCUyMExheW91dCUyMGNvbnN0cnVjdGlvbi5ud2Q="},
     { label : "Lego Guy (Fusion)",          urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0My9sZWdvX2d1eTIwMTQwMTMxMDkxOTU4LmYzZA=="},
     { label : "Utility Knife (Fusion)",     urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0My9VdGlsaXR5X0tuaWZlMjAxNDAxMjkxNDAwNDEuZjNk"}
-];
+];*/
 
     // setup for PRODUCTION
-/*var _viewerEnv = "AutodeskProduction";
+var _viewerEnv = "AutodeskProduction";
 var _myAuthToken = new MyAuthToken("PROD");
 
 var _lmvModelOptions = [
-    { label : "Urban House (Revit)",        urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0NC9VcmJhbiUyMEhvdXNlJTIwLSUyMDIwMTUucnZ0"},
-    { label : "rme-basic-sample (Revit)",   urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0NC9ybWVfYmFzaWNfc2FtcGxlX3Byb2plY3QucnZ0"},
-    { label : "Audobon Structure (Revit)",  urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0NC9BdWRvYm9uJTIwLSUyMFN0cnVjdHVyZS5ydnQ="},
-    { label : "ViewTest1 (Revit)",          urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0NC9WaWV3VGVzdDEucnZ0"},
+    { label : "Urban House (Revit)",        urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3Byb2QvVXJiYW4lMjBIb3VzZSUyMC0lMjAyMDE1LnJ2dA=="},
+    { label : "rme-basic-sample (Revit)",   urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3Byb2Qvcm1lX2Jhc2ljX3NhbXBsZV9wcm9qZWN0LnJ2dA=="},
+    { label : "Audobon Structure (Revit)",  urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3Byb2QvQXVkb2JvbiUyMC0lMjBTdHJ1Y3R1cmUucnZ0"},
     { label : "Factory (Navisworks)",       urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0NC9Db21wbGV0ZWQlMjBQbGFudCUyMExheW91dCUyMGNvbnN0cnVjdGlvbi5ud2Q="},
     { label : "Gatehouse (Navisworks)",     urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0NC9nYXRlaG91c2UyLm53ZA=="},
     { label : "Lego Man (Fusion)",          urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0NC9sZWdvX2d1eTIwMTQwMTMxMDkxOTU4LmYzZA=="},
-    { label : "Utility Knife (Fusion)",     urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0NC9VdGlsaXR5X0tuaWZlMjAxNDAxMjkxNDAwNDEuZjNk"}
-];*/
+    { label : "Utility Knife (Fusion)",     urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0NC9VdGlsaXR5X0tuaWZlMjAxNDAxMjkxNDAwNDEuZjNk"},
+    { label : "Fender Guitar (Fusion)",     urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0NC9GZW5kZXJfU3RyYXRfTlguc3RwLmM5ZTZhODg0LWU0NWItNGQ3ZC1iNjcyLTY2NjM1OTVhYTRkOTIwMTQwMjIwMTA0OTA3LmYzZA=="},
+    { label : "Whiskey Drinks (DWG)",       urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3Byb2Qvd2hpc2tleS1kcmlua3MuZHdn"}
+];
 
 
     // populate the popup menu with the avaialable models to load (from the array above)
@@ -140,16 +143,23 @@ function initializeViewerMain() {
         alert("ERROR: Couldn't initialize main viewer!");
         console.log("ERROR Code: " + retCode);      // TBD: do real error handling here
     }
+        // when selecting in the Primary viewer, select the matching items in the Secondary viewer
     _viewerMain.addEventListener("selection", function (event) {
+        if (_blockEventSecondary)
+            return;
+        
         _curSelSetMain = event.dbIdArray;
         console.log("LmvQty: [Selection Set Main]: ", _curSelSetMain);
         
             // if a single item, help debug by dumping it to the console window.
         if (_curSelSetMain.length == 1) {
-            var tmpObj = _viewerMain.model.getNodeById(_curSelSetMain[0]);
-            console.debug(tmpObj);
-            //_viewerSecondary.select(_curSelSetMain);
-            workaround_2D_select(_curSelSetMain);
+            //var tmpObj = _viewerMain.model.getNodeById(_curSelSetMain[0]);
+            //console.debug(tmpObj);
+            
+            //_viewerSecondary.select(_curSelSetMain);  // NOTE: This is how I would expect to be able to it, but need to call work-around func below
+            _blockEventMain = true;
+            workaround_2D_select(_curSelSetMain);   // Call work-around to select objects in secondary view (see file TestFuncs.js)
+            _blockEventMain = false;
         }
     });
 }
@@ -171,7 +181,12 @@ function initializeViewerSecondary() {
         alert("ERROR: Couldn't initialize secondary viewer!");
         console.log("ERROR Code: " + retCode);      // TBD: do real error handling here
     }
+    
+        // when selecting objects in the Secondary viewer, also select the matching itmes in the Primary viewer
     _viewerSecondary.addEventListener("selection", function (event) {
+        if (_blockEventMain)
+            return;
+        
         _curSelSetSecondary = event.dbIdArray;
         console.log("LmvQty: [Selection Set Secondary]: ", _curSelSetSecondary);
         
@@ -179,9 +194,12 @@ function initializeViewerSecondary() {
         if (_curSelSetSecondary.length == 1) {
             //var tmpObj = _viewerSecondary.model.getNodeById(_curSelSetSecondary[0]);
             //console.debug(tmpObj);
+            
+            _blockEventSecondary = true;
             _viewerMain.isolateById(_curSelSetSecondary);
             _viewerMain.select(_curSelSetSecondary);
             _viewerMain.fitToView(_curSelSetSecondary);
+            _blockEventSecondary = false;
         }
     });
 }
@@ -242,12 +260,12 @@ function loadViewErrorFunc()
     console.log("ERROR: could not load asset into viewer...");
 }
 
-    // load a particular viewable into the viewer
+    // load a particular viewable into the viewer (either Primary or Secondary depending on what's passed in)
 function loadView(viewer, viewObj) {
     var path = _loadedDocument.getViewablePath(viewObj);
     console.log("Loading view URN: " + path);
+    
     viewer.load(path, _loadedDocument.getPropertyDbPath(), loadViewSuccessFunc, loadViewErrorFunc);
-    //viewer.load(path);
 }
 
     // wrap this in a simple function so we can pass it into the Initializer options object
