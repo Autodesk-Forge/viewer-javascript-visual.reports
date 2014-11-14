@@ -149,7 +149,7 @@ function initializeViewerMain() {
             return;
         
         _curSelSetMain = event.dbIdArray;
-        console.log("LmvQty: [Selection Set Main]: ", _curSelSetMain);
+        //console.log("LmvQty: [Selection Set Main]: ", _curSelSetMain);
         
             // if a single item, help debug by dumping it to the console window.
         if (_curSelSetMain.length == 1) {
@@ -188,7 +188,7 @@ function initializeViewerSecondary() {
             return;
         
         _curSelSetSecondary = event.dbIdArray;
-        console.log("LmvQty: [Selection Set Secondary]: ", _curSelSetSecondary);
+        //console.log("LmvQty: [Selection Set Secondary]: ", _curSelSetSecondary);
         
             // if a single item, help debug by dumping it to the console window.
         if (_curSelSetSecondary.length == 1) {
