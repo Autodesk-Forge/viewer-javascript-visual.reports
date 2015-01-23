@@ -25,7 +25,8 @@ var _blockEventSecondary = false;
 var _myAuthToken = new MyAuthToken("STG");
 
 var _lmvModelOptions = [
-    { label : "Urban House (Revit)",        urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0My9VcmJhbiUyMEhvdXNlJTIwLSUyMDIwMTUucnZ0"},
+    { label : "Urban House (Revit)",        urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3N0Zy9VcmJhbiUyMEhvdXNlJTIwLSUyMDIwMTUucnZ0"},
+    { label : "Urban House (Revit - OLD)",  urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0My9VcmJhbiUyMEhvdXNlJTIwLSUyMDIwMTUucnZ0"},
     { label : "rme-basic-sample (Revit)",   urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0My9ybWVfYmFzaWNfc2FtcGxlX3Byb2plY3QucnZ0"},
     { label : "ViewTest1 (Revit)",          urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0My9WaWV3VGVzdDEucnZ0"},
     { label : "Factory (Navisworks)",       urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0My9Db21wbGV0ZWQlMjBQbGFudCUyMExheW91dCUyMGNvbnN0cnVjdGlvbi5ud2Q="},
@@ -227,20 +228,28 @@ function loadDocument(urnStr) {
         initializeViewerMain();
         initializeViewerSecondary();
         
-            // load up first 3D view by default
+            // load up first 3D view by default into the primary viewer
         if (_views3D.length > 0) {
             loadView(_viewerMain, _views3D[0]);   
         }
-        else {
-            assert("ERROR: Can't find any Views in the current model!");    // this is NOT expected
+        else {      // there weren't any 3D views!
+            if (_views2D.length > 0) {
+                loadView(_viewerMain, _views2D[0]);
+                $('#pu_viewToLoad').val('1000'); // selects first option in 2D list
+            }
+            else {
+                alert("ERROR: No 3D or 2D views found in this drawing!");
+            }
         }
+            // now load the Secondary viewer with the first 2D view by default
         if (_views2D.length > 0) {
             loadView(_viewerSecondary, _views2D[0]);
             $('#pu_viewToLoad').val('1000'); // selects first option in 2D list
         }
         else {
             console.log("WARNING: No 2D views found for secondary view, using additional 3D view");
-            loadView(_viewerSecondary, _views3D[0]);
+            if (_views3D.length > 0)
+                loadView(_viewerSecondary, _views3D[0]);
         }
 
         

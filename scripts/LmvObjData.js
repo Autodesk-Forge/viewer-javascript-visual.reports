@@ -23,6 +23,31 @@ function getLmvObjData() {
     return pieData;
 }
 
+function getLmvObjDataSecondary() {
+    var pieData = {
+            "sortOrder": _sortOrder,
+            "content": []
+            };
+    
+    _viewerSecondary.getObjectTree(function(objTree) {
+        
+        $.each(objTree.children, function(num, treeNode) {
+                // create a new object to attach to the tree node
+            var myObj = {};
+            myObj.label = treeNode.name;
+            
+            myObj.value = 0;    // count of how many there are
+            myObj.lmvIds = [];  // empty array of Ids that match this type
+            recursiveCountLeafNodes(treeNode, myObj);
+            
+            pieData.content.push(myObj);
+            
+        }); 
+     });
+    
+    return pieData;
+}
+
     // recursively add all the nodes in the Model Structure of LMV to the jsTree
 function recursiveCountLeafNodes(treeNode, myObj) {
     if (!treeNode.children) {
@@ -39,6 +64,6 @@ function recursiveCountLeafNodes(treeNode, myObj) {
 
 function clickPieWedge(evt) {
     _viewerMain.isolateById(evt.data.lmvIds);
-    //_viewerSecondary.select(evt.data.lmvIds);
-    workaround_2D_select(evt.data.lmvIds);
+    _viewerSecondary.select(evt.data.lmvIds);
+    //workaround_2D_select(evt.data.lmvIds);
 }
