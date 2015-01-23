@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
     
-    $("#bn_showRelationships").click(function(evt) {  
+    $("#bn_showObjsonSheet").click(function(evt) {  
         evt.preventDefault();
 
         var curSelSet = _viewerMain.getSelection();
