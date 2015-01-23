@@ -22,13 +22,14 @@
     <link href="./stylesheets/libs/nv.d3.css" rel="stylesheet">
     <link href="stylesheets/app.css" rel="stylesheet" type="text/css" />
     <script src="scripts/app.js"></script>
-
-        <!-- Autodesk Viewer and scripts -->
+    
+        <!-- Autodesk Viewer (from server: PROD) -->
     <link rel="stylesheet" href="https://developer.api.autodesk.com/viewingservice/v1/viewers/style.css" type="text/css">
-    <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.js"></script>
+    <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js"></script>
 
-    <!--<link rel="stylesheet" href="https://developer-stg.api.autodesk.com/viewingservice/v1/viewers/style.css" type="text/css">
-    <script src="https://developer-stg.api.autodesk.com/viewingservice/v1/viewers/viewer3D.js"></script>-->
+        <!-- Autodesk Viewer (from server: STAGING) -->
+    <!--<link rel="stylesheet" href="https://developer-stg.api.autodesk.com/viewingservice/v1/viewers/style.css?v=0.1.180" type="text/css">
+    <script src="https://developer-stg.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js?v=0.1.180"></script>-->
     
     <script src="./scripts/MyAuthToken.js"></script>
     <script src="./scripts/LmvObjData.js"></script>
@@ -84,11 +85,11 @@
       </li>
     </ul>
     <div class="tab-panel active" id="tab_panel_1">
-      <div class="chart">
+      <!--<div class="chart">
           <h2>
               Object Type <br /><small>Quantities of items in the model</small>
           </h2>
-      </div>
+      </div>-->
       <button id="bn_loadData" class="btn btn-primary">Get Quantities</button>
       <div id="pieChart">
           <!-- PieChart goes here -->
@@ -98,10 +99,10 @@
       </svg>
     </div>
     <div class="tab-panel" id="tab_panel_2">
-      Relationships Tab panel
+      <button id="bn_showRelationships" class="btn btn-primary">Show Relationships</button>
     </div>
     <div class="tab-panel" id="tab_panel_3">
-      Costs Tab panel
+      <button id="bn_showObjsonSheet" class="btn btn-primary">Show "OnSheet but not Model"</button>
     </div>
   </div>
 
@@ -134,4 +135,5 @@
   <script src="./scripts/BarChart.js"></script>
   <script src="./scripts/LoadModel.js"></script>
   <script src="./scripts/TestFuncs.js"></script>
+  <script src="./scripts/Relationships.js"></script>
 </body>
