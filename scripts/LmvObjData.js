@@ -64,6 +64,6 @@ function recursiveCountLeafNodes(treeNode, myObj) {
 
 function clickPieWedge(evt) {
     _viewerMain.isolateById(evt.data.lmvIds);
-    _viewerSecondary.select(evt.data.lmvIds);
-    //workaround_2D_select(evt.data.lmvIds);
+    //_viewerSecondary.select(evt.data.lmvIds);
+    workaround_2D_select(evt.data.lmvIds);
 }
