@@ -197,9 +197,18 @@ function initializeViewerSecondary() {
             //console.debug(tmpObj);
             
             _blockEventSecondary = true;
-            _viewerMain.isolateById(_curSelSetSecondary);
-            _viewerMain.select(_curSelSetSecondary);
-            _viewerMain.fitToView(_curSelSetSecondary);
+            
+                // normal behavior is to isolate and zoom into the selected object, but we can only do that in 3D.
+            if (_viewerMain.model.is2d() == false) {
+                _viewerMain.isolateById(_curSelSetSecondary);
+                _viewerMain.select(_curSelSetSecondary);
+                _viewerMain.fitToView(_curSelSetSecondary);
+            }
+            else {
+                workaround_2D_selectMainViewer(_curSelSetSecondary);   // Call work-around to select objects in secondary view (see file TestFuncs.js)
+                _viewerMain.fitToView(_curSelSetSecondary);
+            }
+            
             _blockEventSecondary = false;
         }
     });
