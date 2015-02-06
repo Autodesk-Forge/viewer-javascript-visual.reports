@@ -50,6 +50,10 @@ var _lmvModelOptions = [
     { label : "Whiskey Drinks (DWG)",       urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3Byb2Qvd2hpc2tleS1kcmlua3MuZHdn"}
 ];
 
+function blankOutReportPane() {
+    $("#pieChart").empty();
+    $("#barChart").empty();
+}
 
     // populate the popup menu with the avaialable models to load (from the array above)
 function loadModelMenuOptions() {
@@ -65,11 +69,13 @@ function loadModelMenuOptions() {
 
     // user selected a new model to load
  $("#pu_modelToLoad").change(function(evt) {  
-    evt.preventDefault();
+     evt.preventDefault();
      
-    var index = parseInt($("#pu_modelToLoad option:selected").val(), 10);
-    console.log("Changing model to: " + _lmvModelOptions[index].label);
-    loadDocument(_lmvModelOptions[index].urn);
+     var index = parseInt($("#pu_modelToLoad option:selected").val(), 10);
+     console.log("Changing model to: " + _lmvModelOptions[index].label);
+     loadDocument(_lmvModelOptions[index].urn);
+     
+     blankOutReportPane();
 });
 
     // populate the popup menu with the avaialable views to load (from the array above)
@@ -301,6 +307,6 @@ function loadInitialModel() {
     options.refreshToken   = getAccessToken;
     
     Autodesk.Viewing.Initializer(options, function() {
-        loadDocument(_lmvModelOptions[0].urn);   // load first entry by default
+        loadDocument(_lmvModelOptions[6].urn);   // load first entry by default
     });
 }
