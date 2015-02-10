@@ -54,7 +54,7 @@ function signalDone(str) {
 
 function getPropsAsync(dbId, propNameStr, pieData) {
     _viewerMain.getProperties(dbId, function(data) {
-        console.log("workingo on dbID: " + dbId);
+        console.log("working on dbID: " + dbId);
         if ((data.properties === null) || (data.properties.length === 0)) {
             console.log("There are no properties for this node.");
             return;
@@ -93,7 +93,8 @@ function getLmvObjDataMat(propNameStr, callbackFunc) {
     $.each(leafNodes, function(num, dbId) {
         getPropsAsync(dbId, propNameStr, pieData);
     });
-    $.when.apply($, promises).then(allDone(pieData));
+    // set a timer so the array gets loaded correctly
+    window.setTimeout(function(){$.when.apply($, promises).then(allDone(pieData));},100);
 }
 
 function allDone(pieData) {
