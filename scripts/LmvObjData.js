@@ -23,6 +23,28 @@ function getLmvObjData() {
     return pieData;
 }
 
+function getLmvObjData2(pieOpts, callbackFunc) {
+    
+    _viewerMain.getObjectTree(function(objTree) {
+        
+        $.each(objTree.children, function(num, treeNode) {
+                // create a new object to attach to the tree node
+            var myObj = {};
+            myObj.label = treeNode.name;
+            
+            myObj.value = 0;    // count of how many there are
+            myObj.lmvIds = [];  // empty array of Ids that match this type
+            recursiveCountLeafNodes(treeNode, myObj);
+            
+            pieOpts.data.content.push(myObj);
+            
+        }); 
+     });
+    
+    if (callbackFunc)
+        callbackFunc(pieOpts);
+}
+
 function getLmvObjDataSecondary() {
     var pieData = {
             "sortOrder": _sortOrder,

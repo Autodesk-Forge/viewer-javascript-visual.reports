@@ -4,7 +4,8 @@ $(document).ready(function() {
     $("#bn_loadData").click(function(evt) {  
         evt.preventDefault();
 
-        loadPieData();
+        var pieOpts = initPieOpts("Object Type");
+        getLmvObjData2(pieOpts, loadPieDataX);
     });
 
     $("#pu_sortOrder").change(function(evt) {  

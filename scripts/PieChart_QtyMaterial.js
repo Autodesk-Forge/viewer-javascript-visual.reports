@@ -1,54 +1,73 @@
 
+var _pieChartX = null;
+var _sortOrderX = "value-desc";
+
 $(document).ready(function() {
+    
+    $("#bn_qtyByType").click(function(evt) {  
+        evt.preventDefault();
+
+        var pieOpts = initPieOpts("Object Type");
+        getLmvObjDataByType(pieOpts, loadPieDataX);
+    });
     
     $("#bn_qtyByMaterial").click(function(evt) {  
         evt.preventDefault();
-
-        getLmvObjDataMat("Material", loadPieDataMaterial);
+        
+        var fieldName = "Material";
+        var pieOpts = initPieOpts(fieldName);
+        
+        getLmvObjDataX(fieldName, pieOpts, loadPieDataX);
     });
 
     $("#pu_sortOrder").change(function(evt) {  
         evt.preventDefault();
 
-        _sortOrder = $("#pu_sortOrder option:selected").val();
-        loadPieDataMaterial();
+        _sortOrderX = $("#pu_sortOrder option:selected").val();
+        loadPieDataX();
     });
     
-    $("#bn_test").click(function(evt) {  
+    $("#bn_qtyByAppearance").click(function(evt) {  
         evt.preventDefault();
 
-        testAsync();
+        var fieldName = "Appearance";
+        var pieOpts = initPieOpts(fieldName);
+        
+        getLmvObjDataX(fieldName, pieOpts, loadPieDataX);
     });
 
 });
-        
 
-//var pieOpts = setupPieDefaults();
-//pieOpts.data = setupDefaultPieData();
-
-//var pie = new d3pie("pieChart", pieOpts);
-var _pieMat = null;
-var _sortOrder = "value-desc";
-
-function loadPieDataMaterial(pieData) {
-    var pieOpts = setupPieDefaultsMat();
-    pieOpts.data = pieData;
-    
-    if (_pieMat)
-        _pieMat.destroy();
-    _pieMat = new d3pie("pieChart", pieOpts);
+    // callback function that fills the pieChart up with the data retrieved from LMV Object Properties
+function loadPieDataX(pieOpts) {
+    if (_pieChartX)
+        _pieChartX.destroy();
+    _pieChartX = new d3pie("pieChart", pieOpts);
 }
 
-function setupPieDefaultsMat() {
+    // initialize
+function initPieOpts(fieldName) {
+    var pieOpts = initPieDefaults(fieldName);
+
+    pieOpts.data = {
+        "sortOrder": _sortOrderX,
+        "content": []
+    };
+    
+    return pieOpts;
+}
+
+function initPieDefaults(fieldName) {
+    var strSubTitle = "Quantities in model (" + fieldName + ")";
     var pieDefaults = {
         "header": {
             "title": {
-                "text": "Material",
+                "text": fieldName,
                 "fontSize": 24,
                 "font": "open sans"
             },
             "subtitle": {
-                "text": "Quantities of items with Material in the model.",
+                "text": strSubTitle,
                 "color": "#999999",
                 "fontSize": 12,
                 "font": "open sans"
@@ -106,7 +125,7 @@ function setupPieDefaultsMat() {
             }
         },
         "callbacks": {
-            onClickSegment: clickPieWedgeMaterial
+            onClickSegment: clickPieWedgeX
         }
     };
 
