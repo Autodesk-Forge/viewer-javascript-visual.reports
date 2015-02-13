@@ -1,56 +1,7 @@
 
 
-function testAsync2() {
-    
-    var leafNodes = getLeafNodeObjs();
-    console.log("\nLEAF NODES: " + leafNodes.length);   // NOTE: Leaf nodes always is correct
-
-        // for each leaf node, find out what Material bucket this object goes in
-    var promises = [];
-    $.each(leafNodes, function(num, dbId) {
-        promises.push(function() {
-            console.log("promise: " + num);
-        });
-    });
-    $.when.apply($, promises).then(function() {
-        console.log("All done");
-    }, function() {
-        console.log("Error happened!");
-    });
-}
-
-
-/*  START:  raw test of jQuery Promise/Deferred.  This is called from "Test Async" button on page
-        NOTE:  it seems to work in the correct order, but I do notice a weird behavior.  When I use an anonymous
-               function for the when.apply().then() statement, it doesn't execute.  But, calling a declared function
-               does.  All examples on Google use an anonymous function, so that should work!
-*/
-function foo(i, cb) {
-    console.log("FOO: " + i);
-}
-
-function testAsync() {
-    var promises = [];
-    function createPromise() {
-        var p = $.Deferred();
-        promises.push(p);
-        //return function() { p.resolve(); };
-        return p.resolve; // Doesn't create an anonymous function
-    };
-    for (var i = 0; i < 3; i++) {
-         foo(i, createPromise());
-    }
-    $.when.apply($, promises).then(signalDone("Finite!"));
-}
-
-function signalDone(str) {
-    alert(str);
-}
-
-/*  END: raw test of jQuery Promise/Deferred */
-
-
-/*  START: attempt to make it work for the Properties */
+/*  NOTE: still working on the correct way to get all the properties asynchronously.  It currently blows
+    past the loop before all the asyncs have finished and we don't get the right data for the pieChart '*/
 
 function getPropsAsync(dbId, propNameStr, pieData) {
     _viewerMain.getProperties(dbId, function(data) {
@@ -74,7 +25,7 @@ function getPropsAsync(dbId, propNameStr, pieData) {
 
     // iterate through all the leaf node objects of the ModelStructure tree and sort into "buckets"
     // based on some Property Name (eg "Material")
-function getLmvObjDataX(propNameStr, pieOpts, callbackFunc) {
+function getReportDataByPropName(propNameStr, pieOpts, callbackFunc) {
     
     var leafNodes = getLeafNodeObjs();
     //console.log("\nLEAF NODES: " + leafNodes.length);   // NOTE: Leaf nodes always is correct
@@ -117,14 +68,6 @@ function getPropBucket(buckets, valueStr) {
 }
 
 
-
-function clickPieWedgeX(evt) {
-    _viewerMain.isolateById(evt.data.lmvIds);
-    //_viewerSecondary.select(evt.data.lmvIds);
-    workaround_2D_select(evt.data.lmvIds);
-}
-
-
 function getLeafNodeObjs() {
     var leafNodes = [];
     
@@ -153,7 +96,7 @@ function recursiveGetLeafNodes(treeNode, leafNodes) {
 
 /////  Functions to get by Object Type (mostly useful with Revit files)
 
-function getLmvObjDataByType(pieOpts, callbackFunc) {
+function getReportDataByObjType(pieOpts, callbackFunc) {
     
     _viewerMain.getObjectTree(function(objTree) {
         

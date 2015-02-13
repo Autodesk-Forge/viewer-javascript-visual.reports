@@ -21,7 +21,7 @@ var _blockEventMain = false;
 var _blockEventSecondary = false;
 
     // setup for STAGING
-/*var _viewerEnv = "AutodeskStaging";
+var _viewerEnv = "AutodeskStaging";
 var _myAuthToken = new MyAuthToken("STG");
 
 var _lmvModelOptions = [
@@ -31,11 +31,15 @@ var _lmvModelOptions = [
     { label : "ViewTest1 (Revit)",          urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0My9WaWV3VGVzdDEucnZ0"},
     { label : "Factory (Navisworks)",       urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0My9Db21wbGV0ZWQlMjBQbGFudCUyMExheW91dCUyMGNvbnN0cnVjdGlvbi5ud2Q="},
     { label : "Lego Guy (Fusion)",          urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0My9sZWdvX2d1eTIwMTQwMTMxMDkxOTU4LmYzZA=="},
-    { label : "Utility Knife (Fusion)",     urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0My9VdGlsaXR5X0tuaWZlMjAxNDAxMjkxNDAwNDEuZjNk"}
-];*/
+    { label : "Utility Knife (Fusion)",     urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0My9VdGlsaXR5X0tuaWZlMjAxNDAxMjkxNDAwNDEuZjNk"},
+    { label : "Bomba KSB ETA 80-20.f3d (Fusion)",     urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3N0Zy9Cb21iYSUyMEtTQiUyMEVUQSUyMDgwLTIwJTIwLSUyMDVDViUyMC0lMjAxNzAwcnBtJTIwLSUyMCUyMHY1LmYzZA=="},
+    { label : "F10K (Fusion)",          urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3N0Zy9GMTBLLmYzZA=="},
+    { label : "KAW_48_3D _2 (DWG)",        urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3N0Zy9LQVdfNDhfM0QlMjBfMi5kd2c="},
+    { label : "2D Floorplan (DWG)",        urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3N0Zy8yRCUyMEZsb29ycGxhbi5kd2c="}
+];
 
     // setup for PRODUCTION
-var _viewerEnv = "AutodeskProduction";
+/*var _viewerEnv = "AutodeskProduction";
 var _myAuthToken = new MyAuthToken("PROD");
 
 var _lmvModelOptions = [
@@ -48,7 +52,7 @@ var _lmvModelOptions = [
     { label : "Utility Knife (Fusion)",     urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0NC9VdGlsaXR5X0tuaWZlMjAxNDAxMjkxNDAwNDEuZjNk"},
     { label : "Fender Guitar (Fusion)",     urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0NC9GZW5kZXJfU3RyYXRfTlguc3RwLmM5ZTZhODg0LWU0NWItNGQ3ZC1iNjcyLTY2NjM1OTVhYTRkOTIwMTQwMjIwMTA0OTA3LmYzZA=="},
     { label : "Whiskey Drinks (DWG)",       urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3Byb2Qvd2hpc2tleS1kcmlua3MuZHdn"}
-];
+];*/
 
 function blankOutReportPane() {
     $("#pieChart").empty();
@@ -307,6 +311,6 @@ function loadInitialModel() {
     options.refreshToken   = getAccessToken;
     
     Autodesk.Viewing.Initializer(options, function() {
-        loadDocument(_lmvModelOptions[6].urn);   // load first entry by default
+        loadDocument(_lmvModelOptions[0].urn);   // load first entry by default
     });
 }

@@ -1,6 +1,6 @@
 
-var _pieChartX = null;
-var _sortOrderX = "value-desc";
+var _pieChart = null;
+var _sortOrder = "value-desc";
 
 $(document).ready(function() {
     
@@ -8,7 +8,7 @@ $(document).ready(function() {
         evt.preventDefault();
 
         var pieOpts = initPieOpts("Object Type");
-        getLmvObjDataByType(pieOpts, loadPieDataX);
+        getReportDataByObjType(pieOpts, loadReportDataPieChart);
     });
     
     $("#bn_qtyByMaterial").click(function(evt) {  
@@ -17,14 +17,7 @@ $(document).ready(function() {
         var fieldName = "Material";
         var pieOpts = initPieOpts(fieldName);
         
-        getLmvObjDataX(fieldName, pieOpts, loadPieDataX);
-    });
-
-    $("#pu_sortOrder").change(function(evt) {  
-        evt.preventDefault();
-
-        _sortOrderX = $("#pu_sortOrder option:selected").val();
-        loadPieDataX();
+        getReportDataByPropName(fieldName, pieOpts, loadReportDataPieChart);
     });
     
     $("#bn_qtyByAppearance").click(function(evt) {  
@@ -33,16 +26,40 @@ $(document).ready(function() {
         var fieldName = "Appearance";
         var pieOpts = initPieOpts(fieldName);
         
-        getLmvObjDataX(fieldName, pieOpts, loadPieDataX);
+        getReportDataByPropName(fieldName, pieOpts, loadReportDataPieChart);
+    });
+    
+    $("#bn_qtyByName").click(function(evt) {  
+        evt.preventDefault();
+
+        var fieldName = "Name";
+        var pieOpts = initPieOpts(fieldName);
+        
+        getReportDataByPropName(fieldName, pieOpts, loadReportDataPieChart);
+    });
+    
+    $("#pu_sortOrder").change(function(evt) {  
+        evt.preventDefault();
+
+        _sortOrder = $("#pu_sortOrder option:selected").val();
+        if (_pieChart) {
+                // we just need to redraw based on current sort order, but pieChart.redraw() doesn't seem to update correctly, 
+                // so we will destroy the chart, but save the data since we don't need to regenerate it, only redraw it.
+            var pieOpts = _pieChart.options;    // detach before destroying pieChart.
+            pieOpts.sortOrder = _sortOrder;
+            pieChart.options = null;
+            
+            loadReportDataPieChart(pieOpts);    // re-assign the data we already had, this time with new sort order
+        }
     });
 
 });
 
     // callback function that fills the pieChart up with the data retrieved from LMV Object Properties
-function loadPieDataX(pieOpts) {
-    if (_pieChartX)
-        _pieChartX.destroy();
-    _pieChartX = new d3pie("pieChart", pieOpts);
+function loadReportDataPieChart(pieOpts) {
+    if (_pieChart)
+        _pieChart.destroy();
+    _pieChart = new d3pie("pieChart", pieOpts);
 }
 
     // initialize
@@ -50,7 +67,7 @@ function initPieOpts(fieldName) {
     var pieOpts = initPieDefaults(fieldName);
 
     pieOpts.data = {
-        "sortOrder": _sortOrderX,
+        "sortOrder": _sortOrder,
         "content": []
     };
     
@@ -125,12 +142,16 @@ function initPieDefaults(fieldName) {
             }
         },
         "callbacks": {
-            onClickSegment: clickPieWedgeX
+            onClickSegment: clickPieWedge
         }
     };
 
     return pieDefaults;
 }
 
-
+function clickPieWedge(evt) {
+    _viewerMain.isolateById(evt.data.lmvIds);
+    //_viewerSecondary.select(evt.data.lmvIds);
+    workaround_2D_select(evt.data.lmvIds);
+}
 
