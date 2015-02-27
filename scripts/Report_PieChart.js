@@ -2,69 +2,105 @@
 var _pieChart = null;
 var _sortOrder = "value-desc";
 
+var _reportOptions = [
+    { label : "Qty - Type",             fieldName: ""           },
+    { label : "Qty - Level",            fieldName: "Level"      },
+    { label : "Qty - Base Constraint",  fieldName: "Base Constraint"      },
+    { label : "Qty - System Type",      fieldName: "System Type"      },
+    { label : "Qty - Material",         fieldName: "Material"   },
+    { label : "Qty - Appearance",       fieldName: "Appearance" },
+    { label : "Qty - Name",             fieldName: "Name"       },
+    { label : "Qty - Mass",             fieldName: "Mass"       },
+    { label : "Qty - Volume",           fieldName: "Volume"     },
+    { label : "Qty - Area",             fieldName: "Area"       }
+];
+
+    // populate the popup menu with the avaialable models to load (from the array above)
+function loadReportMenuOptions() {
+        // add the new options for models
+    var sel = $("#pu_reportToRun");
+    $.each(_reportOptions, function(i, item) {
+        sel.append($("<option>", { 
+            value: i,
+            text : item.label 
+        }));
+    });
+}
+
+function enableReportMenu() {
+    $('#pu_reportToRun').attr("disabled", false);
+    $('#pu_sortOrder').attr("disabled", false);
+}
+
+function disableReportMenu() {
+    $('#pu_reportToRun').attr("disabled", true);
+    $('#pu_sortOrder').attr("disabled", true);
+}
+
+function runReport(index) {
+        // if they pass in a negative index, look up the current one
+    if (index === -1)
+        index = parseInt($("#pu_reportToRun option:selected").val(), 10);
+
+    var reportObj = _reportOptions[index];
+         
+    console.log("Running report: " + reportObj.label);
+
+    if (reportObj.fieldName === "") {
+        var pieOpts = initPieOpts("Object Type", index);
+        getReportDataByObjType(pieOpts, loadReportDataPieChart);
+    }
+    else {
+        var pieOpts = initPieOpts(reportObj.fieldName, index);
+        getReportDataByPropName(reportObj.fieldName, pieOpts, loadReportDataPieChart);
+     }
+}
+
 $(document).ready(function() {
     
-    $("#bn_qtyByType").click(function(evt) {  
+    loadReportMenuOptions();
+    
+        // user selected a new model to load
+    $("#pu_reportToRun").change(function(evt) {  
         evt.preventDefault();
 
-        var pieOpts = initPieOpts("Object Type");
-        getReportDataByObjType(pieOpts, loadReportDataPieChart);
-    });
-    
-    $("#bn_qtyByMaterial").click(function(evt) {  
-        evt.preventDefault();
-        
-        var fieldName = "Material";
-        var pieOpts = initPieOpts(fieldName);
-        
-        getReportDataByPropName(fieldName, pieOpts, loadReportDataPieChart);
-    });
-    
-    $("#bn_qtyByAppearance").click(function(evt) {  
-        evt.preventDefault();
-
-        var fieldName = "Appearance";
-        var pieOpts = initPieOpts(fieldName);
-        
-        getReportDataByPropName(fieldName, pieOpts, loadReportDataPieChart);
-    });
-    
-    $("#bn_qtyByName").click(function(evt) {  
-        evt.preventDefault();
-
-        var fieldName = "Name";
-        var pieOpts = initPieOpts(fieldName);
-        
-        getReportDataByPropName(fieldName, pieOpts, loadReportDataPieChart);
+        var index = parseInt($("#pu_reportToRun option:selected").val(), 10);
+        runReport(index);
     });
     
     $("#pu_sortOrder").change(function(evt) {  
         evt.preventDefault();
 
         _sortOrder = $("#pu_sortOrder option:selected").val();
-        if (_pieChart) {
-                // we just need to redraw based on current sort order, but pieChart.redraw() doesn't seem to update correctly, 
-                // so we will destroy the chart, but save the data since we don't need to regenerate it, only redraw it.
-            var pieOpts = _pieChart.options;    // detach before destroying pieChart.
-            pieOpts.sortOrder = _sortOrder;
-            pieChart.options = null;
-            
-            loadReportDataPieChart(pieOpts);    // re-assign the data we already had, this time with new sort order
-        }
+            // rebuild the report with the new sort order
+        if (_pieChart)
+            runReport(_pieChart.options.reportIndex);   // re-run same report
     });
 
 });
 
     // callback function that fills the pieChart up with the data retrieved from LMV Object Properties
 function loadReportDataPieChart(pieOpts) {
+        // free up anything that is already there
     if (_pieChart)
         _pieChart.destroy();
-    _pieChart = new d3pie("pieChart", pieOpts);
+    
+    $("#barChart").empty();
+
+    if (pieOpts.data.content.length === 0) {
+        $("#pieChart").append("<p><em>No data could be retrieved for charts.  Either this report is not applicable for the given model, or it's the Asynchronous bug rearing its ugly head!  Try again or switch to a different report.</em></p>");
+        //alert("No data for Pie Chart.  Try again");
+    }
+    else {
+        _pieChart = new d3pie("pieChart", pieOpts);
+        loadBarChart(pieOpts.data);
+    }
 }
 
     // initialize
-function initPieOpts(fieldName) {
+function initPieOpts(fieldName, reportIndex) {
     var pieOpts = initPieDefaults(fieldName);
+    pieOpts.reportIndex = reportIndex;
 
     pieOpts.data = {
         "sortOrder": _sortOrder,

@@ -12,9 +12,9 @@ function getPropsAsync(dbId, propNameStr, pieData) {
         }
         for (var j=0; j<data.properties.length; j++) {
             var obj = data.properties[j];
-            if (obj.displayName === propNameStr) {
+            if ((obj.displayName === propNameStr) && (obj.hidden != true)) {
                 //console.log("found property");
-                var index = getPropBucket(pieData.content, obj.displayValue);
+                var index = getPropBucket(pieData.content, obj);
                 var tmpObj = pieData.content[index];
                 tmpObj.value++;  // bump the count
                 tmpObj.lmvIds.push(data.dbId);   // add the LMV dbID
@@ -52,7 +52,8 @@ function getReportDataByPropName(propNameStr, pieOpts, callbackFunc) {
 
 
     // get the bucket object that already exists, or create a new one and return the index
-function getPropBucket(buckets, valueStr) {
+function getPropBucket(buckets, propObj) {
+    var valueStr = Autodesk.Viewing.Private.formatValueWithUnits(propObj.displayValue, propObj.units, propObj.type);
     for (var i=0; i<buckets.length; i++) {
         if (buckets[i].label === valueStr)
             return i;
