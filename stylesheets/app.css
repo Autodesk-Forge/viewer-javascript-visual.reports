@@ -93,7 +93,7 @@ label + .select-light {
 
 /* Grid */
 .project-container {
-  width: 70%;
+  width: 60%;
   float: left;
   height: 500px;
   position: relative; }
@@ -114,11 +114,11 @@ label + .select-light {
 
 .project-view-column {
   float: left;
-  width: 65%; }
+  width: 50%; }
 
 .project-info-column {
   float: right;
-  width: 30%;
+  width: 40%;
   overflow-y: scroll;
   height: 1000px;
   padding: 30px 10px 10px 10px;
