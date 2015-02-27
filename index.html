@@ -16,6 +16,7 @@
     <meta content="Autodesk" name="author" />
     <meta content="3D Model Viewer" name="keywords" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700" rel="stylesheet" type="text/css" />
     <link href="stylesheets/libs/normalize.css" rel="stylesheet" type="text/css" />
     <script src="scripts/libs/jquery/jquery-2.1.1.min.js"></script>
@@ -24,15 +25,15 @@
     <script src="scripts/app.js"></script>
     
         <!-- Autodesk Viewer (from server: PROD) -->
-    <link rel="stylesheet" href="https://developer.api.autodesk.com/viewingservice/v1/viewers/style.css" type="text/css">
-    <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js"></script>
+    <link rel="stylesheet" href="https://developer.api.autodesk.com/viewingservice/v1/viewers/style.css?v=v1.2.3" type="text/css">
+    <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js?v=v1.2.3"></script>
     
         <!-- Autodesk Viewer (from server: STAGING) -->
-    <!--<link rel="stylesheet" href="https://developer-stg.api.autodesk.com/viewingservice/v1/viewers/style.css?v=0.1.180" type="text/css">
-    <script src="https://developer-stg.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js?v=0.1.180"></script>-->
+    <!--<link rel="stylesheet" href="https://developer-stg.api.autodesk.com/viewingservice/v1/viewers/style.css" type="text/css">
+    <script src="https://developer-stg.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js"></script>-->
     
     <script src="./scripts/MyAuthToken.js"></script>
-    <script src="./scripts/LmvObjData.js"></script>
+    <script src="./scripts/ReportData.js"></script>
 
     <script>var debugging = true;</script>
 </head>
@@ -62,17 +63,6 @@
 
   <!-- Inspector column -->
   <div class="project-info-column">
-    <h2>
-      Inspector
-    </h2>
-    <label for="pu_sortOrder">Sort Order</label>
-    <select id="pu_sortOrder" class="select-light" name="sortOrder">
-        <option value="value-asc">Value - Ascending</option>
-        <option value="value-desc" selected="selected">Value - Descending</option>
-        <option value="label-asc">Label - Ascending</option>
-        <option value="label-desc">Label - Descending</option>
-        <option value="random">Random</option>
-    </select>
     <ul class="tab-buttons">
       <li class="active">
           <a href="#tab_panel_1"><span class="icon icon-large icon-report"></span><span>Reports</span></a>
@@ -85,18 +75,25 @@
       </li>
     </ul>
     <div class="tab-panel active" id="tab_panel_1">
-      <!--<div class="chart">
-          <h2>
-              Object Type <br /><small>Quantities of items in the model</small>
-          </h2>
-      </div>-->
-      <button id="bn_loadData" class="btn btn-primary">Get Quantities</button>
-      <div id="pieChart">
-          <!-- PieChart goes here -->
-      </div>
-      <svg id="barChart">
-          <!-- BarChart goes here -->
-      </svg>
+        <label for="pu_reportToRun">Report</label>
+        <select id="pu_reportToRun" class="select-light" name="reportToRun" disabled>
+                <!-- Options filled in by function in Report_PieChart.js -->
+        </select>
+        <label for="pu_sortOrder">Sort Order</label>
+        <select id="pu_sortOrder" class="select-light" name="sortOrder" disabled>
+            <option value="value-asc">Value - Ascending</option>
+            <option value="value-desc" selected="selected">Value - Descending</option>
+            <option value="label-asc">Label - Ascending</option>
+            <option value="label-desc">Label - Descending</option>
+            <option value="random">Random</option>
+        </select>
+        
+        <div id="pieChart">
+            <!-- PieChart goes here -->
+        </div>
+        <svg id="barChart">
+            <!-- BarChart goes here -->
+        </svg>
     </div>
     <div class="tab-panel" id="tab_panel_2">
       <!--<button id="bn_showRelationships" class="btn btn-primary">Show Relationships</button>-->
@@ -132,8 +129,8 @@
   <script src="./scripts/libs/d3/d3.min.js"></script>
   <script src="./scripts/libs/d3pie/d3pie.js"></script>
   <script src="./scripts/libs/nvd3/nv.d3.min.js"></script>
-  <script src="./scripts/PieChart.js"></script>
-  <script src="./scripts/BarChart.js"></script>
+  <script src="./scripts/Report_BarChart.js"></script>
+  <script src="./scripts/Report_PieChart.js"></script>
   <script src="./scripts/LoadModel.js"></script>
   <script src="./scripts/TestFuncs.js"></script>
   <script src="./scripts/Relationships.js"></script>
