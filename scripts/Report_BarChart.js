@@ -9,6 +9,7 @@ function loadBarChart(lmvData) {
             .y(function(d) { return d.value; })
             .showValues(true)
             .showControls(false)
+            .tooltips(false)
             .valueFormat(d3.format('f'))
             .margin({ top: 0, right: 50, bottom: 0, left: 150})
             .transitionDuration(400);
@@ -31,6 +32,9 @@ function loadBarChart(lmvData) {
                     values: lmvData.content
                 }
             ];
+        
+        barChart.height((lmvData.content.length + 2) * 15); // give each line 15px + add a header and footer
+
 
         d3.select('#barChart')
             .datum(barCharData)

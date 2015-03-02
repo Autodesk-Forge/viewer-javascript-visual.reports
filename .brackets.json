@@ -3,6 +3,7 @@
         "/Users/awej/Sites/LmvNavTest/scripts/libs/nvd3/nv.d3.min.js",
         "/Users/jim/dev/LmvNavTest/scripts/BarChart.js",
         "/Users/jim/dev/LmvNavTest/scripts/LmvObjData.js",
-        "/Users/jim/dev/LmvNavTest/scripts/ReportData.js"
+        "/Users/jim/dev/LmvNavTest/scripts/ReportData.js",
+        "/Users/jim/dev/LmvNavTest/scripts/Report_BarChart.js"
     ]
 }

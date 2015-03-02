@@ -92,6 +92,13 @@ function loadReportDataPieChart(pieOpts) {
         //alert("No data for Pie Chart.  Try again");
     }
     else {
+            // if we have a lot of buckets, don't let the pie chart get out of control, condense anything with 2 or less
+            // into an "Other" wedge.
+        if (pieOpts.data.content.length > 20)
+            pieOpts.data.smallSegmentGrouping.value = 2;
+        else if (pieOpts.data.content.length < 10)  // if its less than 10, don't condense
+            pieOpts.data.smallSegmentGrouping.enabled = false;
+        
         _pieChart = new d3pie("pieChart", pieOpts);
         loadBarChart(pieOpts.data);
     }
@@ -104,7 +111,12 @@ function initPieOpts(fieldName, reportIndex) {
 
     pieOpts.data = {
         "sortOrder": _sortOrder,
-        "content": []
+        "content": [],
+        "smallSegmentGrouping": {
+            "enabled": true,
+            "value": 1,
+            "valueType": "value"   // percentage or value
+        },  
     };
     
     return pieOpts;
@@ -127,9 +139,6 @@ function initPieDefaults(fieldName) {
             },
             "titleSubtitlePadding": 9
         },
-        "data": {
-            // nothing initially
-        },
         "footer": {
             "color": "#999999",
             "fontSize": 10,
@@ -146,7 +155,7 @@ function initPieDefaults(fieldName) {
                 "pieDistance": 32
             },
             "inner": {
-                //"hideWhenLessThanPercentage": 3,
+                "hideWhenLessThanPercentage": 3,
                 "format": "value"
             },
             "mainLabel": {
@@ -163,6 +172,11 @@ function initPieDefaults(fieldName) {
             "lines": {
                 "enabled": true
             }
+        },
+        "tooltips": {
+            "enabled": true,
+            "type": "placeholder",
+            "string": "{label}: {value}, {percentage}%"
         },
         "effects": {
             "pullOutSegmentOnClick": {
@@ -186,8 +200,17 @@ function initPieDefaults(fieldName) {
 }
 
 function clickPieWedge(evt) {
-    _viewerMain.isolateById(evt.data.lmvIds);
-    //_viewerSecondary.select(evt.data.lmvIds);
-    workaround_2D_select(evt.data.lmvIds);
+    ids = [];
+    if (evt.data.isGrouped === true) {  // "Other" bucket will group things together
+        for (i=0; i<evt.data.groupedData.length; i++)
+            ids = ids.concat(evt.data.groupedData[i].lmvIds);
+    }
+    else {
+        ids = evt.data.lmvIds;
+    }
+        
+    _viewerMain.isolateById(ids);
+    //_viewerSecondary.select(ids);
+    workaround_2D_select(ids);
 }
 
