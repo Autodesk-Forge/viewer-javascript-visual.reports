@@ -1,8 +1,6 @@
 
-
-/*  NOTE: still working on the correct way to get all the properties asynchronously.  It currently blows
-    past the loop before all the asyncs have finished and we don't get the right data for the pieChart '*/
-
+    // get the properties for a given object so that we can see if it matches the property type
+    // we are looking for.  If so, put its id in the correct bucket.
 function getPropsAsync(dbId, propNameStr, pieData, callback) {
     _viewerMain.getProperties(dbId, function(data) {
         //console.log("working on dbID: " + dbId);

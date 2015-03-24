@@ -88,8 +88,7 @@ function loadReportDataPieChart(pieOpts) {
     $("#barChart").empty();
 
     if (pieOpts.data.content.length === 0) {
-        $("#pieChart").append("<p><em>No data could be retrieved for charts.  Either this report is not applicable for the given model, or it's the Asynchronous bug rearing its ugly head!  Try again or switch to a different report.</em></p>");
-        //alert("No data for Pie Chart.  Try again");
+        $("#pieChart").append("<p><em>No data could be retrieved for charts.  This report is probably not applicable for the given model.  As an example, Revit models can be sorted by Type or Level, but Fusion models cannot.  Fusion models are more appropriate for reports sorted by Mass, Volume, or Material.  Try switching to a different report or a different model.</em></p>");
     }
     else {
             // if we have a lot of buckets, don't let the pie chart get out of control, condense anything with 2 or less
