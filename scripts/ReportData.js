@@ -3,7 +3,7 @@
 /*  NOTE: still working on the correct way to get all the properties asynchronously.  It currently blows
     past the loop before all the asyncs have finished and we don't get the right data for the pieChart '*/
 
-function getPropsAsync(dbId, propNameStr, pieData) {
+function getPropsAsync(dbId, propNameStr, pieData, callback) {
     _viewerMain.getProperties(dbId, function(data) {
         //console.log("working on dbID: " + dbId);
         if ((data.properties === null) || (data.properties.length === 0)) {
@@ -12,7 +12,7 @@ function getPropsAsync(dbId, propNameStr, pieData) {
         }
         for (var j=0; j<data.properties.length; j++) {
             var obj = data.properties[j];
-            if ((obj.displayName === propNameStr) && (obj.hidden != true)) {
+            if ((obj.displayName === propNameStr) && (!obj.hidden)) {
                 //console.log("found property");
                 var index = getPropBucket(pieData.content, obj);
                 var tmpObj = pieData.content[index];
@@ -20,6 +20,9 @@ function getPropsAsync(dbId, propNameStr, pieData) {
                 tmpObj.lmvIds.push(data.dbId);   // add the LMV dbID
             }
         }
+
+        if (callback)
+            callback();
     });
 }
 
@@ -27,27 +30,21 @@ function getPropsAsync(dbId, propNameStr, pieData) {
     // based on some Property Name (eg "Material")
 function getReportDataByPropName(propNameStr, pieOpts, callbackFunc) {
     
-    var leafNodes = getLeafNodeObjs();
-    //console.log("\nLEAF NODES: " + leafNodes.length);   // NOTE: Leaf nodes always is correct
+    getLeafNodeObjs(function(leafNodes) {
+
+        //console.log("\nLEAF NODES: " + leafNodes.length);   // NOTE: Leaf nodes always is correct
+        var allDone = leafNodes.length;
 
         // for each leaf node, find out what Material bucket this object goes in
-    var promises = [];
-    function createPromise() {
-        var p = $.Deferred();
-        promises.push(p);
-        return p.resolve; // Doesn't create an anonymous function
-    };
-    $.each(leafNodes, function(num, dbId) {
-        getPropsAsync(dbId, propNameStr, pieOpts.data);
-    });
-        // set a timer so the array gets loaded correctly
-    //window.setTimeout(function(){$.when.apply($, promises).then(allDone(pieData));},100);
-    window.setTimeout(function() {
-        $.when.apply($, promises).then(function () {
-            if (callbackFunc)
-                callbackFunc(pieOpts);
+        $.each(leafNodes, function(num, dbId) {
+            getPropsAsync(dbId, propNameStr, pieOpts.data, function() {
+                allDone--;
+                if (allDone == 0 && callbackFunc)
+                    callbackFunc(pieOpts);        
+            });
         });
-    }, 1000);
+    });
+
 }
 
 
@@ -69,16 +66,19 @@ function getPropBucket(buckets, propObj) {
 }
 
 
-function getLeafNodeObjs() {
-    var leafNodes = [];
+function getLeafNodeObjs(callback) {
     
     _viewerMain.getObjectTree(function(objTree) {
+
+        var leafNodes = [];
+
         $.each(objTree.children, function(num, treeNode) {
             recursiveGetLeafNodes(treeNode, leafNodes);
         }); 
+
+        if (callback)
+            callback(leafNodes);
      });
-    
-    return leafNodes;
 }
 
     // recursively add all the leaf nodes
@@ -113,10 +113,10 @@ function getReportDataByObjType(pieOpts, callbackFunc) {
             pieOpts.data.content.push(myObj);
             
         }); 
-     });
-    
-    if (callbackFunc)
-        callbackFunc(pieOpts);
+
+        if (callbackFunc)
+            callbackFunc(pieOpts);
+     });    
 }
 
     // recursively add all the nodes in the Model Structure of LMV to the jsTree

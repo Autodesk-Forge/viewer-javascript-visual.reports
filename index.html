@@ -17,7 +17,7 @@
     <meta content="3D Model Viewer" name="keywords" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700" rel="stylesheet" type="text/css" />
     <link href="stylesheets/libs/normalize.css" rel="stylesheet" type="text/css" />
     <script src="scripts/libs/jquery/jquery-2.1.1.min.js"></script>
     <link href="./stylesheets/libs/nv.d3.css" rel="stylesheet">
@@ -25,8 +25,12 @@
     <script src="scripts/app.js"></script>
     
         <!-- Autodesk Viewer (from server: PROD) -->
-    <link rel="stylesheet" href="https://developer.api.autodesk.com/viewingservice/v1/viewers/style.css?v=v1.2.3" type="text/css">
-    <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js?v=v1.2.3"></script>
+    <!-- link rel="stylesheet" href="https://developer.api.autodesk.com/viewingservice/v1/viewers/style.css?v=v1.2.3" type="text/css">
+    <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js?v=v1.2.3"></script -->
+
+        <!-- Autodesk Viewer (from server: DEV) -->
+    <link rel="stylesheet" href="https://lmv.autodesk.com/viewers-dev/latest/style.css" type="text/css">
+    <script src="https://lmv.autodesk.com/viewers-dev/latest/viewer3D.min.js"></script>
     
         <!-- Autodesk Viewer (from server: STAGING) -->
     <!--<link rel="stylesheet" href="https://developer-stg.api.autodesk.com/viewingservice/v1/viewers/style.css" type="text/css">
