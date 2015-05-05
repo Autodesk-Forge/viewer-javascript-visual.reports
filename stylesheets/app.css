@@ -190,3 +190,7 @@ svg .nv-bar.clicked {
     width: 100%;
     height: 400px;
     margin: 0px; }
+
+#sheetThumbs img {
+    margin-right: 10px;
+}

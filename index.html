@@ -25,16 +25,16 @@
     <script src="scripts/app.js"></script>
     
         <!-- Autodesk Viewer (from server: PROD) -->
-    <link rel="stylesheet" href="https://developer.api.autodesk.com/viewingservice/v1/viewers/style.css" type="text/css">
-    <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js"></script>
+    <!--<link rel="stylesheet" href="https://developer.api.autodesk.com/viewingservice/v1/viewers/style.css" type="text/css">
+    <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js"></script>-->
 
         <!-- Autodesk Viewer (from server: DEV) -->
     <!--<link rel="stylesheet" href="https://lmv.autodesk.com/viewers-dev/latest/style.css" type="text/css">
     <script src="https://lmv.autodesk.com/viewers-dev/latest/viewer3D.min.js"></script>-->
     
         <!-- Autodesk Viewer (from server: STAGING) -->
-    <!--<link rel="stylesheet" href="https://developer-stg.api.autodesk.com/viewingservice/v1/viewers/style.css" type="text/css">
-    <script src="https://developer-stg.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js"></script>-->
+    <link rel="stylesheet" href="https://developer-stg.api.autodesk.com/viewingservice/v1/viewers/style.css" type="text/css">
+    <script src="https://developer-stg.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js"></script>
     
     <script src="./scripts/MyAuthToken.js"></script>
     <script src="./scripts/ReportData.js"></script>
@@ -48,7 +48,7 @@
   <div class="page-heading">
     <div class="page-heading-cell">
       <h1>
-        Fluent&reg; Viewer
+        LMV Nav Test
       </h1>
     </div>
     <div class="page-heading-cell">
@@ -100,8 +100,13 @@
         </svg>
     </div>
     <div class="tab-panel" id="tab_panel_2">
-      <!--<button id="bn_showRelationships" class="btn btn-primary">Show Relationships</button>-->
-      <button id="bn_showObjsonSheet" class="btn btn-primary">Show "OnSheet but not Model"</button>
+        <!--<button id="bn_showRelationships" class="btn btn-primary">Show Relationships</button>-->
+        <button id="bn_showObjsonSheet" class="btn btn-primary">Show "OnSheet but not Model"</button>
+        <button id="bn_showWhereViewable" class="btn btn-primary">Show where viewable</button>
+        <div id="sheetThumbs">
+            <img id="img_thumbnail"></img>
+            <!-- Sheet thumbnails go here -->
+        </div>
     </div>
     <div class="tab-panel" id="tab_panel_3">
       <button id="bn_showCosts" class="btn btn-primary">Show Costs (Not Implemented)</button>
