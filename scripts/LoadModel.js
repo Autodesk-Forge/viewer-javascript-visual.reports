@@ -21,7 +21,7 @@ var _blockEventMain = false;
 var _blockEventSecondary = false;
 
     // setup for STAGING
-var _viewerEnv = "AutodeskStaging";
+/*var _viewerEnv = "AutodeskStaging";
 var _myAuthToken = new MyAuthToken("STG");
 
 var _lmvModelOptions = [
@@ -35,10 +35,10 @@ var _lmvModelOptions = [
     { label : "F10K (Fusion)",          urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3N0Zy9GMTBLLmYzZA=="},
     { label : "KAW_48_3D _2 (DWG)",        urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3N0Zy9LQVdfNDhfM0QlMjBfMi5kd2c="},
     { label : "2D Floorplan (DWG)",        urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3N0Zy8yRCUyMEZsb29ycGxhbi5kd2c="}
-];
+];*/
 
     // setup for PRODUCTION
-/*var _viewerEnv = "AutodeskProduction";
+var _viewerEnv = "AutodeskProduction";
 var _myAuthToken = new MyAuthToken("PROD");
 
 var _lmvModelOptions = [
@@ -67,7 +67,7 @@ var _lmvModelOptions = [
     
     { label : "AC11 Institute (IFC)",       urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6YWRza19xdWlja3N0YXJ0L0FDMTEtSW5zdGl0dXRlLVZhci0yLUlGQy5pZmM="},
     { label : "Hunter Residence (SKP)",     urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3Byb2QvTUFUVEhFV19IVU5URS1SRVMtMDRfRVBELnNrcA=="},
-];*/
+];
 
 function blankOutReportPane() {
     $("#pieChart").empty();
@@ -141,16 +141,6 @@ function loadViewMenuOptions() {
         loadView(_viewerSecondary, _views3D[index]);
     }
 });
-
-function switchModel() {
-    
-    if (_viewerMain !== null) {
-        _viewerMain.tearDown();     // delete everything associated with the current loaded asset
-        _curSelSetMain = [];
-    }
-
-    _viewerMain.setUp();    // set it up again for a new asset to be loaded
-}
 
 function switchSheet() {
     
