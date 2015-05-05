@@ -70,7 +70,7 @@ function getLeafNodeObjs(callback) {
 
         var leafNodes = [];
 
-        $.each(objTree.children, function(num, treeNode) {
+        $.each(objTree.root.children, function(num, treeNode) {
             recursiveGetLeafNodes(treeNode, leafNodes);
         }); 
 
