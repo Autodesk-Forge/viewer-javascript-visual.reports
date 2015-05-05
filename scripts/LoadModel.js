@@ -72,6 +72,7 @@ var _lmvModelOptions = [
 function blankOutReportPane() {
     $("#pieChart").empty();
     $("#barChart").empty();
+    $("#sheetThumbs").empty();
 }
 
     // populate the popup menu with the avaialable models to load (from the array above)
@@ -131,15 +132,35 @@ function loadViewMenuOptions() {
     if (index >= 1000) {    // 2D views we gave a higher index to in the Popup menu
         index -= 1000;
         console.log("Changing to 2D view: " + _views2D[index].name);
-        initializeViewerSecondary();
+        switchSheet();
         loadView(_viewerSecondary, _views2D[index]);
     }
     else {
         console.log("Changing to 3D view: " + _views3D[index].name);
-        initializeViewerSecondary();
+        switchSheet();
         loadView(_viewerSecondary, _views3D[index]);
     }
 });
+
+function switchModel() {
+    
+    if (_viewerMain !== null) {
+        _viewerMain.tearDown();     // delete everything associated with the current loaded asset
+        _curSelSetMain = [];
+    }
+
+    _viewerMain.setUp();    // set it up again for a new asset to be loaded
+}
+
+function switchSheet() {
+    
+    if (_viewerSecondary !== null) {
+        _viewerSecondary.tearDown();     // delete everything associated with the current loaded asset
+        _curSelSetSecondary = [];
+    }
+
+    _viewerSecondary.setUp();    // set it up again for a new asset to be loaded
+}
 
 // STEPS:
 //  0)  Initialize the Viewing Runtime
@@ -169,19 +190,23 @@ function initializeViewerMain() {
         alert("ERROR: Couldn't initialize main viewer!");
         console.log("ERROR Code: " + retCode);      // TBD: do real error handling here
     }
+    
+        // when the geometry is loaded, automatically run the first report
+    disableReportMenu();
+    _viewerMain.addEventListener(Autodesk.Viewing.GEOMETRY_LOADED_EVENT, function (event) {
+        enableReportMenu();
+        runReport(-1);   // run the currently selected report (the first one if this is the first model loaded, current one if loading a subsequent model)
+    });
+    
         // when selecting in the Primary viewer, select the matching items in the Secondary viewer
-    _viewerMain.addEventListener("selection", function (event) {
+    _viewerMain.addEventListener(Autodesk.Viewing.SELECTION_CHANGED_EVENT, function (event) {
+        _curSelSetMain = event.dbIdArray;
+        
         if (_blockEventSecondary)
             return;
         
-        _curSelSetMain = event.dbIdArray;
-        //console.log("LmvQty: [Selection Set Main]: ", _curSelSetMain);
-        
             // if a single item, help debug by dumping it to the console window.
         if (_curSelSetMain.length == 1) {
-            //var tmpObj = _viewerMain.model.getNodeById(_curSelSetMain[0]);
-            //console.debug(tmpObj);
-            
             //_viewerSecondary.select(_curSelSetMain);  // NOTE: This is how I would expect to be able to it, but need to call work-around func below
             _blockEventMain = true;
             workaround_2D_select(_curSelSetMain);   // Call work-around to select objects in secondary view (see file TestFuncs.js)
@@ -209,18 +234,14 @@ function initializeViewerSecondary() {
     }
     
         // when selecting objects in the Secondary viewer, also select the matching itmes in the Primary viewer
-    _viewerSecondary.addEventListener("selection", function (event) {
+    _viewerSecondary.addEventListener(Autodesk.Viewing.SELECTION_CHANGED_EVENT, function (event) {
         if (_blockEventMain)
             return;
         
         _curSelSetSecondary = event.dbIdArray;
-        //console.log("LmvQty: [Selection Set Secondary]: ", _curSelSetSecondary);
         
             // if a single item, help debug by dumping it to the console window.
-        if (_curSelSetSecondary.length == 1) {
-            //var tmpObj = _viewerSecondary.model.getNodeById(_curSelSetSecondary[0]);
-            //console.debug(tmpObj);
-            
+        if (_curSelSetSecondary.length == 1) {            
             _blockEventSecondary = true;
             
                 // normal behavior is to isolate and zoom into the selected object, but we can only do that in 3D.
@@ -236,6 +257,13 @@ function initializeViewerSecondary() {
             
             _blockEventSecondary = false;
         }
+    });
+    
+        // when we change sheets, we want to re-select things after this sheet is loaded
+    _viewerSecondary.addEventListener(Autodesk.Viewing.GEOMETRY_LOADED_EVENT, function (event) {
+        _blockEventMain = true; // prevent normal event of select/isolate/fit in main viewer
+        workaround_2D_select(_curSelSetMain);
+        _blockEventMain = false;
     });
 }
     
@@ -261,13 +289,6 @@ function loadDocument(urnStr) {
         loadViewMenuOptions();                   // populate UX with views we just retrieved
         initializeViewerMain();
         initializeViewerSecondary();
-        
-            // when the geometry is loaded, automatically run the first report
-        disableReportMenu();
-        _viewerMain.addEventListener(Autodesk.Viewing.GEOMETRY_LOADED_EVENT, function (event) {
-            enableReportMenu();
-            runReport(-1);   // run the currently selected report (the first one if this is the first model loaded, current one if loading a subsequent model)
-        });
             
             // load up first 3D view by default into the primary viewer
         if (_views3D.length > 0) {
@@ -314,15 +335,6 @@ function loadViewErrorFunc()
 function loadView(viewer, viewObj) {
     var path = _loadedDocument.getViewablePath(viewObj);
     console.log("Loading view URN: " + path);
-    
-        // when the geometry in secondary viewer is loaded, highlight anything currently selected in main viewer
-    if (viewer === _viewerSecondary) {
-        _viewerSecondary.addEventListener(Autodesk.Viewing.GEOMETRY_LOADED_EVENT, function (event) {
-            _blockEventSecondary = true;
-            workaround_2D_select(_curSelSetMain);
-            _blockEventSecondary = false;
-        });
-    }
     
     viewer.load(path, _loadedDocument.getPropertyDbPath(), loadViewSuccessFunc, loadViewErrorFunc);
 }
