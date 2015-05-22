@@ -55,7 +55,7 @@ function handleBarClick(event) {
     d3.selectAll('.nv-bar').classed({'clicked': false});
     d3.select(this).classed({'clicked': true});
 
-    _viewerMain.isolateById(event.lmvIds);
+    _viewerMain.isolate(event.lmvIds);
     //_viewerSecondary.select(evt.data.lmvIds);
     workaround_2D_select(event.lmvIds);
 }

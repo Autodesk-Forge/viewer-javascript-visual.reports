@@ -208,7 +208,7 @@ function clickPieWedge(evt) {
         ids = evt.data.lmvIds;
     }
         
-    _viewerMain.isolateById(ids);
+    _viewerMain.isolate(ids);
     //_viewerSecondary.select(ids);
     workaround_2D_select(ids);
 }
