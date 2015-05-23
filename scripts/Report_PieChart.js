@@ -209,7 +209,6 @@ function clickPieWedge(evt) {
     }
         
     _viewerMain.isolate(ids);
-    //_viewerSecondary.select(ids);
-    workaround_2D_select(ids);
+    _viewerSecondary.select(ids);
 }
 

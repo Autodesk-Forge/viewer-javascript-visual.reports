@@ -197,9 +197,8 @@ function initializeViewerMain() {
         
             // if a single item, help debug by dumping it to the console window.
         if (_curSelSetMain.length == 1) {
-            //_viewerSecondary.select(_curSelSetMain);  // NOTE: This is how I would expect to be able to it, but need to call work-around func below
             _blockEventMain = true;
-            workaround_2D_select(_curSelSetMain);   // Call work-around to select objects in secondary view (see file TestFuncs.js)
+            _viewerSecondary.select(_curSelSetMain)//select objects in secondary view
             _blockEventMain = false;
         }
     });
@@ -241,7 +240,7 @@ function initializeViewerSecondary() {
                 _viewerMain.fitToView(_curSelSetSecondary);
             }
             else {
-                workaround_2D_selectMainViewer(_curSelSetSecondary);   // Call work-around to select objects in secondary view (see file TestFuncs.js)
+                _viewerMain.select(_curSelSetSecondary);   // Call work-around to select objects in secondary view (see file TestFuncs.js)
                 _viewerMain.fitToView(_curSelSetSecondary);
             }
             
@@ -252,7 +251,7 @@ function initializeViewerSecondary() {
         // when we change sheets, we want to re-select things after this sheet is loaded
     _viewerSecondary.addEventListener(Autodesk.Viewing.GEOMETRY_LOADED_EVENT, function (event) {
         _blockEventMain = true; // prevent normal event of select/isolate/fit in main viewer
-        workaround_2D_select(_curSelSetMain);
+        _viewerSecondary.select(_curSelSetMain);
         _blockEventMain = false;
     });
 }
