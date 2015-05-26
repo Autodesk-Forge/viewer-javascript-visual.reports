@@ -10,8 +10,7 @@ $(document).ready(function() {
         //_viewerSecondary.select(manSelSet);
         
         var selSet = [0];
-        //_viewerSecondary.select(selSet);
-        workaround_2D_select(selSet);   // code Traian gave me to highlight on a 2D sheet
+        _viewerSecondary.select(selSet);
     });
     
     $("#bn_showWhereViewable").click(function(evt) {  
