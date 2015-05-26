@@ -6,8 +6,6 @@ $(document).ready(function() {
 
         var curSelSet = _viewerMain.getSelection();
         console.log(curSelSet);
-
-        //_viewerSecondary.select(manSelSet);
         
         var selSet = [0];
         _viewerSecondary.select(selSet);
@@ -26,7 +24,7 @@ $(document).ready(function() {
         }
         else {
             $('#sheetThumbs').empty();
-            _viewerMain.getProperties(curSelSet[0].dbId, getViewableInProps, getViewableInErrorFunc);
+            _viewerMain.getProperties(curSelSet[0], getViewableInProps, getViewableInErrorFunc);
         }
     });
     
