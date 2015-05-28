@@ -4,11 +4,16 @@ $(document).ready(function() {
     $("#bn_showObjsonSheet").click(function(evt) {  
         evt.preventDefault();
 
-        var curSelSet = _viewerMain.getSelection();
-        console.log(curSelSet);
+        //var curSelSet = _viewerMain.getSelection();
+        //console.log(curSelSet);
+        
+        //_viewerSecondary.clearSelection();
         
         var selSet = [0];
+        
+        _blockEventMain = true;
         _viewerSecondary.select(selSet);
+        _blockEventMain = false;
     });
     
     $("#bn_showWhereViewable").click(function(evt) {  

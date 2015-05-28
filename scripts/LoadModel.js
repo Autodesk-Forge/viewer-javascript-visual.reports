@@ -19,7 +19,7 @@ var _blockEventMain = false;
 var _blockEventSecondary = false;
 
     // setup for STAGING
-var _viewerEnv = "AutodeskStaging";
+/*var _viewerEnv = "AutodeskStaging";
 var _myAuthToken = new MyAuthToken("STG");
 
 var _lmvModelOptions = [
@@ -33,10 +33,10 @@ var _lmvModelOptions = [
     { label : "F10K (Fusion)",          urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3N0Zy9GMTBLLmYzZA=="},
     { label : "KAW_48_3D _2 (DWG)",        urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3N0Zy9LQVdfNDhfM0QlMjBfMi5kd2c="},
     { label : "2D Floorplan (DWG)",        urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3N0Zy8yRCUyMEZsb29ycGxhbi5kd2c="}
-];
+];*/
 
     // setup for PRODUCTION
-/*var _viewerEnv = "AutodeskProduction";
+var _viewerEnv = "AutodeskProduction";
 var _myAuthToken = new MyAuthToken("PROD");
 
 var _lmvModelOptions = [
@@ -65,7 +65,7 @@ var _lmvModelOptions = [
     
     { label : "AC11 Institute (IFC)",       urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6YWRza19xdWlja3N0YXJ0L0FDMTEtSW5zdGl0dXRlLVZhci0yLUlGQy5pZmM="},
     { label : "Hunter Residence (SKP)",     urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3Byb2QvTUFUVEhFV19IVU5URS1SRVMtMDRfRVBELnNrcA=="},
-];*/
+];
 
 function blankOutReportPane() {
     $("#pieChart").empty();
@@ -191,11 +191,11 @@ function initializeViewerMain() {
         
             // if a single item selected in 3D, select that same item in 2D.
         var curSelSetMain = _viewerMain.getSelection();
-        if (curSelSetMain.length === 1) {
+        //if (curSelSetMain.length === 1) {
             _blockEventMain = true;
             _viewerSecondary.select(curSelSetMain)//select objects in secondary view
             _blockEventMain = false;
-        }
+        //}
     });
 }
 
@@ -226,12 +226,12 @@ function initializeViewerSecondary() {
         if (curSelSetSecondary.length === 1) {            
             _blockEventSecondary = true;
             
-            _viewerMain.clearSelection();   // reset to nothing selected (otherwise we end up in cases where it just adds to the existing selection)
+            //_viewerMain.clearSelection();   // reset to nothing selected (otherwise we end up in cases where it just adds to the existing selection)
             
                 // normal behavior is to isolate and zoom into the selected object, but we can only do that in 3D.
             if (_viewerMain.model.is2d() == false) {
-                _viewerMain.isolate(curSelSetSecondary);
                 _viewerMain.select(curSelSetSecondary);
+                _viewerMain.isolate(curSelSetSecondary);
                 _viewerMain.fitToView(curSelSetSecondary);
             }
             else {
