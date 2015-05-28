@@ -70,7 +70,7 @@ function getLeafNodeObjs(callback) {
 
         var leafNodes = [];
 
-        $.each(objTree.children, function(num, treeNode) {
+        $.each(objTree.root.children, function(num, treeNode) {
             recursiveGetLeafNodes(treeNode, leafNodes);
         }); 
 
@@ -99,7 +99,7 @@ function getReportDataByObjType(pieOpts, callbackFunc) {
     
     _viewerMain.getObjectTree(function(objTree) {
         
-        $.each(objTree.children, function(num, treeNode) {
+        $.each(objTree.root.children, function(num, treeNode) {
                 // create a new object to attach to the tree node
             var myObj = {};
             myObj.label = treeNode.name;

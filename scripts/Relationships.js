@@ -4,14 +4,16 @@ $(document).ready(function() {
     $("#bn_showObjsonSheet").click(function(evt) {  
         evt.preventDefault();
 
-        var curSelSet = _viewerMain.getSelection();
-        console.log(curSelSet);
-
-        //_viewerSecondary.select(manSelSet);
+        //var curSelSet = _viewerMain.getSelection();
+        //console.log(curSelSet);
+        
+        //_viewerSecondary.clearSelection();
         
         var selSet = [0];
-        //_viewerSecondary.select(selSet);
-        workaround_2D_select(selSet);   // code Traian gave me to highlight on a 2D sheet
+        
+        _blockEventMain = true;
+        _viewerSecondary.select(selSet);
+        _blockEventMain = false;
     });
     
     $("#bn_showWhereViewable").click(function(evt) {  
@@ -27,7 +29,7 @@ $(document).ready(function() {
         }
         else {
             $('#sheetThumbs').empty();
-            _viewerMain.getProperties(curSelSet[0].dbId, getViewableInProps, getViewableInErrorFunc);
+            _viewerMain.getProperties(curSelSet[0], getViewableInProps, getViewableInErrorFunc);
         }
     });
     

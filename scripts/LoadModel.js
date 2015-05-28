@@ -11,8 +11,6 @@
     // some global vars  (TBD: consider consolidating into an object)
 var _viewerMain = null;             // the viewer
 var _viewerSecondary = null;        // the viewer
-var _curSelSetMain = [];            // init to empty array
-var _curSelSetSecondary = [];       // init to empty array
 var _loadedDocument = null;
 var _views2D = null;
 var _views3D = null;
@@ -146,7 +144,6 @@ function switchSheet() {
     
     if (_viewerSecondary !== null) {
         _viewerSecondary.tearDown();     // delete everything associated with the current loaded asset
-        _curSelSetSecondary = [];
     }
 
     _viewerSecondary.setUp();    // set it up again for a new asset to be loaded
@@ -169,7 +166,6 @@ function initializeViewerMain() {
     if (_viewerMain !== null) {
         _viewerMain.uninitialize();
         _viewerMain = null;
-        _curSelSetMain = [];
     }
 
     var viewerElement = document.getElementById("viewerMain");  // placeholder in HTML to stick the viewer
@@ -189,19 +185,17 @@ function initializeViewerMain() {
     });
     
         // when selecting in the Primary viewer, select the matching items in the Secondary viewer
-    _viewerMain.addEventListener(Autodesk.Viewing.SELECTION_CHANGED_EVENT, function (event) {
-        _curSelSetMain = event.dbIdArray;
-        
+    _viewerMain.addEventListener(Autodesk.Viewing.SELECTION_CHANGED_EVENT, function (event) {        
         if (_blockEventSecondary)
             return;
         
-            // if a single item, help debug by dumping it to the console window.
-        if (_curSelSetMain.length == 1) {
-            //_viewerSecondary.select(_curSelSetMain);  // NOTE: This is how I would expect to be able to it, but need to call work-around func below
+            // if a single item selected in 3D, select that same item in 2D.
+        var curSelSetMain = _viewerMain.getSelection();
+        //if (curSelSetMain.length === 1) {
             _blockEventMain = true;
-            workaround_2D_select(_curSelSetMain);   // Call work-around to select objects in secondary view (see file TestFuncs.js)
+            _viewerSecondary.select(curSelSetMain)//select objects in secondary view
             _blockEventMain = false;
-        }
+        //}
     });
 }
 
@@ -211,7 +205,6 @@ function initializeViewerSecondary() {
     if (_viewerSecondary !== null) {
         _viewerSecondary.uninitialize();
         _viewerSecondary = null;
-        _curSelSetSecondary = [];
     }
 
     var viewerElement = document.getElementById("viewerSecondary");  // placeholder in HTML to stick the viewer
@@ -227,22 +220,23 @@ function initializeViewerSecondary() {
     _viewerSecondary.addEventListener(Autodesk.Viewing.SELECTION_CHANGED_EVENT, function (event) {
         if (_blockEventMain)
             return;
-        
-        _curSelSetSecondary = event.dbIdArray;
-        
-            // if a single item, help debug by dumping it to the console window.
-        if (_curSelSetSecondary.length == 1) {            
+                
+            // if a single item, select and isolate same thing in 3D.
+        var curSelSetSecondary = _viewerSecondary.getSelection();
+        if (curSelSetSecondary.length === 1) {            
             _blockEventSecondary = true;
+            
+            //_viewerMain.clearSelection();   // reset to nothing selected (otherwise we end up in cases where it just adds to the existing selection)
             
                 // normal behavior is to isolate and zoom into the selected object, but we can only do that in 3D.
             if (_viewerMain.model.is2d() == false) {
-                _viewerMain.isolateById(_curSelSetSecondary);
-                _viewerMain.select(_curSelSetSecondary);
-                _viewerMain.fitToView(_curSelSetSecondary);
+                _viewerMain.select(curSelSetSecondary);
+                _viewerMain.isolate(curSelSetSecondary);
+                _viewerMain.fitToView(curSelSetSecondary);
             }
             else {
-                workaround_2D_selectMainViewer(_curSelSetSecondary);   // Call work-around to select objects in secondary view (see file TestFuncs.js)
-                _viewerMain.fitToView(_curSelSetSecondary);
+                _viewerMain.select(curSelSetSecondary);   // Call work-around to select objects in secondary view (see file TestFuncs.js)
+                _viewerMain.fitToView(curSelSetSecondary);
             }
             
             _blockEventSecondary = false;
@@ -252,7 +246,7 @@ function initializeViewerSecondary() {
         // when we change sheets, we want to re-select things after this sheet is loaded
     _viewerSecondary.addEventListener(Autodesk.Viewing.GEOMETRY_LOADED_EVENT, function (event) {
         _blockEventMain = true; // prevent normal event of select/isolate/fit in main viewer
-        workaround_2D_select(_curSelSetMain);
+        _viewerSecondary.select(_viewerMain.getSelection());
         _blockEventMain = false;
     });
 }
