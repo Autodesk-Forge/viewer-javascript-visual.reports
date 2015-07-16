@@ -8,6 +8,7 @@
 // Jim Awe
 // Autodesk, Inc.
 
+
     // some global vars  (TBD: consider consolidating into an object)
 var _viewerMain = null;             // the viewer
 var _viewerSecondary = null;        // the viewer
@@ -40,6 +41,10 @@ var _viewerEnv = "AutodeskProduction";
 var _myAuthToken = new MyAuthToken("PROD");
 
 var _lmvModelOptions = [
+    // { label : "House",        urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bW9kZWwyMDE1LTA2LTE2LTE4LTE2LTUxLWhucHM0dG45ZDdmaTR3bnFhY2Fjdzl4b2poeHAvR2F0ZUhvdXNlLm53ZA=="},
+    // { label : "RobotArm",     urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bW9kZWwyMDE1LTA2LTE2LTE4LTEwLTUyLWhucHM0dG45ZDdmaTR3bnFhY2Fjdzl4b2poeHAvUm9ib3RBcm0uZHdmeA=="},
+    // { label : "Seat",         urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bW9kZWwyMDE1LTA2LTE2LTE4LTM4LTE0LWhucHM0dG45ZDdmaTR3bnFhY2Fjdzl4b2poeHAvU2VhdC5kd2Y="},
+
     { label : "Urban House (Revit)",        urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3Byb2QvVXJiYW4lMjBIb3VzZSUyMC0lMjBuZXcucnZ0"},
     { label : "Chruch (Revit)",             urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3Byb2QvQ2h1cmNoUmVub3ZhdGlvbjIucnZ0"},
     { label : "SaRang - Struct (Revit)",    urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3Byb2QvU2FSYW5nLVN0cnVjdHVyZS0yMDE1LnJ2dA=="},
@@ -70,7 +75,9 @@ var _lmvModelOptions = [
 function blankOutReportPane() {
     $("#pieChart").empty();
     $("#barChart").empty();
+    $("#bar-chart").empty();
     $("#sheetThumbs").empty();
+
 }
 
     // populate the popup menu with the avaialable models to load (from the array above)
@@ -92,7 +99,9 @@ function loadModelMenuOptions() {
      var index = parseInt($("#pu_modelToLoad option:selected").val(), 10);
      console.log("Changing model to: " + _lmvModelOptions[index].label);
      loadDocument(_lmvModelOptions[index].urn);
-     
+
+     uninitializePinPanel();
+     unitializeThemePanel();
      blankOutReportPane();
 });
 
@@ -178,10 +187,15 @@ function initializeViewerMain() {
     }
     
         // when the geometry is loaded, automatically run the first report
+
     disableReportMenu();
     _viewerMain.addEventListener(Autodesk.Viewing.GEOMETRY_LOADED_EVENT, function (event) {
+
         enableReportMenu();
-        runReport(-1);   // run the currently selected report (the first one if this is the first model loaded, current one if loading a subsequent model)
+        //runReport(-1);   // run the currently selected report (the first one if this is the first model loaded, current one if loading a subsequent model)
+        
+        $("#tab_button_1").click();
+        startReportDataLoader(runReport);
     });
     
         // when selecting in the Primary viewer, select the matching items in the Secondary viewer
@@ -300,7 +314,7 @@ function loadDocument(urnStr) {
 
         
     }, function(errorCode, errorMsg) {
-        alert('Load Error: ' + errorMsg);
+        alert('Load Error: ' + errorCode + " " + errorMsg);
     });
 }
 
@@ -341,6 +355,9 @@ function dbgPrintLmvVersion()
 
     // called when HTML page is finished loading, trigger loading of default model into viewer
 function loadInitialModel() {
+
+    console.log("onload: loadInitialModel in LoadModel.js");
+
     dbgPrintLmvVersion(); 
 
     loadModelMenuOptions();                  // populate the list of available models for the user
