@@ -12,7 +12,8 @@ var _reportOptions = [
     { label : "Qty - Name",             fieldName: "Name"       },
     { label : "Qty - Mass",             fieldName: "Mass"       },
     { label : "Qty - Volume",           fieldName: "Volume"     },
-    { label : "Qty - Area",             fieldName: "Area"       }
+    { label : "Qty - Area",             fieldName: "Area"       },
+    { label : "Qty - Assembly Code",    fieldName: "Assembly Code"       }
 ];
 
     // populate the popup menu with the avaialable models to load (from the array above)
