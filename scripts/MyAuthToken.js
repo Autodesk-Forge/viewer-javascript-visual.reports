@@ -15,22 +15,24 @@
 
 
 // CONS MyAuthToken():
-// locally running token service (Token Service is started with Node.js command: "node AuthTokenServer.js")
-// If you deploy AuthTokenServer.js, this obj constructor needs to change URL accordingly.
+// Make a call to the AuthTokenServer to get our authToken to pass on to the View and Data APIs.
+// This is setup currently to call my AuthTokenService.  If you want to add your own models to this project
+// then you will also have to have your own token service.  Adjust lines below appropriately to point
+// to your service (either locally, or deployed on something like Heroku).
 
 
 function MyAuthToken(env)
 {
     if (env === "PROD") {
-        //this.tokenService = "http://localhost:3000/auth";
+        //this.tokenService = "http://localhost:5000/auth";
         this.tokenService = "https://salty-caverns-3017.herokuapp.com/auth";
     }
     else if (env === "STG") {
-        //this.tokenService = "http://localhost:3000/auth-stg";
+        //this.tokenService = "http://localhost:5000/auth-stg";
         this.tokenService = "https://salty-caverns-3017.herokuapp.com/auth-stg";
     }
     else if (env === "DEV") {
-        //this.tokenService = "http://localhost:3000/auth-dev";
+        //this.tokenService = "http://localhost:5000/auth-dev";
         this.tokenService = "https://salty-caverns-3017.herokuapp.com/auth-dev";
     }
     else {
@@ -77,6 +79,8 @@ MyAuthToken.prototype.get = function()
 {
     var retVal = "";
     var expires_in = 0;
+
+    console.log("getting from url " + this.tokenService );
     
     var jqxhr = $.ajax({
         url: this.tokenService,
@@ -89,6 +93,7 @@ MyAuthToken.prototype.get = function()
 
         },
         error: function(jqXHR, textStatus) {
+            console.log(jqXHR);
             alert("AUTH TOKEN: Failed to get new auth token!");
         }
     });
