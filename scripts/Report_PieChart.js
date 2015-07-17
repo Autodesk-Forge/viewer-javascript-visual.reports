@@ -7,7 +7,7 @@ var _reportOptions = [
     { label : "Qty - Level",            fieldName: "Level",             fieldType : "Properties"},
     { label : "Qty - Base Constraint",  fieldName: "Base Constraint",   fieldType : "Properties"},
     { label : "Qty - System Type",      fieldName: "System Type",       fieldType : "Properties"},
-    { label : "Qty - Assembly Code",    fieldName: "Assembly Code"      fieldType : "Properties"},
+    { label : "Qty - Assembly Code",    fieldName: "Assembly Code",     fieldType : "Properties"},
     { label : "Qty - Material",         fieldName: "Material",          fieldType : "Properties"},
     { label : "Qty - Appearance",       fieldName: "Appearance",        fieldType : "Properties"},
     { label : "Qty - Name",             fieldName: "Name",              fieldType : "Properties"},
@@ -186,14 +186,9 @@ function loadReportDataPieChart(pieOpts) {
         $("#pieChart").append("<p><em>No data could be retrieved for charts.  This report is probably not applicable for the given model.  As an example, Revit models can be sorted by Type or Level, but Fusion models cannot.  Fusion models are more appropriate for reports sorted by Mass, Volume, or Material.  Try switching to a different report or a different model.</em></p>");
     }
     else {
-        //     // if we have a lot of buckets, don't let the pie chart get out of control, condense anything with 2 or less
-        //     // into an "Other" wedge.
-        // if (pieOpts.data.content.length > 20)
-        //     pieOpts.data.smallSegmentGrouping.value = 2;
-        // else if (pieOpts.data.content.length < 10)  // if its less than 10, don't condense
-        //     pieOpts.data.smallSegmentGrouping.enabled = false;
-
-
+        // if we have a lot of buckets, don't let the pie chart get out of control, condense anything with 2 or less
+        // into an "Other" wedge.
+        
         //pieOpts.data.sortOrder = "value-desc";
         pieOpts.data.content.sort(function (a, b) {
             if (a.value < b.value) return 1;

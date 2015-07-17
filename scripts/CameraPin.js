@@ -80,9 +80,27 @@ function prepareForAddNewPin() {
 function createNewPin(client, world, label) {
 
     var divid = "pin" + getUUID();
+
+        // NOTE: we can pass in a filter to getState() if we only want certain values like Camera
+    /*var optionsFilter = {
+        guid: true,
+        seedURN: true,
+        overrides: true,
+        objectSet: {
+            id: true,
+            isolated: true,
+            hidden: true,
+            explodeScale: true
+        },
+        viewport: true,
+        renderOptions: true
+    };*/
     
         // update the pin data
-    _viewerPin.addPin(divid, world, label, _viewerMain.getState());
+    var curViewerState = _viewerMain.getState(/*optionsFilter*/);  
+    console.log("ViewerState", curViewerState);
+
+    _viewerPin.addPin(divid, world, label, curViewerState); 
 
         // update the pin ui
     pushPinToOverlay(divid, client);
@@ -101,8 +119,13 @@ function positionToVector3(position) {
     // handle pin click, transit to its specific viewport and setup the headsup display
 function viewPinClicked(evt) {
 
-    var viewport = _viewerPin.getViewport(this.id);
-    var nav = _viewerMain.navigation;
+    var viewport = _viewerPin.getViewState(this.id);
+    _viewerMain.restoreState(viewport);     // NOTE: we can pass in a filter if we only want certain values like Camera position
+    
+        //  NOTE:  In the above call, we are just relying on the ViewerState function to capture everything in a JSON object and
+        // the restore it when asked.  We could do a more controlled way and only worry about the Camera and try to do some effects
+        // on our own, but that usually isn't necessary.
+    /*var nav = _viewerMain.navigation;
 
     var eye = positionToVector3(viewport.eye);
     var up = positionToVector3(viewport.up);
@@ -148,7 +171,7 @@ function viewPinClicked(evt) {
         } else {
             _checkCount += 1;
         }
-    }, 100);
+    }, 100);*/
 }
 
 

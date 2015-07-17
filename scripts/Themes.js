@@ -6,7 +6,7 @@
 //
 
 var _themeOptions = [
-    { label : "Original",         type: "Original"   },
+    { label : "*NONE*",           type: "Original"   },
     { label : "Type",             type: "ModelType"  },
     { label : "Level",            type: "Property "  },
     { label : "Base Constraint",  type: "Property"   },

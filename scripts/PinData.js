@@ -6,7 +6,7 @@
 
 function ViewerPin(model) {
 	this.pinobjs = [];
-	this.viewports = {};
+	this.viewStates = {};
 	this.dbkey = model + ' ViewerPin';
 
 		// load previous data from local storage if there were any
@@ -14,7 +14,7 @@ function ViewerPin(model) {
 		var dataStr = localStorage.getItem(this.dbkey);
 		var parsedObj = JSON.parse(dataStr);
 		this.pinobjs = parsedObj.pinobjs;
-		this.viewports = parsedObj.viewports;
+		this.viewStates = parsedObj.viewStates;
 	}
 };
 
@@ -54,10 +54,10 @@ ViewerPin.prototype.getPinObj = function(pinid) {
 };
 
 	// get the associated viewport object by id
-ViewerPin.prototype.getViewport = function(pinid) {
+ViewerPin.prototype.getViewState = function(pinid) {
 
-	if (pinid in this.viewports)
-		return this.viewports[pinid];
+	if (pinid in this.viewStates)
+		return this.viewStates[pinid];
 	return null;
 };
 
@@ -72,7 +72,7 @@ ViewerPin.prototype.removePin = function(pinid) {
     };
     if (index !== -1) {
         var deletedPin = this.pinobjs.splice(index, 1);
-        delete this.viewports[pinid];
+        delete this.viewStates[pinid];
         return deletedPin;
     }
     return null;
@@ -87,18 +87,9 @@ ViewerPin.prototype.addPin = function(pinid, pos, label, viewstate) {
         z: pos.z
     };
 
-    	// viewport here is obtained from a given viewState of our viewer
-    	// extract the minimum properties that we need to construct a new viewport object
-    var viewportObj = {
-        "eye": viewstate.viewport.eye, 
-        "isOrthographic": viewstate.viewport.isOrthographic, 
-        "pivotPoint": viewstate.viewport.pivotPoint,
-        "target": viewstate.viewport.target, 
-        "up": viewstate.viewport.up
-    };
 
     this.pinobjs.push(pinObj);
-    this.viewports[pinid] = viewportObj;
+    this.viewStates[pinid] = viewstate;
 };
 
 
@@ -113,7 +104,7 @@ ViewerPin.prototype.changePinLabel = function(pinid, newLabel) {
 ViewerPin.prototype.updateLocalStorage = function() {
 	var parsedObj = {
 		pinobjs: this.pinobjs,
-		viewports: this.viewports
+		viewStates: this.viewStates
 	};
 
 	var dataStr = JSON.stringify(parsedObj);
