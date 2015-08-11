@@ -149,12 +149,6 @@ function viewPinClicked(evt) {
     nav.setPivotPoint(pivot);
     nav.setPivotSetFlag(true);
 
-
-        // set up the headsup text and position
-    var pinObj = _viewerPin.getPinObj(this.id);
-    var vec = positionToVector3([pinObj.x, pinObj.y, pinObj.z]);
-    hideHeadesUpDiv(false);
-
         // stop transition check of other click events
     if (_checkTransition !== null)
         clearInterval(_checkTransition);
@@ -172,6 +166,20 @@ function viewPinClicked(evt) {
             _checkCount += 1;
         }
     }, 100);*/
+
+
+
+        // Uncomment for headsup display, this will set the 
+        // text/position/visibility of the headsup div
+    /*
+
+    var pinObj = _viewerPin.getPinObj(this.id);
+    var vec = positionToVector3([pinObj.x, pinObj.y, pinObj.z]);
+    var clientPos = worldToClient(vec, _viewerMain.getCamera());
+    hideHeadesUpDiv(false);
+    setHeadsUpDisplay(pinObj.label, clientPos.x, clientPos.y, true);
+
+    */
 }
 
 

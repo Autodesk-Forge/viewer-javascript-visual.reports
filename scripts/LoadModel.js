@@ -260,7 +260,8 @@ function initializeViewerSecondary() {
         // when we change sheets, we want to re-select things after this sheet is loaded
     _viewerSecondary.addEventListener(Autodesk.Viewing.GEOMETRY_LOADED_EVENT, function (event) {
         _blockEventMain = true; // prevent normal event of select/isolate/fit in main viewer
-        _viewerSecondary.select(_viewerMain.getSelection());
+        if (_viewerMain.model)
+            _viewerSecondary.select(_viewerMain.getSelection());
         _blockEventMain = false;
     });
 }
