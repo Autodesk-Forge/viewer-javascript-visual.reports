@@ -101,8 +101,7 @@ function restoreToOriginal() {
 
     if (_originalFragMaterial) {
 
-        var modelQueueF = _viewerMain.impl.modelQueue;
-        var frglst = modelQueueF().getFragmentList();
+        var frglst = _viewerMain.impl.modelQueue().getFragmentList();
 
         // get the mesh object of each fragment and restore their material to orignal
         for (var fragId in _originalFragMaterial) {
@@ -147,7 +146,7 @@ function overrideColorOnObjects(colorMap) {
             _originalFragMaterial = {};
             for (var i = _modelLeafNodes.length - 1; i >= 0; i--) {
                 objTree.enumNodeFragments(_modelLeafNodes[i], function(fragId) {
-                    var mat = _viewerMain.impl.getFragmentProxy().frags.getMaterial(fragId);
+                    var mat = _viewerMain.impl.getRenderProxy(_viewerMain.model, fragId).material;
                     _originalFragMaterial[fragId] = mat;
                 });
             };
@@ -196,8 +195,7 @@ function overrideColorOnObjects(colorMap) {
 }
 
 function overrideColorOnFragment(fragId, hexColorStr) {
-    var modelQueueF = _viewerMain.impl.modelQueue;
-    var frglst = modelQueueF().getFragmentList();
+    var frglst = _viewerMain.impl.modelQueue().getFragmentList();
 
     // Rather than chaning the color of the mesh material, we change the material
     // directly to gain better visual result
