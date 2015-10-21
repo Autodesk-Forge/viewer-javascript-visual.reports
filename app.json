@@ -1,0 +1,6 @@
+{
+  "name": "LMV Navigation Test",
+  "description": "Demonstration of how to write a "Visual Report" with LMV",
+  "repository": "https://github.com/redcraft/LmvNavTest",
+  "keywords": ["viewer"]
+}
