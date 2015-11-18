@@ -4,3 +4,5 @@ Demonstration of how to write a "Visual Report" with LMV.  Currently, I just hav
 Not all report types work for each type of model.  For instance, a Fusion model doesn't have an attribute for "Level" as a Revit model would.  In general, the top half of the reports are suitable for Revit and the bottom half are suitable for Manufacturing models (Fusion, Solidworks, Inventor, etc.).
 
 I will evolve this to include other "Bubble Navigation" interaction in the future...
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
