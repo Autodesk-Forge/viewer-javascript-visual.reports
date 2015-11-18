@@ -231,17 +231,8 @@ function initPieDefaults(fieldName) {
     var strSubTitle = "Quantities in model (" + fieldName + ")";
     var pieDefaults = {
         "header": {
-            "title": {
-                "text": fieldName,
-                "fontSize": 24,
-                "font": "open sans"
-            },
-            "subtitle": {
-                "text": strSubTitle,
-                "color": "#999999",
-                "fontSize": 12,
-                "font": "open sans"
-            },
+            "title": false,
+            "subtitle": false,
             "titleSubtitlePadding": 9
         },
         "footer": {

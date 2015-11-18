@@ -371,3 +371,153 @@ svg .nv-bar.clicked {
 #sheetThumbs img {
     margin-right: 10px;
 }
+
+.project-info-column {
+	padding: 20px 0 10px;
+}
+
+.project-info-selector {
+	text-align: left;
+	padding: 0 30px;
+	position: relative;
+}
+.project-info-selector label {
+	display: block;
+	color: #999;
+	font-size: 12px;
+	margin-bottom: 0.35em;
+}
+
+.project-info-selector select {
+	background: #fff;
+	width: 100%;
+	color: #999;
+	height: 3em;
+	font-size: 18px;
+	margin-bottom: 1em;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	padding: 0 15px;
+	border: 1px solid #bbb;
+	border-radius: 5px;
+
+}
+
+.project-info-selector:after {
+	content:" ";
+	background: url("../images/caret.svg");
+	width: 14px;
+	height: 10px;
+	opacity: 0.5;
+	position: absolute;
+	bottom: 38px;
+	right: 44px;
+}
+
+.tab-buttons {
+	border-left: none;
+	border-right: none;
+}
+
+.tab-buttons,
+.tab-buttons li:first-child,
+.tab-buttons li:last-child {
+	border-radius: 0;
+}
+
+.tab-buttons a {
+	font-size: 14px;
+}
+
+/* Viewer Group */
+
+#viewer-group {
+	height: 1000px;
+}
+
+#viewer-group:after {
+	content: " ";
+	clear: both;
+	display: table;
+}
+
+#handle {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	bottom: -4px;
+	height: 10px;
+	z-index: 2;
+	cursor: row-resize;
+	text-indent: -9999px;
+}
+
+#handle:before {
+	content: " ";
+	border-radius: 5px;
+	height: 7px;
+	width: 100px;
+	background: #eee;
+	border: 1px solid #999;
+	position: absolute;
+	left: 50%;
+	margin-left: -50px;
+	top: 50%;
+	margin-top: -4px;
+}
+
+#handle:after {
+	content: " ";
+	width:3px;
+	height: 3px;
+	border-radius: 100%;
+	position: absolute;
+	left: 50%;
+	margin-left: -1px;
+	top: 50%;
+	margin-top: -1px;
+	background: #999;
+	box-shadow: -14px 0 0 0 #999, -7px 0 0 0 #999, 7px 0 0 0 #999, 14px 0 0 0 #999;
+}
+
+.report-select{
+	padding-bottom: 35px;
+}
+
+.report-select-mask {
+	font-size: 24px;
+	font-weight: 100;
+	opacity: 0.5;
+}
+
+.report-select-mask:after{
+	content:" ";
+	background: url("../images/caret.svg");
+	width: 14px;
+	height: 10px;
+	display: inline-block;
+	margin-left: 0.5em;
+}
+
+.report-select-input {
+	opacity: 0;
+	min-width: 50%;
+}
+.report-select-mask, .report-select-input {
+	position: absolute;
+	transform: translateX(-50%);
+	cursor: pointer;
+}
+
+/* tweak viewer css */
+.progressbg{
+	bottom: 8px;
+}
+.adsk-toolbar{
+	bottom: 16px;
+}
+
+#viewerSecondary {
+	padding-top: 5px;
+}

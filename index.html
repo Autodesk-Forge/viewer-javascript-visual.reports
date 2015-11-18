@@ -22,20 +22,13 @@
     <link href="./stylesheets/libs/nv.d3.css" rel="stylesheet">
     <link href="./stylesheets/app.css" rel="stylesheet" type="text/css" />
 
-    <script src="./scripts/libs/jquery/jquery-2.1.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="scripts/app.js"></script>
     
         <!-- Autodesk Viewer (from server: PROD) -->
-    <link rel="stylesheet" href="https://developer.api.autodesk.com/viewingservice/v1/viewers/style.css?v=v1.2.18" type="text/css">
-    <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js?v=v1.2.18"></script>
+    <link rel="stylesheet" href="https://developer.api.autodesk.com/viewingservice/v1/viewers/style.css" type="text/css">
 
-        <!-- Autodesk Viewer (from server: DEV) -->
-    <!--<link rel="stylesheet" href="https://lmv.autodesk.com/viewers-dev/latest/style.css" type="text/css">
-    <script src="https://lmv.autodesk.com/viewers-dev/latest/viewer3D.min.js"></script>-->
-    
-        <!-- Autodesk Viewer (from server: STAGING) -->
-    <!--<link rel="stylesheet" href="https://developer-stg.api.autodesk.com/viewingservice/v1/viewers/style.css?v=v1.1.145" type="text/css">
-    <script src="https://developer-stg.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js?v=v1.1.145"></script>-->
+    <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js"></script>
     
     <script src="./scripts/MyAuthToken.js"></script>
     <script>var debugging = true;</script>
@@ -43,61 +36,40 @@
 
 <body onload="loadInitialModel();" oncontextmenu="return debugging;">
 
-  <!-- header -->
-  <div class="page-heading">
-    <div class="page-heading-cell">
-      <h1>
-        LMV Nav Test
-      </h1>
-    </div>
-    <div class="page-heading-cell">
-      <label for="pu_modelToLoad">Select Model</label>
-      <select id="pu_modelToLoad" class="select-dark" name="modelToLoad">
-          <!-- Options filled in by function in LoadModel.js -->
-      </select>
-    </div>
-    <div class="page-heading-cell">
-      <label for="pu_viewToLoad">Secondary View</label>
-      <select id="pu_viewToLoad" class="select-dark" name="viewToLoad">
-          <!-- Options filled in by function in LoadModel.js -->
-      </select>
-    </div>
-  </div>
-
   <!-- Inspector column -->
   <div class="project-info-column">
+
+    <div class="project-info-selector">
+      <label for="pu_modelToLoad">Model</label>
+      <select id="pu_modelToLoad" class="" name="modelToLoad">
+          <!-- Options filled in by function in LoadModel.js -->
+      </select>
+    </div>
+
+    <div class="project-info-selector">
+      <label for="pu_viewToLoad">Secondary View</label>
+      <select id="pu_viewToLoad" class="" name="viewToLoad">
+          <!-- Options filled in by function in LoadModel.js -->
+      </select>
+    </div>
 
     <ul class="tab-buttons" id="tab_buttons">
       <li class="tab-button active">
           <a href="#tab_panel_1" id="tab_button_1"><span class="icon icon-large icon-report"></span><span>Reports</span></a>
       </li>
       <li class="tab-button">
-          <a href="#tab_panel_2" id="tab_button_2"><span class="icon icon-large icon-chart"></span><span>Relationships</span></a>
-      </li>
-      <li class="tab-button">
-          <a href="#tab_panel_3" id="tab_button_3"><span class="icon icon-large icon-cost"></span><span>Costs</span></a>
-      </li>
-      <li class="tab-button">
           <a href="#tab_panel_4" id="tab_button_4"><span class="icon icon-large icon-theme"></span><span>Themes</span></a>
-      </li>
-      <li class="tab-button">
-          <a href="#tab_panel_5" id="tab_button_5"><span class="icon icon-large icon-play"></span><span>Presentation</span></a>
       </li>
     </ul>
 
     <div class="tab-panel active" id="tab_panel_1">
-      <label for="pu_reportToRun">Report</label>
-        <select id="pu_reportToRun" class="select-light" name="reportToRun" disabled>
+      <div class="report-select">
+        <span class="report-select-mask">Type</span>
+        <select id="pu_reportToRun" class="select-light report-select-input" name="reportToRun" disabled>
           <!-- Options filled in by function in Report_PieChart.js -->
         </select>
-      <label for="pu_sortOrder">Sort Order</label>
-      <select id="pu_sortOrder" class="select-light" name="sortOrder" disabled>
-          <option value="value-asc">Value - Ascending</option>
-          <option value="value-desc" selected="selected">Value - Descending</option>
-          <option value="label-asc">Label - Ascending</option>
-          <option value="label-desc">Label - Descending</option>
-          <option value="random">Random</option>
-      </select>
+      </div>
+      
       <div id="reportinput"></div>
       <div class="svgcanvas">
         <div id="pieChart">
@@ -107,29 +79,16 @@
       </div>
     </div>
 
-    <div class="tab-panel" id="tab_panel_2">
-      <!--<button id="bn_showRelationships" class="btn btn-primary">Show Relationships</button>-->
-      <button id="bn_showObjsonSheet" class="btn btn-primary">Show "OnSheet but not Model"</button>
-      <button id="bn_showWhereViewable" class="btn btn-primary">Show where viewable</button>
-      <div id="sheetThumbs">
-          <img id="img_thumbnail"></img>
-          <!-- Sheet thumbnails go here -->
-      </div>
-    </div>
-
-    <div class="tab-panel" id="tab_panel_3">
-      <button id="bn_showCosts" class="btn btn-primary">Show Costs (Not Implemented)</button>
-    </div>
-
     <div class="tab-panel" id="tab_panel_4">
-        <label for="pu_colorTheme">Themes</label>
-        <select id="pu_colorTheme" class="select-light" name="colorTheme">
+      <div class="report-select">
+        <span class="report-select-mask">No theme selected</span>
+        <select id="pu_colorTheme" class="select-light report-select-input" name="colorTheme">
         </select>
         <!--
         <button id="thmbtn" type="button">Add Theme</button>
         -->
-        <input id="nonpropchckbx" type="checkbox">
-        <label for="nonpropchckbx">Show Non-applicable</label>
+      </div>
+
       <div class="svgcanvas">
         <div id="themetitle">
         </div>
@@ -139,40 +98,35 @@
    
     </div>
 
-    <div class="tab-panel" id="tab_panel_5">
-        <button id="tourbtn" type="button">Start Tour</button>
-        <button id="viewportbtn" type="button">Add Pin</button>
-        <input id="pincheckbox" type="checkbox">
-        <label for="pincheckbox">Hide Pins</label>
-      <div id="pintablelist"></div>
-    </div>
-
   </div>
 
   <!-- 3D Model Viewer -->
-  <div class="project-container group">
-    <div class="project-view-column">
-        <div id="viewerMain">
-        <!-- Upon the viewer initialization, it will append a div to the above div to insert the viewer.  It
-             will use 100% width and height so that it will fill up whatever the above div's dimensions are.
-             NOTE: Height must be set for this object. -->
-        </div>
-    </div>
-  </div>
-
-  <!-- 2D Model Viewer -->
-  <div class="project-container group">
+  <div id="viewer-group">
+    <div class="project-container group" id="viewerMain-panel">
+      <div id="handle">Handle</div>
       <div class="project-view-column">
-        <div id="viewerSecondary">
-            <!-- Upon the viewer initialization, it will append a div to the above div to insert the viewer.  It
-                 will use 100% width and height so that it will fill up whatever the above div's dimensions are.
-                 NOTE: Height must be set for this object. -->
-        </div>
+          <div id="viewerMain">
+          <!-- Upon the viewer initialization, it will append a div to the above div to insert the viewer.  It
+               will use 100% width and height so that it will fill up whatever the above div's dimensions are.
+               NOTE: Height must be set for this object. -->
+          </div>
+      </div>
+    </div>
+
+    <!-- 2D Model Viewer -->
+    <div class="project-container group" id="viewerSecondary-panel">
+        <div class="project-view-column">
+          <div id="viewerSecondary">
+              <!-- Upon the viewer initialization, it will append a div to the above div to insert the viewer.  It
+                   will use 100% width and height so that it will fill up whatever the above div's dimensions are.
+                   NOTE: Height must be set for this object. -->
+          </div>
+      </div>
     </div>
   </div>
 
   <script src="./scripts/libs/d3/d3.min.js"></script>
-  <script src="./scripts/libs/d3pie/d3pie.js"></script>
+  <script src="./scripts/libs/d3pie/d3pie.min.js"></script>
   <script src="./scripts/libs/nvd3/nv.d3.min.js"></script>
   <script src="./scripts/LoadModel.js"></script>
   <script src="./scripts/ReportData.js"></script>

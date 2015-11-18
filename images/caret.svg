@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14px" height="9px" viewBox="0 0 14 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4 (15588) - http://www.bohemiancoding.com/sketch -->
+    <title>caret</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="caret" sketch:type="MSLayerGroup" fill="#000000">
+            <g id="_x34_85._Up" transform="translate(7.000000, 4.727273) scale(1, -1) translate(-7.000000, -4.727273) translate(0.000000, 0.527273)" sketch:type="MSShapeGroup">
+                <path d="M13.7475,6.49036364 L7.48318182,0.225409091 C7.20427273,-0.0532272727 6.75254545,-0.0532272727 6.47395455,0.225409091 L0.208954545,6.49036364 C-0.0696363636,6.76909091 -0.0696363636,7.22077273 0.208954545,7.4995 L0.713545455,8.00409091 C0.992136364,8.283 1.44427273,8.283 1.72304545,8.00409091 L6.9785,2.74836364 L12.2341364,8.00409091 C12.5126818,8.283 12.9645909,8.283 13.2432727,8.00409091 L13.7478636,7.4995 C14.0267727,7.22045455 14.0267727,6.76909091 13.7475,6.49036364 L13.7475,6.49036364 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
