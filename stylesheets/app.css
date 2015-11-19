@@ -521,3 +521,7 @@ svg .nv-bar.clicked {
 #viewerSecondary {
 	padding-top: 5px;
 }
+
+#nonpropchckbx {
+    display: none;
+}
