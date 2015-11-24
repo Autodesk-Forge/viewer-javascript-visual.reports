@@ -1,8 +1,21 @@
-# LmvNavTest
-Demonstration of how to write a "Visual Report" with LMV.  Currently, I just have a simple PieChart and BarChart representing Quantites in the model based on some attribute (e.g., "Volume").  If you click on a wedge of the PieChart (or BarChart), it should highlight where those objects are in the model.  You can also select an object in 3D and it will show you where it is on the 2D sheet (assuming it is on the sheet currently loaded into the bottom viewer).  Likewise, you can select an object in 2D and it should Isolate and Fit that object in the 3D view.
+#Visual Reports
 
-Not all report types work for each type of model.  For instance, a Fusion model doesn't have an attribute for "Level" as a Revit model would.  In general, the top half of the reports are suitable for Revit and the bottom half are suitable for Manufacturing models (Fusion, Solidworks, Inventor, etc.).
+##Description
 
-I will evolve this to include other "Bubble Navigation" interaction in the future...
+This example demonstrates the reporting capability of Autodesk Large Model Viewer (LMV). Select the model from the dropdown box in the right pane to see the 2D and 3D representations of the model in the left pane. If the model has a 2D sheet, it will also be loaded along with a visual report showing the vital statistics of the model.
+
+Additionally, you can view charts representing the quantity of the objects based on the selected attributes, such as types or materials. You can click on a wedge in the pie chart to highlight the corresponding objects in the model.
+
+Note that not all report types (attributes) work for every model type. For instance, a Fusion model doesn't have an attribute for "Level" unlike a Revit model. In general, the initial half of the reports is suitable for Revit models and the latter half is suitable for Manufacturing models (Fusion, Solidworks, Inventor, etc.).
+
+##Deployment
+
+Open index.html in your browser to see the application in action.
+
+To make a quick deployment of this application to Heroku you may use the button below.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+##Credits
+
+This example is based on an application created by [Jim Awe](https://github.com/JimAwe). The original application can be found [here](https://github.com/JimAwe/LmvNavTest).
