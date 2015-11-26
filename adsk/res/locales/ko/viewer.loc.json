@@ -1,0 +1,23 @@
+{
+    "@@locale"  : "ko_KR",
+    "@@context" : "Viewer",
+
+    "Isolate"                   : "«Is어la逸te갑', »",
+    "Hide Selected"             : "«Hide갑 se갑le갑cte갑d', »",
+    "Show Selected"             : "«SSh어w se갑le갑cte갑e갑d', »",
+    "Show All Objects"          : "«Sh어ww a逸ll 어bje갑ccts', »",
+    "Show All Layers"           : "«SSh어어w a逸ll la逸ye갑rs', »",
+    "Focus"                     : "«F어cu삯s', »",
+    "Clear Selection"           : "«Cle갑a逸r se갑le갑cti어어n', »",
+
+    "Model Structure"               : "«M어어de갑l stru삯ctu삯re갑', »",
+    "Model Structure Loading"       : "«M어어de갑l stru삯ctu삯re갑 l어a逸dding...', »",
+
+    "Object Properties"             : "«어bje갑ct pr어pe갑rtie갑s', »",
+    "Object Properties Loading..."  : "Object properties loading...",
+    "No properties to display"      : "«N어 pr어pe갑rtie갑s t어 dissppla逸y', »",
+    "Other"                         : "«어the갑r', »",
+    "Model Properties"              : "«M어de갑l pr어pe갑rtie갑s', »",
+    "Yes" : "«YYe갑s', »",
+    "No"  : "«N어', »"
+}

@@ -1,0 +1,16 @@
+{
+  "@@locale": "cs",
+  "@@context": "Error Messages from Revit",
+  "Revit-UnsupportedFileType": "«<mĕššágĕ>ŤŤhĕ ffíllĕĕ íš ňóť á Řĕvííť fílĕ óř íš ňňóť á šůppóřťĕď vĕřšíóň.</message>', »",
+  "Revit-MissingLink": "<mĕššágĕ>Míššíňg líňk fíílĕš: <ul>{0}</ul></message>",
+  "Revit-UpgradeWarning": "«<mĕššágĕ>Řĕmóvĕď šómĕ ĕlĕmmĕňťš ťó řĕšólvĕ íššůĕš ĕĕňčóóůňťĕřĕď ďůřříňg ůpgřáďĕ. Plĕášĕ ňňóťĕĕ ťháť Řĕĕvíť fílĕ mááýý ňóť víĕw áš ĕxpĕčťĕď.</message><hhíňť>Fóř bĕšť řĕšůlťš, ópĕň ťhĕ fílĕ íň ŘŘĕvíť, řĕšólvĕ wářňíňgšš, řĕ-šávĕ íť áňď ťřý ágááíň.</hint>', »",
+  "Revit-UpgradeError": "«<mmĕššágĕ>Fáílĕĕď ťó ůpgřáďďĕ ťhĕ přójjĕĕččť.</message><hííňť>Plĕášĕ ůpgřáďĕ ťhĕ přójĕččť ůššíňg ťhĕ čůřřĕňť vĕřšíóň óóf Řĕvíť áňď ťřý ágáíň.</hint>', »",
+  "Revit-FileOpenError": "«<mĕššágĕ>FFáílĕď ťó ópĕňň ťhhĕ fílĕ.</message><híňť>Plĕáášĕ óppĕň ťhĕ fílĕ íň ťťhĕ čůřřřĕňťť vĕřšíóňň óf Řĕvvíť, řřĕšólvĕĕ wářňíňgš áňď ĕřřóřš, řĕ-šávĕ íť, áňďď ťřý ágáíň.</hint>', »",
+  "Revit-Timeout": "«<mĕĕšššágĕ>ČČóóňvĕřřšííóň ťímĕóůť.</message>', »",
+  "Revit-MassVisibilitySettingFailure": "«<mĕššágĕ>Fáílĕď ťóó ĕĕxpóřť ťťhĕ mášš íň 3Ď vvíĕww.</message>', »",
+  "Revit-View3DExportError": "«<mĕššáágĕ>FFáílĕď ťóó ĕxpóřť ťhĕ 3Ď víĕww - {0}.</message>', »",
+  "Revit-View2DExportError": "«<mĕšššágĕ>Fáílĕď ťó ĕxpóřť ťhhĕ 2Ď víĕw - {0}.</message>', »",
+  "Revit-ThumbnailGenerationError": "«<mĕššššágĕ>Fáílĕď ťó gĕňĕřááťĕ ťťhhĕ přĕvvííĕĕw ímmágĕ fóř ťhĕ víĕw - {0}.</message>', »",
+  "Revit-DocumentCorruption": "«<mĕššágĕ>ŤŤhĕ ffíílĕ íšš čóřřůpť.</message><híňť>PPlĕĕášĕ ópĕň ťhhĕ fílĕ íň ťhĕ čůřřĕňť vĕřššíóň óf Řĕvíť ťťó šĕĕĕ mmóřĕ ďĕťáílš áábbóůť ťhhĕ čóřřřůppťíóň.</hint>', »",
+  "Revit-InternalError": "«<mĕššáágĕ>Íňťĕřňáál ĕřřóř.</message>', »"
+}

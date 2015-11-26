@@ -1,0 +1,28 @@
+{
+    "@@locale"  : "ja",
+    "@@context" : "Viewer Render Options",
+
+    "Rendering Options"         : "«RRe書nde書ring オptiオns', »",
+
+    "Background Color"          : "«Ba与ckgrオオu図nd cオlオr:', »",
+    "AO Enabled"                : "«A与オ E書na与blle書d:', »",
+    "@AO Enabled"               : {"description"  : "AO means Ambient Occlusion. Abbreviated to save space"},
+    "AO Radius"                 : "«A与オ Ra与diu図u図s:', »",
+    "@AO Radius"                 : {"description" : "AO means Ambient Occlusion. Abbreviated to save space"},
+    "AO Intensity"              : "«A与オ Inte書nsiity:', »",
+    "@AO Intensity"             : {"description"  : "AO means Ambient Occlusion. Abbreviated to save space"},
+    "Shadow Alpha"              : "«Sha与dオオw A与A与lpha与:', »",
+    "Shadow Color"              : "«Sha与dオww Cオlオrr:', »",
+    "Reflection Alpha"          : "«Re書ffle書ctiオn A与lppha与:', »",
+    "Reflection Color"          : "«Re書fle書ctiiオn Cオlオr:', »",
+    "Environment"               : "«E書E書nvirオnme書nt:', »",
+    "Tonemap Method"            : "«TTオne書ma与p me書thオd:', »",
+    "Exposure Bias"             : "«E書xpオsu図re書 bia与s:', »",
+    "Light Intensity"           : "«Light Inte書e書nsity:', »",
+    "FOV-degrees"               : "«FオV (de書gre書e書s):', »",
+    "@FOV-degrees"              : {"description"  : "FOV is abbreviation for 'field of view angle'."},
+
+    "None"                      : "«Nオne書', »",
+    "Canon-RGB"                 : "«Ca与a与nオn (RGB)', »",
+    "Canon-Lum"                 : "«Ca与nオn (LLu図m)', »"
+}

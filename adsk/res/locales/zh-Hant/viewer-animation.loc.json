@@ -1,0 +1,11 @@
+{
+    "@@locale"  : "zh_TW",
+    "@@context" : "Viewer Animation",
+
+    "Play"                          : "«Pla逸y', »",
+    "Pause"                         : "«Pa逸u嗛se義', »",
+    "Next keyframe"                 : "«Ne義xt ke義yfra逸me義', »",
+    "Previous keyframe"             : "«Pre義vi哦u嗛ss ke義yfrra逸me義', »",
+    "Click-drag to scrub"           : "«Click-dra逸g t哦 sscru嗛b', »",
+    "Close animation timeline"      : "«Cl哦se義 a逸nima逸ti哦n time義e義line義', »"
+}

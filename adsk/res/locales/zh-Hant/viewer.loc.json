@@ -1,0 +1,23 @@
+{
+    "@@locale"  : "zh_TW",
+    "@@context" : "Viewer",
+
+    "Isolate"                   : "«Is哦lla逸te義', »",
+    "Hide Selected"             : "«Hidde義 se義le義cte義d', »",
+    "Show Selected"             : "«Sh哦w se義le義cte義d', »",
+    "Show All Objects"          : "«Sh哦w a逸ll 哦bje義cts', »",
+    "Show All Layers"           : "«Sh哦w a逸llll la逸ye義rss', »",
+    "Focus"                     : "«F哦哦cu嗛s', »",
+    "Clear Selection"           : "«Cle義a逸rr se義le義cti哦n', »",
+
+    "Model Structure"               : "«M哦de義l stru嗛cttu嗛re義', »",
+    "Model Structure Loading"       : "«M哦de義l stru嗛cttu嗛re義 l哦a逸ding...', »",
+
+    "Object Properties"             : "«哦bbje義ct prr哦pe義rtie義ss', »",
+    "Object Properties Loading..."  : "Object properties loading...",
+    "No properties to display"      : "«N哦哦 pr哦哦pe義rtie義s t哦 disppla逸y', »",
+    "Other"                         : "«哦thhe義r', »",
+    "Model Properties"              : "«M哦de義l prr哦哦pe義rtie義s', »",
+    "Yes" : "«Ye義s', »",
+    "No"  : "«N哦', »"
+}

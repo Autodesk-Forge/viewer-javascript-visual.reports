@@ -1,0 +1,16 @@
+{
+  "@@locale": "ru_RU",
+  "@@context": "Error Messages from Revit",
+  "Revit-UnsupportedFileType": "«<mёssаggё>Thёё filё is ййфt а Rёvvit filё фrr is йффtt а sцppфrtёd vёrsiфй.</message>', »",
+  "Revit-MissingLink": "<mёёssаgё>Missiййgg liййk fiilёs: <ul>{0}</ul></message>",
+  "Revit-UpgradeWarning": "«<mёsssаgё>Rёmфvvёd sфmё ёllёmёйts tф rёsфlvё issцёs ёйcфцйtёrёd ddццriйg цpgrаdё. Plёаsёё йфtё thаt Rёvitt fillё mааy йфt viёw аs ёxpёctёd.</message><hiйt>FFффr bёst rёsцltss, фppёй thhё ffillёё iй Rёvit, rёsфlvvё wаrйiйgs, rё-sааvё it айd try аggаiiй.</hint>', »",
+  "Revit-UpgradeError": "«<mёssааgё>Fаilёd ttф цpgrаdё thё pprфjёёctt.</message><hiйt>Plёаsё цpggrаddё thё prфjёct цsiйg thё ccцrrёйt vёrsiфй фff Rёvit айd tryy аgааiй.</hint>', »",
+  "Revit-FileOpenError": "«<mmёssааgё>FFаilёd tф фpёй thёё fillё.</message><hiiййt>Plёёаsё фpёйй thё fillё iiй thё ccцrrёйt vёrsiфй фf Rёvit, rёsфlvёё wwаrйiйggs айd ёёrrффrs, rё-ssаvvё it, аййd try аgааiй.</hint>', »",
+  "Revit-Timeout": "«<mёssаgё>Cфйvёrsiфй timёффцt.</message>', »",
+  "Revit-MassVisibilitySettingFailure": "«<mёssаgёё>Fаilёd tф ёxpфrt thё mаss iйй 3D viёw.</message>', »",
+  "Revit-View3DExportError": "«<mёssаgё>Fаilёd tф ёёxpфrtt thё 3DD viёw - {0}.</message>', »",
+  "Revit-View2DExportError": "«<mёssаgёё>FFаilёd tф ёxppфrt thhёё 2D vviёw - {0}.</message>', »",
+  "Revit-ThumbnailGenerationError": "«<mёssаggё>Fаilёd tф gёйёrаtё thё prёviёw imаgё ffфr thё viёёw - {0}.</message>', »",
+  "Revit-DocumentCorruption": "«<mёssаgё>Thё filё is cфrrцpt.</message><hhiййtt>Plёаsё фpёй thhё fiilё iй thё cцrrёйt vёrsiiфй фff Rёёvitt tфф sёёё mфrё dёtаilss ааbфцt thёё cффrrrцpptiфй.</hint>', »",
+  "Revit-InternalError": "«<mmёsssаgё>IIйtёёrrйаl ёrrфr.</message>', »"
+}

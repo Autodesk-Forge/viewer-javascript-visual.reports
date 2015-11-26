@@ -1,0 +1,65 @@
+{
+    "@@locale"  : "en",
+    "@@context" : "Viewer Toolbar",
+
+    "Orbit"                     : "Orbit",
+    "Free orbit"                : "Free orbit",
+    "Pan"                       : "Pan",
+    "Zoom"                      : "Zoom",
+    "Walk to"                   : "Walk to (double-click to Walk through)",
+
+    "Camera interactions"        : "Camera interactions",
+    "Fit to view"                : "Fit to view (F)",
+    "Focal length"               : "Focal length (Ctrl+Shift drag)",
+    "Focal Length"               : "Focal length",
+    "Roll"                       : "Roll (Alt+Shift drag)",
+
+    "Model structure"            : "Model structure",
+    "Explode model"              : "Explode model",
+    "Layer Manager"              : "Layer manager",
+    "Reset model"                : "Reset model",
+    "Reset drawing"              : "Reset drawing",
+    "Properties"                 : "Properties",
+    "Comments and Markers"       : "Comments and markers",
+    "Rendering options"          : "Rendering options",
+    "Full screen"                : "Full screen",
+    "Exit full screen"           : "Exit full screen",
+
+    "Layers"                     : "Layers",
+    "Enter filter term"          : "Enter filter term",
+    "Show/hide all layers"       : "Show/hide all layers",
+    "Show/hide this layer"       : "Show/hide this layer",
+
+    "Background and lighting"    : "Background and lighting",
+    "Display Lines"              : "Display lines",
+    "Performance and appearance settings"       : "Performance and appearance settings",
+    "Navigation and selection settings"         : "Navigation and selection settings",
+
+    "RaaS"                       : "RaaS",
+    "@RaaS"                      : { "description" : "RaaS stands for Rendering as a Service" },
+    "Gallery"                    : "Gallery",
+
+    "FPS statistics"             : "FPS statistics",
+    "@FPS statistics"		     : { "description" : "FPS stands for Frames Per Seconds" },
+    "Model statistics"           : "Model statistics",
+    "Show search bar"            : "Show search bar",
+    "Search"                     : "Search",
+    "Language"                   : "Language",
+    "Error"                      : "Error",
+    "Search the currently displayed content" : "Search the currently displayed content",
+
+    "Comment and Markers"        : "Comment and markers",
+    "Comment"                    : "Comment",
+    "Post"                       : "Post",
+    "Hide Markers"               : "Hide markers",
+    "Show Markers:"              : "Show markers:",
+
+    "Orthographic View Set"           : "Orthographic View Set",
+    "The view is set to Orthographic" : "The view is set to Orthographic. Changing the focal length will switch to Perspective.",
+    "Do not show this message again"  : "Do not show this message again",
+
+    "The view is set to Orthographic Beeline" : "The view is set to Orthographic. Using this tool will switch to Perspective.",
+
+    "Long Focal Length View Set"              : "Long Focal Length View Set",
+    "The view is set to a long focal length"  : "This view has a long focal length. Using this tool will set a short focal length."
+}

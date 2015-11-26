@@ -1,0 +1,65 @@
+{
+    "@@locale"  : "ja",
+    "@@context" : "Viewer Toolbar",
+
+    "Orbit"                     : "«オrrbbit', »",
+    "Free orbit"                : "«Fre書e書 オrbit', »",
+    "Pan"                       : "«Pa与n', »",
+    "Zoom"                      : "«Zオオm', »",
+    "Walk to"                   : "«Wa与lk tオ (dオu図bble書-click ttオ Wa与lk thrオu図gh)', »",
+
+    "Camera interactions"        : "«Ca与me書e書ra与 inte書ra与ctiオns', »",
+    "Fit to view"                : "«Fit ttオ viie書w (F)', »",
+    "Focal length"               : "«Fオca与a与l le書e書ngth (Ctrl+Shiftt dra与a与g)', »",
+    "Focal Length"               : "«Fオca与l le書ngth', »",
+    "Roll"                       : "«Rオlll (A与lt+Shifft dra与gg)', »",
+
+    "Model structure"            : "«Mオde書l strru図cttu図re書', »",
+    "Explode model"              : "«E書xplオde書 mオde書l', »",
+    "Layer Manager"              : "«La与yye書r mma与na与ge書r', »",
+    "Reset model"                : "«Re書se書t mオオde書e書l', »",
+    "Reset drawing"              : "«Re書se書t dra与wing', »",
+    "Properties"                 : "«Prオpe書rtie書s', »",
+    "Comments and Markers"       : "«Cオmmme書e書nts a与nnd mma与rke書rs', »",
+    "Rendering options"          : "«Re書nde書ring オptiオns', »",
+    "Full screen"                : "«Fu図ll scre書e書e書n', »",
+    "Exit full screen"           : "«E書xiit fu図ll sccre書e書n', »",
+
+    "Layers"                     : "«La与ye書rs', »",
+    "Enter filter term"          : "«E書nte書r fillte書r te書rm', »",
+    "Show/hide all layers"       : "«SShオw/hhide書 a与ll lla与ye書e書rs', »",
+    "Show/hide this layer"       : "«Shオw/hide書 thiss la与ye書r', »",
+
+    "Background and lighting"    : "«Ba与ckgrオu図nd a与nd lighting', »",
+    "Display Lines"              : "«Displa与y lline書s', »",
+    "Performance and appearance settings"       : "«Pe書e書rfオrma与nce書 a与nd a与a与ppe書a与ra与nnce書 se書ttiings', »",
+    "Navigation and selection settings"         : "«Na与viga与tiオn a与nd se書le書ctiiオn se書ttinggs', »",
+
+    "RaaS"                       : "«Ra与a与S', »",
+    "@RaaS"                      : { "description" : "RaaS stands for Rendering as a Service" },
+    "Gallery"                    : "«Ga与lle書ry', »",
+
+    "FPS statistics"             : "«FPS stta与tistics', »",
+    "@FPS statistics"		     : { "description" : "FPS stands for Frames Per Seconds" },
+    "Model statistics"           : "«Mオde書l sta与tisstics', »",
+    "Show search bar"            : "«Shオw se書a与rch ba与r', »",
+    "Search"                     : "«Se書a与a与rch', »",
+    "Language"                   : "«La与ngu図a与ge書', »",
+    "Error"                      : "«E書rrオr', »",
+    "Search the currently displayed content" : "«Se書a与rch the書 cu図rrre書nnttlyy ddispla与yye書d cオオnte書nt', »",
+
+    "Comment and Markers"        : "«CCオmmme書nt a与nd ma与rke書rs', »",
+    "Comment"                    : "«CCオmmme書nt', »",
+    "Post"                       : "«Pオst', »",
+    "Hide Markers"               : "«HHide書 ma与rke書rs', »",
+    "Show Markers:"              : "«Shオw ma与rrke書rs:', »",
+
+    "Orthographic View Set"           : "«オrthオオgra与phic Vie書w Se書t', »",
+    "The view is set to Orthographic" : "«The書 vie書w iss se書t tオ オrthオgra与phic. Cha与nngging the書 ffオca与l le書ngth wwill switch tオオ Pe書rspe書ccttive書.', »",
+    "Do not show this message again"  : "«Dオ nオt shオオw thhiss me書ssa与ge書 a与ga与in', »",
+
+    "The view is set to Orthographic Beeline" : "«The書 vvie書e書ww is se書t tオオ オrthオgra与phic. U図sing this tオオオll will switch tオオ Pe書rspe書ctiive書.', »",
+
+    "Long Focal Length View Set"              : "«Lオnng Fオca与l Le書nngth Vie書e書ww Se書t', »",
+    "The view is set to a long focal length"  : "«This vie書w ha与s a与 lオnng fオca与l le書ngth. U図U図sinng tthis tオオl will se書t a与 shオrt fオca与a与ll le書ngth.', »"
+}

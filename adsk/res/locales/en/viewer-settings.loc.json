@@ -1,0 +1,31 @@
+{
+    "@@locale"  : "en",
+    "@@context" : "Viewer Settings",
+
+    "Settings"                              : "Settings",
+    "Navigation and selection"              : "Navigation & selection",
+    "Performance and appearance"            : "Performance & appearance",
+
+    "Show ViewCube"                         : "Show ViewCube",
+    "ViewCube acts on pivot"                : "ViewCube acts on pivot",
+    "Reverse mouse zoom direction"          : "Reverse mouse zoom direction",
+    "Reverse horizontal look direction"     : "Reverse horizontal look direction",
+    "Reverse vertical look direction"       : "Reverse vertical look direction",
+    "Zoom towards pivot"                    : "Zoom towards pivot",
+    "Orbit past world poles"                : "Orbit past world poles",
+    "Set pivot with left mouse button"      : "Set pivot with left mouse button",
+    "Fusion style orbit"                    : "Fusion style orbit",
+    "First person walk"                     : "First person walk",
+    "Open properties on select"             : "Open properties on select",
+    "Left handed mouse setup"               : "Left handed mouse setup",
+
+    "Ghost hidden objects"                  : "Ghost hidden objects",
+    "Smooth navigation"                     : "Smooth navigation",
+    "Ambient shadows"                       : "Ambient shadows",
+    "Anti-aliasing"                         : "Anti-aliasing",
+    "Ground shadow"                         : "Ground shadow",
+    "Ground refleciton"                     : "Ground refleciton",
+    "Progressive model display"             : "Progressive model display",
+
+    "Restore settings defaults"             : "Restore settings defaults"
+}

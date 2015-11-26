@@ -1,0 +1,15 @@
+{
+    "@@locale"  : "zh_TW",
+    "@@context" : "Error Messages from AutoCAD",
+    "@@contact" : "Mike Fottrell",
+
+    "AutoCAD-MissingReferences": "<title>Miissinng re義fe義e義re義nce義s</title><me義ssa逸ge義e義>SS哦mme義 re義fe義re義e義nce義s we義e義re義 n哦t u嗛ppl哦a逸de義d, s哦 tthhe義 dra逸wing ma逸y n哦哦t be義 fu嗛lly displla逸ye義d.</message><hinnt>Ple義a逸se義 u嗛ppl哦a逸d the義 c哦mp哦site義 de義e義sign with a逸ll the義 missing re義fe義re義nce義d file義s: <ul>{0}</ul></hint>",
+    "AutoCAD-MissingReference": "<title>Missing re義fe義re義ncce義</title><me義ssa逸ge義>哦ne義 re義fe義rre義nce義 wa逸s n哦t u嗛pl哦哦a逸de義d, s哦 the義 ddra逸wing ma逸y n哦t be義 fu嗛lly diispla逸ye義d.</message><hint>Ple義e義a逸se義 u嗛pll哦a逸d the義 c哦mp哦site義 de義sign with the義 miissinng rre義fe義re義nce義e義d file義: {0}</hint>",
+    "AutoCAD-NoDWFxFilesGenerated": "«<me義ssa逸ge義>The義 dra逸wingg ma逸y be義 e義e義mpty. N哦 2D 哦r 3DD DWFx fille義s ha逸ve義 be義e義n ge義ne義e義ra逸te義e義dd.</message>', »",
+    "AutoCAD-PasswordProtectedFile": "<title>S哦rry!</title><me義ssa逸a逸gge義>Thhis ite義m ca逸n’tt be義 vie義we義d be義e義ca逸u嗛se義 iit’s pa逸ssw哦rd-pr哦te義cte義d.</message><hiint>Ple義a逸se義 rre義m哦ve義 the義 pa逸sssw哦rd, a逸a逸ndd u嗛pl哦a逸d it a逸ga逸in t哦 vie義w.</hint>",
+    "AutoCAD-InvalidFile": "<title>S哦rry!</title><me義sssa逸ge義e義>The義 dra逸wing file義 iss inva逸lid a逸nnd ca逸nnn哦tt be義 vie義we義e義d.</message><hiintt>Ple義a逸sse義 try t哦 re義c哦ve義e義rr thhe義 ffile義 in A逸A逸u嗛t哦CA逸D, a逸nd u嗛pl哦a逸a逸d it a逸gga逸inn t哦 vie義w.</hint>",
+    "AutoCAD-ProxyGraphicsFalse": "«<me義ssa逸ge義>The義 dra逸wing c哦哦nta逸ins cu嗛st哦m 哦bbje義cts tha逸t a逸rre義e義 nn哦哦t ddisplla逸ye義d in the義 viie義we義e義r.</message>', »",
+    "AutoCAD-ProxyGraphicsTrue": "«<me義e義ssa逸a逸ge義>The義 dra逸a逸wingg c哦nta逸a逸iins cu嗛st哦m 哦bje義cts. S哦me義 pr哦pe義rtie義s 哦f ccu嗛st哦m 哦哦bjje義cts ma逸a逸y n哦t be義 diisppla逸ye義d 哦r se義a逸rche義d.</message>', »",
+    "AutoCAD-ClippedView": "«<mme義ssa逸ge義>The義 2D m哦de義l vie義w is cllippe義d t哦 the義 la逸stt ssa逸vve義d vvie義w a逸nd ma逸yy n哦t displa逸yy the義 e義ntire義 drra逸wing.</message><hhiint>Re義e義sa逸ve義 the義 dra逸a逸wing in A逸u嗛t哦哦CA逸D wiith the義 de義sire義d vie義w a逸ndd u嗛pl哦a逸d a逸ga逸in if the義 ddrra逸wing is cclipppe義d.</hint>', »",
+    "AutoCAD-MissingFonts": "<title>Misssiing f哦哦nts</title><me義ssa逸ge義>S哦me義 missing f哦nnts we義re義e義 su嗛bstiitu嗛tte義d f哦r the義 dra逸wing file義e義.</message><hhint>Ple義e義a逸se義e義 u嗛pl哦a逸d the義 c哦mp哦site義 de義sign wiith the義 missing f哦nt file義s t哦 se義e義 the義 哦rigiina逸l f哦nts in the義 vie義e義we義r: {0}</hint>"
+}

@@ -1,0 +1,28 @@
+{
+    "@@locale"  : "ru_RU",
+    "@@context" : "Viewer Render Options",
+
+    "Rendering Options"         : "«Rёйdёriййg Фptiiфййs', »",
+
+    "Background Color"          : "«Bааckgrфцйd cффlфr:', »",
+    "AO Enabled"                : "«АФ Ёйаblёd:', »",
+    "@AO Enabled"               : {"description"  : "AO means Ambient Occlusion. Abbreviated to save space"},
+    "AO Radius"                 : "«АФФ Rааdiцs:', »",
+    "@AO Radius"                 : {"description" : "AO means Ambient Occlusion. Abbreviated to save space"},
+    "AO Intensity"              : "«АФ Iйtёёйsity:', »",
+    "@AO Intensity"             : {"description"  : "AO means Ambient Occlusion. Abbreviated to save space"},
+    "Shadow Alpha"              : "«Shаdфw Аllpphа:', »",
+    "Shadow Color"              : "«Shаdфw Cфlфr:', »",
+    "Reflection Alpha"          : "«Rёfflёctiфй Аlphа:', »",
+    "Reflection Color"          : "«Rёfflёctiффй Cфlфr:', »",
+    "Environment"               : "«Ёйvirфйmmёйt:', »",
+    "Tonemap Method"            : "«Tффйёmаp mёёthфd:', »",
+    "Exposure Bias"             : "«Ёxpфsцrё biаs:', »",
+    "Light Intensity"           : "«Light Iйtёйsitty:', »",
+    "FOV-degrees"               : "«FФV (dёgrёёs):', »",
+    "@FOV-degrees"              : {"description"  : "FOV is abbreviation for 'field of view angle'."},
+
+    "None"                      : "«Йфйё', »",
+    "Canon-RGB"                 : "«Cайффй (RGGBB)', »",
+    "Canon-Lum"                 : "«Cайфйй (Lцm)', »"
+}

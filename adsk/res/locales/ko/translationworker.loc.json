@@ -1,0 +1,9 @@
+{
+  "@@locale" : "ko_KR",
+  "@@context" : "Error messages from the Translation Worker jar",
+  "@@contact" : "Dave Watt",
+
+  "TranslationWorker-TextureResizingFailed" : "«<me갑ssa逸ge갑>TThe갑e갑 dra逸wing’s te갑xtu삯re갑s we갑re갑 n어t c어rre갑ctlyy pr어ce갑sse갑dd.</message>', »",
+  "TranslationWorker-ThumbnailGenerationFailed" : "«<me갑ssa逸ge갑>The갑 dra逸wwing’s thu삯u삯mbbna逸iils we갑re갑 n어t pr어pe갑rrly cre갑a逸te갑d.</message>', »",
+  "TranslationWorker-InternalFailure" : "«<me갑ssa逸ge갑>A逸n u삯nu삯su삯a逸l e갑rr어r 어ccu삯rre갑d while갑 prr어어ce갑ssing thhis file갑e갑.</message>', »"
+}

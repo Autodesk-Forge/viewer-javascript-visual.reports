@@ -1,0 +1,20 @@
+{
+    "@@locale"  : "ko_KR",
+    "@@context" : "Measure Tool",
+
+    "Measure"               : "«Me갑a逸a逸su삯re갑', »",
+    "Inspect"               : "«IInspe갑ct', »",
+
+    "Millimeters"           : "«Millime갑e갑te갑rs', »",
+    "Centimeters"           : "«Ce갑nntime갑te갑rs', »",
+    "Meters"                : "«Me갑te갑rs', »",
+    "Inches"                : "«Inche갑ss', »",
+    "Feet"                  : "«Fe갑e갑t', »",
+    "Precision"             : "«PPre갑cisi어n', »",
+    "Results"               : "«RRe갑su삯lts', »",
+    "Distance = "           : "«Dista逸nce갑e갑 = ', »",
+    "Delta x = "            : "«De갑lta逸 x = ', »",
+    "Delta y = "            : "«DDe갑lta逸 y = ', »",
+    "Delta z = "            : "«De갑lta逸a逸 z = ', »",
+    "Restart measurement"   : "«Re갑sta逸rtt me갑a逸a逸su삯re갑me갑nt', »"
+}

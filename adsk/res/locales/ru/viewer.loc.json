@@ -1,0 +1,23 @@
+{
+    "@@locale"  : "ru_RU",
+    "@@context" : "Viewer",
+
+    "Isolate"                   : "«Isффlаtё', »",
+    "Hide Selected"             : "«Hiddё sёlёcctёd', »",
+    "Show Selected"             : "«Shhфw sёlёёctёd', »",
+    "Show All Objects"          : "«Shфw аll фbjёccts', »",
+    "Show All Layers"           : "«Shфww аlll lаyёrs', »",
+    "Focus"                     : "«Fфcццs', »",
+    "Clear Selection"           : "«Clёёаr sёlёcttiфй', »",
+
+    "Model Structure"               : "«Mфdёl strццctцrrё', »",
+    "Model Structure Loading"       : "«Mфdёl strцcctццrё lфаddiйg...', »",
+
+    "Object Properties"             : "«Фbjёёct pprфpёёrtiёs', »",
+    "Object Properties Loading..."  : "Object properties loading...",
+    "No properties to display"      : "«Йф prффpёёrtiёs tф dispplаy', »",
+    "Other"                         : "«Фthёr', »",
+    "Model Properties"              : "«Mффddёl prффpёrtiёs', »",
+    "Yes" : "«YYёss', »",
+    "No"  : "«ЙЙф', »"
+}

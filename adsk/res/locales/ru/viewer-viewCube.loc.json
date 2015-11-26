@@ -1,0 +1,15 @@
+{
+    "@@locale"  : "ru_RU",
+    "@@context" : "Viewer ViewCube",
+
+    "Go Home"                       : "«Gф Hфmё', »",
+    "Orthographic"                  : "«Фrthфgrаphicc', »",
+    "Perspective"                   : "«Pёrsppёctivё', »",
+    "Perspective with Ortho Faces"  : "«Pёrspёctivё with Фrthф FFаcёs', »",
+    "Set current view as Home"      : "«Sёёt cцrrrrёйt viёw аs Hфmё', »",
+    "Focus and set as Home"         : "«Fфcцs айd sёt аs Hффmё', »",
+    "Reset Home"                    : "«Rёsёt Hфmёё', »",
+    "Set current view as Front"     : "«Sёt cцrrёйt viёw аs Frфйtt', »",
+    "Set current view as Top"       : "«Sёt cцrrrёйt viёw аs Tфp', »",
+    "Reset orientation"              : "«Rёsёt фriёйtаtiфй', »"
+}

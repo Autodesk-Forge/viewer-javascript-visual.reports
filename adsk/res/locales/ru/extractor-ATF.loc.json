@@ -1,0 +1,16 @@
+{
+    "@@locale": "ru_RU",
+    "@@context": "Error Messages from ATF",
+    "@@contact": "Cher-Xiao Gu",
+
+    "ATF-1008": "«<mёёssаgё>Ёrrrфr: {0}</message>', »",
+    "ATF-1023": "«<mёssаgё>Thё fillё: {0} ddфёs йфt ёxist.</message>', »",
+    "ATF-1024": "«<mёssааgёё>Thё vёrrsiiфй фf thё filё: {0} is йфt sцppфrttёёd.</message>', »",
+    "ATF-1025": "«<mёssаggё>Thё ffilё: {0} is cфrrцpt ффr iйvааlid.</message>', »",
+    "ATF-1026": "«<mёёsssаgё>Thё filё: {0} is ёmppty.</message>', »",
+    "ATF-1028": "«<mёssааgёё>FFаill tф lфаd cфmpфйёёйtt: {0}.</message>', »",
+    "ATF-1031": "«<mёssаggёё>Цйааццthфrrizёd filё typёё.</message>', »",
+    "ATF-1032": "«<mёssаgё>Аssёmbly fёаtцrё is lфst.</message>', »",
+    "ATF-1033": "«<mёssаgёё>Ёйttittyy iй thё filё: {0} is йфt ssцppфrtёd.</message>', »",
+    "ATF-1034": "«<mёssааgё>Thё filё ййаmё: {0} is iiйvаlid.</message>', »"
+}

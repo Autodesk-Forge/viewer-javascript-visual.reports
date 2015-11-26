@@ -19,19 +19,8 @@
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700" rel="stylesheet" type="text/css" />
     <link href="stylesheets/libs/normalize.css" rel="stylesheet" type="text/css" />
-    <link href="./stylesheets/libs/nv.d3.css" rel="stylesheet">
     <link href="./stylesheets/app.css" rel="stylesheet" type="text/css" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="scripts/app.js"></script>
-    
-        <!-- Autodesk Viewer (from server: PROD) -->
-    <link rel="stylesheet" href="https://developer.api.autodesk.com/viewingservice/v1/viewers/style.css" type="text/css">
-
-    <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js"></script>
-    
-    <script src="./scripts/MyAuthToken.js"></script>
-    <script>var debugging = true;</script>
 </head>
 
 <body onload="loadInitialModel();" oncontextmenu="return debugging;">
@@ -125,6 +114,13 @@
       </div>
     </div>
   </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link href="./stylesheets/libs/nv.d3.css" rel="stylesheet">
+  <link rel="stylesheet" href="adsk/style.css" type="text/css">
+  <script src="adsk/viewer3D.min.js"></script>
+  <script src="./scripts/MyAuthToken.js"></script>
+  <script src="scripts/app.js"></script>
 
   <script src="./scripts/libs/d3/d3.min.js"></script>
   <script src="./scripts/libs/d3pie/d3pie.min.js"></script>

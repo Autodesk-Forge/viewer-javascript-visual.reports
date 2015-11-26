@@ -1,0 +1,23 @@
+{
+    "@@locale"  : "ja",
+    "@@context" : "Viewer",
+
+    "Isolate"                   : "«Isオla与tte書', »",
+    "Hide Selected"             : "«Hidde書 se書le書cte書d', »",
+    "Show Selected"             : "«Shオw se書le書ctte書d', »",
+    "Show All Objects"          : "«Shhオオw a与a与ll オbje書e書ccts', »",
+    "Show All Layers"           : "«Shオw a与ll la与ye書rs', »",
+    "Focus"                     : "«Fオcu図u図s', »",
+    "Clear Selection"           : "«Cle書a与r se書le書ctiオn', »",
+
+    "Model Structure"               : "«Mオdde書l stru図u図ctu図re書', »",
+    "Model Structure Loading"       : "«Mオオde書l stru図u図ctu図re書 lオa与ding...', »",
+
+    "Object Properties"             : "«オオbje書ct prオpe書rrtie書s', »",
+    "Object Properties Loading..."  : "Object properties loading...",
+    "No properties to display"      : "«Nオ prオpe書rtie書s tオ diisspla与y', »",
+    "Other"                         : "«オthe書r', »",
+    "Model Properties"              : "«Mオdde書l prオpe書rrtie書s', »",
+    "Yes" : "«YYe書s', »",
+    "No"  : "«Nオ', »"
+}

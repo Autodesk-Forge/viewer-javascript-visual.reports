@@ -1,0 +1,65 @@
+{
+    "@@locale"  : "zh_TW",
+    "@@context" : "Viewer Toolbar",
+
+    "Orbit"                     : "«哦rrbbit', »",
+    "Free orbit"                : "«Fre義e義e義 哦rbit', »",
+    "Pan"                       : "«Pa逸n', »",
+    "Zoom"                      : "«Z哦哦mm', »",
+    "Walk to"                   : "«Wa逸a逸lk t哦 (dd哦u嗛ble義-click t哦 Wa逸lk thhr哦u嗛ggh)', »",
+
+    "Camera interactions"        : "«Ca逸me義ra逸 inte義ra逸cti哦ns', »",
+    "Fit to view"                : "«Fit t哦 vie義ww (F)', »",
+    "Focal length"               : "«F哦ca逸l le義e義ngth (CCtrrl+Shift dra逸g)', »",
+    "Focal Length"               : "«F哦ca逸l lle義e義ngth', »",
+    "Roll"                       : "«RR哦ll (A逸ltt+SShift dra逸gg)', »",
+
+    "Model structure"            : "«M哦de義l sstru嗛cctu嗛re義', »",
+    "Explode model"              : "«E義xpl哦de義 m哦de義l', »",
+    "Layer Manager"              : "«La逸ye義e義r ma逸na逸ge義r', »",
+    "Reset model"                : "«Re義se義e義t m哦de義l', »",
+    "Reset drawing"              : "«Re義se義t ddrra逸wingg', »",
+    "Properties"                 : "«Pr哦pe義rrtie義s', »",
+    "Comments and Markers"       : "«C哦mme義nts a逸nnd ma逸rke義rs', »",
+    "Rendering options"          : "«Re義nde義ring 哦ppti哦ns', »",
+    "Full screen"                : "«Fu嗛ll scrre義e義n', »",
+    "Exit full screen"           : "«E義xit ffu嗛ll scre義e義n', »",
+
+    "Layers"                     : "«La逸a逸ye義rs', »",
+    "Enter filter term"          : "«E義nte義r fiilte義r te義rm', »",
+    "Show/hide all layers"       : "«Shh哦哦w/hide義 a逸ll la逸ye義rs', »",
+    "Show/hide this layer"       : "«Shh哦ww/hide義 tthiis la逸ye義e義r', »",
+
+    "Background and lighting"    : "«Ba逸a逸ckgr哦哦u嗛u嗛nd a逸ndd lighting', »",
+    "Display Lines"              : "«Displa逸y line義ss', »",
+    "Performance and appearance settings"       : "«Pe義rf哦哦rma逸nce義e義 a逸nd a逸pppe義a逸rra逸nce義 se義ttingss', »",
+    "Navigation and selection settings"         : "«Na逸viiga逸ti哦n a逸a逸nd se義le義cti哦n se義e義ttinggs', »",
+
+    "RaaS"                       : "«Ra逸a逸S', »",
+    "@RaaS"                      : { "description" : "RaaS stands for Rendering as a Service" },
+    "Gallery"                    : "«Ga逸lle義e義ryy', »",
+
+    "FPS statistics"             : "«FPS ssta逸tistics', »",
+    "@FPS statistics"		     : { "description" : "FPS stands for Frames Per Seconds" },
+    "Model statistics"           : "«M哦de義l sta逸ttistics', »",
+    "Show search bar"            : "«Sh哦哦ww se義a逸rch ba逸r', »",
+    "Search"                     : "«Se義a逸rrcch', »",
+    "Language"                   : "«LLa逸ngu嗛a逸ge義', »",
+    "Error"                      : "«E義rr哦r', »",
+    "Search the currently displayed content" : "«Se義a逸rch the義 cu嗛rre義ntly displa逸ye義e義d c哦nte義e義nt', »",
+
+    "Comment and Markers"        : "«C哦mme義ntt a逸nnd mma逸rke義rs', »",
+    "Comment"                    : "«C哦mme義nt', »",
+    "Post"                       : "«P哦stt', »",
+    "Hide Markers"               : "«Hide義 ma逸rke義rs', »",
+    "Show Markers:"              : "«Shh哦哦ww ma逸rke義rs:', »",
+
+    "Orthographic View Set"           : "«哦rth哦gra逸phiic Vie義w Se義tt', »",
+    "The view is set to Orthographic" : "«The義e義 vie義w iss se義tt t哦 哦rth哦gra逸phic. Cha逸nging tthe義e義 f哦ca逸a逸l lle義ngthh will switch tt哦 Pe義e義rspe義ctive義.', »",
+    "Do not show this message again"  : "«D哦哦 n哦tt sh哦w tthis me義ssa逸gge義 a逸ga逸inn', »",
+
+    "The view is set to Orthographic Beeline" : "«The義e義 vie義w iis se義t t哦 哦rrth哦ggra逸phhic. U嗛sing this t哦哦l willl swiitch t哦 Pe義rspe義ctive義.', »",
+
+    "Long Focal Length View Set"              : "«L哦ngg F哦cca逸l Le義nggth Vie義w Se義t', »",
+    "The view is set to a long focal length"  : "«This vie義w hha逸s a逸 l哦ng f哦ca逸a逸l lle義ngth. U嗛sing tthhis t哦哦l wiillll sse義t a逸 ssh哦哦rt f哦哦ca逸l le義ngth.', »"
+}

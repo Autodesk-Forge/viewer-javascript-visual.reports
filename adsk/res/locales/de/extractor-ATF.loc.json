@@ -1,0 +1,16 @@
+{
+    "@@locale": "de_DE",
+    "@@context": "Error Messages from ATF",
+    "@@contact": "Cher-Xiao Gu",
+
+    "ATF-1008": "«<mééssägé>Érrrör: {0}</message>', »",
+    "ATF-1023": "«<méssägé>Thé filéé: {0} döés ñööt éxist.</message>', »",
+    "ATF-1024": "«<mésssägé>Thé vérsiööñ öf thé filé: {0} is ñött süpppörtédd.</message>', »",
+    "ATF-1025": "«<mmééssägé>Thé filé: {0} is cörrüptt ör iñvvälid.</message>', »",
+    "ATF-1026": "«<mméssägé>Thé filé: {0} is émptyy.</message>', »",
+    "ATF-1028": "«<méssssäggéé>Fäil ttöö löäd cömpööñéñt: {0}.</message>', »",
+    "ATF-1031": "«<méssäggé>Üñäüthöörizéd filé typé.</message>', »",
+    "ATF-1032": "«<méésssägé>Ässémbly féätüré is löst.</message>', »",
+    "ATF-1033": "«<mésssägé>Éññtityy iñ thé filé: {0} iis ñöt ssüpppörtéd.</message>', »",
+    "ATF-1034": "«<méssägé>TThé filé ñämé: {0} is iñvälid.</message>', »"
+}

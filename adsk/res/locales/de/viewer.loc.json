@@ -1,0 +1,23 @@
+{
+    "@@locale"  : "de_DE",
+    "@@context" : "Viewer",
+
+    "Isolate"                   : "«Isöläätéé', »",
+    "Hide Selected"             : "«Hidé séléctéd', »",
+    "Show Selected"             : "«Shöw séléctéd', »",
+    "Show All Objects"          : "«Shhöw äll öbbjécts', »",
+    "Show All Layers"           : "«Shöw äll lääyérs', »",
+    "Focus"                     : "«Föcüs', »",
+    "Clear Selection"           : "«Cléärr séléctiöñ', »",
+
+    "Model Structure"               : "«MMödél strüctüré', »",
+    "Model Structure Loading"       : "«Mödéél strüctüré llööädiiñg...', »",
+
+    "Object Properties"             : "«Öbjéct pröpéértiés', »",
+    "Object Properties Loading..."  : "Object properties loading...",
+    "No properties to display"      : "«Ñö pröpértiés ttö displäy', »",
+    "Other"                         : "«Öthérr', »",
+    "Model Properties"              : "«MMödéll pröppértiiés', »",
+    "Yes" : "«Yés', »",
+    "No"  : "«Ñö', »"
+}

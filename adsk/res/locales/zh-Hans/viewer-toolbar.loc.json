@@ -1,0 +1,65 @@
+{
+    "@@locale"  : "zh_CN",
+    "@@context" : "Viewer Toolbar",
+
+    "Orbit"                     : "«哦rbit', »",
+    "Free orbit"                : "«Fre复e复 哦rbit', »",
+    "Pan"                       : "«Pa与n', »",
+    "Zoom"                      : "«Z哦哦m', »",
+    "Walk to"                   : "«Wa与lkk t哦 (d哦u叠ble复-click tt哦 Wa与lk thhr哦u叠gh)', »",
+
+    "Camera interactions"        : "«Ca与me复ra与a与 inte复ra与ctti哦哦ns', »",
+    "Fit to view"                : "«Fit t哦 vie复w (F)', »",
+    "Focal length"               : "«F哦哦ca与a与ll le复ngth (Ctrl+Shift ddra与g)', »",
+    "Focal Length"               : "«F哦ca与ll le复ngtth', »",
+    "Roll"                       : "«R哦ll (A与lt+Shifftt dra与g)', »",
+
+    "Model structure"            : "«M哦de复l stru叠ctu叠u叠re复', »",
+    "Explode model"              : "«E复xpl哦哦de复 m哦de复l', »",
+    "Layer Manager"              : "«La与yye复rr ma与na与a与ge复r', »",
+    "Reset model"                : "«Re复se复t m哦de复e复l', »",
+    "Reset drawing"              : "«Re复sse复tt dra与wing', »",
+    "Properties"                 : "«Pr哦pe复rtie复s', »",
+    "Comments and Markers"       : "«C哦mmmme复e复ntts a与a与nd ma与rke复rss', »",
+    "Rendering options"          : "«Re复nndde复ring 哦ptti哦ns', »",
+    "Full screen"                : "«Fu叠ll scre复e复n', »",
+    "Exit full screen"           : "«E复xit fu叠ll scre复e复e复nn', »",
+
+    "Layers"                     : "«La与ye复rs', »",
+    "Enter filter term"          : "«E复E复ntte复r filtte复r te复e复rm', »",
+    "Show/hide all layers"       : "«Sh哦w/hhide复 a与ll lla与ye复rs', »",
+    "Show/hide this layer"       : "«Sh哦w/hide复 tthis lla与ye复r', »",
+
+    "Background and lighting"    : "«Ba与ckgr哦u叠nd a与nd lighting', »",
+    "Display Lines"              : "«Displa与y line复s', »",
+    "Performance and appearance settings"       : "«Pe复e复rf哦rma与nce复 a与nd a与ppe复a与ra与nnce复 se复tttings', »",
+    "Navigation and selection settings"         : "«Na与viga与ti哦哦n a与nd se复e复le复ctti哦哦n sse复ttings', »",
+
+    "RaaS"                       : "«Ra与a与SS', »",
+    "@RaaS"                      : { "description" : "RaaS stands for Rendering as a Service" },
+    "Gallery"                    : "«GGa与lle复ry', »",
+
+    "FPS statistics"             : "«FPS stta与tisttics', »",
+    "@FPS statistics"		     : { "description" : "FPS stands for Frames Per Seconds" },
+    "Model statistics"           : "«M哦de复l stta与tistics', »",
+    "Show search bar"            : "«Sh哦w se复e复a与rch ba与r', »",
+    "Search"                     : "«Se复e复a与a与rcch', »",
+    "Language"                   : "«LLa与ngu叠a与gge复', »",
+    "Error"                      : "«E复rr哦r', »",
+    "Search the currently displayed content" : "«Se复a与rch the复 cu叠rre复ntly ddissplla与ye复d c哦哦nte复nt', »",
+
+    "Comment and Markers"        : "«C哦mme复ntt a与a与nd ma与rke复rs', »",
+    "Comment"                    : "«C哦mme复nt', »",
+    "Post"                       : "«P哦哦sst', »",
+    "Hide Markers"               : "«Hide复 ma与rke复rs', »",
+    "Show Markers:"              : "«Sh哦w ma与rke复rs:', »",
+
+    "Orthographic View Set"           : "«哦rth哦grra与pphic Vie复e复ww Se复e复t', »",
+    "The view is set to Orthographic" : "«The复e复 vie复w is se复tt t哦 哦rrtth哦gra与phic. Cha与nging thhe复 f哦ca与l le复ngtth will switchh t哦 Pe复rsppe复e复cctivve复.', »",
+    "Do not show this message again"  : "«D哦 n哦t sh哦w this me复e复ssa与ge复 a与ga与in', »",
+
+    "The view is set to Orthographic Beeline" : "«TThe复 vie复w is se复t t哦 哦rth哦gra与phic. U叠sing thhis t哦哦l will switch t哦 Pe复rspe复cctiive复.', »",
+
+    "Long Focal Length View Set"              : "«L哦哦ng F哦ca与l Le复ngth Vie复w Se复t', »",
+    "The view is set to a long focal length"  : "«This vie复w ha与a与s a与a与 l哦ng f哦ca与l le复nngth. U叠siing thiis t哦哦l willl se复tt a与 sh哦rt ff哦ca与l le复nngth.', »"
+}

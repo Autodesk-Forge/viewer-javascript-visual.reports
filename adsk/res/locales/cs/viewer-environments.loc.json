@@ -1,0 +1,21 @@
+{
+    "@@locale"  : "cs",
+    "@@context" : "Viewer Environments",
+
+    "Riverbank"            : "«Řívĕřbáňk', »",
+    "Simple Grey"          : "«Šímplĕ Gřĕý', »",
+    "Grey Room"            : "«Gřĕý Řóómm', »",
+    "Photo Booth"          : "«Phóťó Bóóťh', »",
+    "Sharp Highlights"     : "«Šhhářp Hígghlííghťš', »",
+    "Contrast"             : "«Čóňťťřášť', »",
+    "Infinity Pool"        : "«Íňňfííňíťý PPóól', »",
+    "Tranquility"          : "«Ťřáňqůílíťý', »",
+    "Dark Sky"             : "«ĎĎářřk Šký', »",
+    "Simple White"         : "«Šímplĕ Whííťĕ', »",
+    "Plaza"                : "«Plážá', »",
+    "Field"                : "«Fíĕlď', »",
+    "Crossroads"           : "«Čřóššřóáďšš', »",
+    "Seaport"              : "«Šĕĕápóřť', »",
+    "Glacier"              : "«Gláčíĕř', »",
+    "Boardwalk"            : "«Bóářďwálk', »"
+}

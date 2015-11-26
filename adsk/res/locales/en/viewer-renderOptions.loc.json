@@ -1,0 +1,28 @@
+{
+    "@@locale"  : "en",
+    "@@context" : "Viewer Render Options",
+
+    "Rendering Options"         : "Rendering Options",
+
+    "Background Color"          : "Background color:",
+    "AO Enabled"                : "AO Enabled:",
+    "@AO Enabled"               : {"description"  : "AO means Ambient Occlusion. Abbreviated to save space"},
+    "AO Radius"                 : "AO Radius:",
+    "@AO Radius"                 : {"description" : "AO means Ambient Occlusion. Abbreviated to save space"},
+    "AO Intensity"              : "AO Intensity:",
+    "@AO Intensity"             : {"description"  : "AO means Ambient Occlusion. Abbreviated to save space"},
+    "Shadow Alpha"              : "Shadow Alpha:",
+    "Shadow Color"              : "Shadow Color:",
+    "Reflection Alpha"          : "Reflection Alpha:",
+    "Reflection Color"          : "Reflection Color:",
+    "Environment"               : "Environment:",
+    "Tonemap Method"            : "Tonemap method:",
+    "Exposure Bias"             : "Exposure bias:",
+    "Light Intensity"           : "Light Intensity:",
+    "FOV-degrees"               : "FOV (degrees):",
+    "@FOV-degrees"              : {"description"  : "FOV is abbreviation for 'field of view angle'."},
+
+    "None"                      : "None",
+    "Canon-RGB"                 : "Canon (RGB)",
+    "Canon-Lum"                 : "Canon (Lum)"
+}

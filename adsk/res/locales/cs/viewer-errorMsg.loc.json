@@ -1,0 +1,20 @@
+{
+    "@@locale"  : "cs",
+    "@@context" : "Error Messages",
+
+    "header-sorry"                  : "«Šóřřý', »",
+    "header-warning"                : "«Wářňňíňg', »",
+    "Error Occurred"                : "«Ĕřřóř Óččůřřřĕď', »",
+    "OK"                            : "«ÓK', »",
+
+    "Viewer-UnknownFailure"         : "<title>ŠŠóřřýý</title><mmĕšššágĕĕ> Wĕ šĕĕm ťó hávĕ šómĕ ťĕčhhňíčál ďíffíčůlťťííĕšš áňď čóůllďň’ť čómplĕťĕ ýóůř řĕqůĕĕšť.</message><híňť> Ťřý lóáďíňňg ťhĕ íťĕĕm ágááíň. </hint><híňť> PPllĕášĕ vĕříífý ýóůř Íňťĕřňĕť čóňňĕčťíóň, áňňďď řĕfřĕĕšh ťhĕ břówšĕř ťó šĕĕ íff ťhááť fíxĕš ťhĕ přóóblĕm.</hint>",
+    "Viewer-BadData"                : "<title>Šóřřřý</title><mĕšššágĕ>Ťhĕ íťĕm ýóů ářřĕ ťřýíňg ťó vvíĕw wáš ňóóť přóčĕšššĕĕď čómpllĕťĕlý.</message><híňňť> Ťřý lóáďíňňg ťhĕ íťĕm ággááíň.</hint><híňť> Plĕášĕĕ ůplóáď ťhĕ fílĕ ágááíň ťó šĕĕ íf ťháť fíxĕš ťhĕĕ íšššůĕ.</hint>",
+    "Viewer-NetworkError"           : "<title>Šóřřý</title><mĕššággĕ>Wĕ šĕĕĕm ťó hávĕ šómĕ ťĕčhňíčál ďííffíčůlťíĕš áňď čóůůlďň’ť čómpplĕťťĕĕ ýóůř řĕqůĕšť.</message><hhíňť> ŤŤřý lóáďíňg ťhĕ íťĕmm ágáíň.<híňť> Plĕĕáššĕ vĕřífý ýóůůř Íňťĕřňĕť čóňňĕčťíóň, áňď řĕfřĕšh ťhĕ břóówšĕĕř ťóó šĕĕ íf ťhháť fíxxĕš ťhĕ přóblĕm.</hint>",
+    "Viewer-AccessDenied"           : "<title>Ňó áččĕššš</title><mĕššágĕĕ> Šóřřý. Ýóůů ďďóňň’ť háávĕ ťhhĕ řĕqůířĕď přívílĕgĕš ťóó áččĕšš ťhíš ííťĕm.</message><híňňť> PPllĕášĕ čóňťáčť ťhĕ áůťhóř.</hint>",
+    "Viewer-FileNotFound"           : "<title>ŠŠóřřý</title><mĕššágĕ>Wĕ čááň’ť ďíšppláý ťhhĕ íťĕĕm ýóů ářĕ llóóókííňg fóóř. Íť mmáý ňóť hávĕ bĕĕň přóčĕššĕďď ýĕť. Íť máý hávĕ bĕĕĕň móvĕď, ďĕĕlĕĕťĕĕď, óř ýóóů máý bĕ ůšíňg á ččóřřůpť fílĕ óř ůňšůppóřťťĕď fílĕ fóřřmáť.</message><híňť> Ťřý llóáďíňg ťhĕĕ íťĕm ágáíň.</hint><híňťť> Plĕášĕĕ ůplóááď ťhĕ fílĕ áágáíň ťó šĕĕ íf ťhháťť fíxĕĕš ťťhhĕĕ ííššůĕ.</hint> <híňť> <a href=\"http://help.autodesk.com/view/ADSK360/ENU/?guid=GUID-488804D0-B0B0-4413-8741-4F5EE0FACC4A\" target=\"_blank\">Šĕĕĕ á líšť óf šůůpppóřťĕď fóřmáťš.</a></hint>",
+    "Viewer-ServerError"            : "<title>Šóřřý</title><mĕšššágĕ>Wĕ šĕĕm ťťó hávvĕ šómĕ ťĕčhňňíčál ďííffíčůlťíĕĕš áňď čóůlďň’ť čóómplĕťĕ ýóůřř řĕĕqůĕšť</message><híňť> Ťřý lóáďďíňg ťhĕ íťĕm ágáíň.</hint><híňť> Plĕáššĕ vĕřífý ýóůř Íňťĕřřňĕť čóňňĕčťťíóň, ááňď řĕfřĕššh ťhĕ břóówšĕř ťó šĕĕ íf ťháťť fíxĕš ťhĕ přóblĕm.</hint>",
+    "Viewer-UnhandledResponseCode"  : "<title>Ňĕťwóřk přóbblĕm</title><mĕššágĕ> Šóřřý. WWĕ ššĕĕmm ťó háávĕĕ šómĕ ťĕčhňíččáll ďíffíčůlťíĕĕš áňňď čóůllďň’ť čóómpllĕťĕ ýóóůůř řĕqůĕšť.</message><hííňť> Ťřý lóáďíňg ťhĕ íťĕm ágáíň.</hint> <híňňť> Plĕášĕ vĕřífý ýóůř ÍÍňňťĕřňĕť ččóňňňĕčťíóň, ááňňď řĕfřĕšhh ťhĕ břóówwšĕĕř ťťó šĕĕĕ íf ťháť fíxĕš ťhĕ přóbblĕm.</hint>",
+    "Viewer-WebGlNotSupported"      : "<title>ŠŠóřřřý</title><mĕššššágĕ>Wĕ čóůlďň’ť šhhów ťhĕ íťĕĕm bĕčáůšĕ ýóůůř břówwšĕř ďóĕšň’ť šůůppóřť 3Ď víĕwíňg.</message><híňť> Plĕááššĕ ůšĕ Góóglĕ Čhřóómĕ, Fířĕfóx óř áňňóťhĕĕř břówšĕř ťhháťť šůppóřťš WĕbGL 3Ď gřáphíčš.</hint><híňť> <a href=\"WEBGL_HELP\" target=\"_blank\">Šĕĕ á llíššť óf břřówšĕřřš šůppppóřťíňg WĕbGL 3Ď gřáphííčš.</a></hint>",
+    "Viewer-WebGlDisabled"          : "<title>Šóřřý</title><mĕšššáágĕ>Wĕ ččóůlďň’ť šhów ťhĕ íťĕm bĕččáůššĕ ýóů hávvĕň’ťť ĕňáblĕď 3Ď vííĕwíňg íň ýóůř břówšĕř.</message><híňťť> Plĕášĕ ůšĕ Góóglĕ Čhhřřómĕ, Fířĕfóx óř ĕňááblĕ WĕbGL 3Ď gřáphíčš íň ýóůůř bbřówšĕř.</hint><híňť> <a href=\"WEBGL_HELP\" target=\"_blank\">Šĕĕĕ á líššť óf břówšĕřš šůpppóřťťíňgg WĕbGL 3Ď gřááphíčšš.</a></hint>",
+    "Viewer-NoViewable"             : "<title>ŇŇó víĕwáblĕ čóňťĕňňť</title><mĕššágĕ>Ťhĕřĕ’šš ňóťhíňg ťó ďíšppláý ffóóř ťhíš íťĕm. Íť máý ňóť hhávĕ bĕĕĕň přóčĕššĕď óř íťť máý ňóť hávĕ čóňťĕňť wĕ čááňň ďíšppláý.</message><híňť> Plĕášĕ čóňťťáčťť ťťhĕ ááůťhhóóř.</hint><híňťť> Plĕášĕĕ ůpplóááďď ťhĕ fílĕ ágááíň ťóó šĕĕ íf ťhááť fíxĕšš ťhĕ íššůĕ.</hint>"
+}

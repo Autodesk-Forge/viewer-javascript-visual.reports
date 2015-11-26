@@ -1,0 +1,11 @@
+{
+    "@@locale"  : "en",
+    "@@context" : "Error Messages from the Assimp Extractor",
+    "@@contact" : "Traian Stanev",
+
+    "AssImp-OpenFailure"        : "<message>File cannot be opened.</message>",
+    "AssImp-InternalError"      : "<message>Internal error.</message>",
+    "AssImp-CannotCreateOutput" : "<message>Cannot write output file.</message>",
+    "AssImp-CannotLoadOBJ"      : "<message>Cannot load OBJ file.</message>",
+    "AssImp-MissingTextures"    : "<message>Missing texture image file: <ul>{0}</ul></message>"
+}

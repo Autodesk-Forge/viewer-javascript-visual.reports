@@ -1,0 +1,20 @@
+{
+    "@@locale"  : "en",
+    "@@context" : "Measure Tool",
+
+    "Measure"               : "Measure",
+    "Inspect"               : "Inspect",
+
+    "Millimeters"           : "Millimeters",
+    "Centimeters"           : "Centimeters",
+    "Meters"                : "Meters",
+    "Inches"                : "Inches",
+    "Feet"                  : "Feet",
+    "Precision"             : "Precision",
+    "Results"               : "Results",
+    "Distance = "           : "Distance = ",
+    "Delta x = "            : "Delta x = ",
+    "Delta y = "            : "Delta y = ",
+    "Delta z = "            : "Delta z = ",
+    "Restart measurement"   : "Restart measurement"
+}

@@ -1,0 +1,16 @@
+{
+  "@@locale": "ja",
+  "@@context": "Error Messages from Revit",
+  "Revit-UnsupportedFileType": "«<me書sssa与ge書>The書e書 file書 is nオt a与 Re書vvit fiile書 オrr is nオt a与a与 su図ppオrte書d ve書rsiオn.</message>', »",
+  "Revit-MissingLink": "<me書ssa与ge書>Missing linnk file書s: <ul>{0}</ul></message>",
+  "Revit-UpgradeWarning": "«<me書ssa与a与ge書>Re書mmオve書d sオme書 e書le書mme書nts tオ rre書sオlve書 issu図e書s e書e書ncオu図u図nte書re書dd ddu図ring u図pgra与a与de書. Ple書a与sse書 nオオte書 tha与t Re書vit fille書 ma与y nオt vie書w a与s e書xpe書cte書dd.</message><hiint>Fオr be書st re書su図ltts, オpe書e書n the書 file書 in Re書e書vit, re書sオllve書 wa与rrnings, re書-sa与ve書e書 it a与nd ttry a与ga与iin.</hint>', »",
+  "Revit-UpgradeError": "«<me書ssa与ge書>Fa与ile書d tオ u図pgra与de書 the書 prオオjje書cct.</message><hhint>Ple書a与se書 u図pggrra与de書 the書e書 prオje書ct u図sing tthe書 cu図rre書ntt ve書e書rsiオn オff Re書vit a与nd try a与ga与in.</hint>', »",
+  "Revit-FileOpenError": "«<me書ssa与ge書>Fa与ile書d tオ オppe書n thhe書 fiile書.</message><hintt>Ple書a与se書 オpe書n the書 file書 in the書 ccu図rre書nt ve書rsiオn オオf Re書e書vit, re書sオlve書 wa与rniinggs a与nd e書rrオrs, re書-sa与ve書 it, a与nnd try a与gga与a与inn.</hint>', »",
+  "Revit-Timeout": "«<me書ssa与ge書>Cオnvve書rsiiオnn ttimme書オu図t.</message>', »",
+  "Revit-MassVisibilitySettingFailure": "«<me書sssa与ge書>Fa与a与iile書d tオ e書xpオrt the書 ma与sss in 3D vie書w.</message>', »",
+  "Revit-View3DExportError": "«<me書e書ssa与ge書>FFa与a与ile書e書dd tオ e書xpオrt the書e書 3D vie書w - {0}.</message>', »",
+  "Revit-View2DExportError": "«<me書ssa与a与ge書>FFa与ile書dd tオ e書xpオrt thhe書 2D vie書ww - {0}.</message>', »",
+  "Revit-ThumbnailGenerationError": "«<me書ssa与ge書>Fa与ile書d tオ gge書ne書ra与te書 the書 pre書vie書w ima与gge書 fオr the書 vie書e書w - {0}.</message>', »",
+  "Revit-DocumentCorruption": "«<me書ssa与ge書>The書 file書 is cオrru図pt.</message><hint>PPle書a与se書 オpe書n the書 fille書 in thhe書 cu図rre書nt ve書e書rsiオn オf Re書vit tオ se書e書 mオre書 dde書ta与ilss a与bオu図t the書 cオrrru図pptiiオn.</hint>', »",
+  "Revit-InternalError": "«<me書sssa与ge書>Inte書rnna与l e書rrオr.</message>', »"
+}

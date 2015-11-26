@@ -1,0 +1,11 @@
+{
+    "@@locale": "ru_RU",
+    "@@context": "Error Messages from Navisworks",
+    "@@contact": "Kenny Guo",
+
+    "Navisworks-2DSheetUnsupported": "«<mёёssаgё>2D shёёt is йфt sцppфrtёёd.</message>', »",
+    "Navisworks-MissingXref": "<mёssаgё>MMissiiйg ёxtёёrйаl rёёfёrёйcёё filё: <ul>{0}</ul></message>",
+    "Navisworks-EmptyFile": "«<mёssаgёё>Thёrё is йф gёфmёtry thаt cай bё displаyёёd.</message>', »",
+    "Navisworks-PointUnsupported": "«<mёssаgё>Pфiйt айd sйаppффiiйtt аrё йфt sцppфrtёёdd.</message>', »",
+    "Navisworks-Failed": "«<mmёssаgёё>Fаilёd tф lфаd thiss shёёt.</message>', »"
+}

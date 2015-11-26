@@ -1,0 +1,29 @@
+{
+    "@@locale"  : "de_DE",
+    "@@context" : "Viewer Settings",
+
+    "Settings"                              : "«Sééttttiñgs', »",
+    "Navigation and selection"               : "«Ñäviigätiöñ & séllééctiöñ', »",
+    "Performance and appearance"            : "«Pérförmäñcé & äpppééäräññcéé', »",
+
+    "Show ViewCube"                         : "«Shöw ViéwCübbé', »",
+    "ViewCube acts on pivot"                : "«ViéwCübé äctts öñ pivvöt', »",
+    "Reverse mouse zoom direction"          : "«Réévvérsé möüsé zööm dirrécttiiöñ', »",
+    "Reverse horizontal look direction"     : "«Réévérsé hhörrizöñtäl lööök ddiréctiöñ', »",
+    "Reverse vertical look direction"       : "«Révéérsé vértticäl löök diréctiöñ', »",
+    "Zoom towards pivot"                    : "«Zööm töwärrds pivöt', »",
+    "Orbit past world poles"                : "«Örbit pässt wörld pölés', »",
+    "Set pivot with left mouse button"      : "«SSét ppivvöt with lléft möüséé büttöñ', »",
+    "Open properties on select"             : "«Öppééñ pröppértiéés öñ séléct', »",
+    "Left handed mouse setup"               : "«Léfft hääñdéd mmöüüsé séttüüp', »",
+
+    "Ghost hidden objects"                  : "«Ghöst hidddéñ ööbjécts', »",
+    "Smooth navigation"                     : "«Smööth ññävigätiiöñ', »",
+    "Ambient shadows"                       : "«Ämbiéññt shädööws', »",
+    "Anti-aliasing"                         : "«Äñti-älliäsiñg', »",
+    "Ground shadow"                         : "«Gröüñd sshädöw', »",
+    "Ground refleciton"                     : "«Grröüñd rééflécitöñ', »",
+    "Progressive model display"             : "«Prögréssivéé möödéll diispläy', »",
+
+    "Restore settings defaults"             : "«Réstööré sétttiñgs ddéfäülts', »"
+}

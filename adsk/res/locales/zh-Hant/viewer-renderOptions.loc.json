@@ -1,0 +1,28 @@
+{
+    "@@locale"  : "zh_TW",
+    "@@context" : "Viewer Render Options",
+
+    "Rendering Options"         : "«Re義nde義ring 哦哦pti哦ns', »",
+
+    "Background Color"          : "«BBa逸ckkgr哦u嗛nd cc哦l哦rr:', »",
+    "AO Enabled"                : "«A逸哦 E義na逸ble義d:', »",
+    "@AO Enabled"               : {"description"  : "AO means Ambient Occlusion. Abbreviated to save space"},
+    "AO Radius"                 : "«A逸哦 Ra逸diu嗛ss:', »",
+    "@AO Radius"                 : {"description" : "AO means Ambient Occlusion. Abbreviated to save space"},
+    "AO Intensity"              : "«A逸哦 Innte義nsiity:', »",
+    "@AO Intensity"             : {"description"  : "AO means Ambient Occlusion. Abbreviated to save space"},
+    "Shadow Alpha"              : "«Sha逸dd哦w A逸lpha逸:', »",
+    "Shadow Color"              : "«Sha逸d哦w C哦哦l哦r:', »",
+    "Reflection Alpha"          : "«Re義fle義e義cti哦n A逸lpha逸:', »",
+    "Reflection Color"          : "«Re義fle義cti哦n C哦l哦r:', »",
+    "Environment"               : "«E義nvir哦nme義nt:', »",
+    "Tonemap Method"            : "«T哦ne義e義ma逸p me義th哦d:', »",
+    "Exposure Bias"             : "«E義xp哦哦su嗛re義 bia逸s:', »",
+    "Light Intensity"           : "«Lightt Inte義nsity:', »",
+    "FOV-degrees"               : "«F哦V (de義gre義e義s):', »",
+    "@FOV-degrees"              : {"description"  : "FOV is abbreviation for 'field of view angle'."},
+
+    "None"                      : "«NN哦nne義e義', »",
+    "Canon-RGB"                 : "«Ca逸n哦n (RGB)', »",
+    "Canon-Lum"                 : "«Ca逸n哦哦n (LLu嗛m)', »"
+}

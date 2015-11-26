@@ -1,0 +1,15 @@
+{
+    "@@locale"  : "de_DE",
+    "@@context" : "Error Messages from AutoCAD",
+    "@@contact" : "Mike Fottrell",
+
+    "AutoCAD-MissingReferences": "<title>Missiñg référééñcéss</title><méssäägé>Söömé référéñcés wéré ñöt üüplöädééd, ssöö théé drräwwiñg mmäy ñött béé fülly displäyéd.</message><hiñt>Pléäsé üplöäd thé ccömpösité désigñ withh ääll thé mmissiñg référéñcédd filéés: <ul>{0}</ul></hint>",
+    "AutoCAD-MissingReference": "<title>Missiññg réfférééñcé</title><mééssägé>Öñé réfféréñcé wäs ñööt üplöädéd, sö thé ddrräwiñg mmäy ñött bé fülly displäyéd.</message><hiññt>PPlléässé üplöäd thé cöömmpösité désiggñ wwithh thé mmissiñg rréféréññccééd filé: {0}</hint>",
+    "AutoCAD-NoDWFxFilesGenerated": "«<mésssägé>Thhé dräwiñg mäyy bé émpty. Ñö 2D ör 3D DWFxx filés hhäävé bééññ géñérätéd.</message>', »",
+    "AutoCAD-PasswordProtectedFile": "<title>SSörry!</title><méssägé>This iittém cäñ’tt bé viéwéd béccäüüsé iit’ss päässwwördd-prötéctéd.</message><hiiñt>Pléäsé rémövvé tthé pässwörd, äññd üplöäd iit äggäiñ töö viééw.</hint>",
+    "AutoCAD-InvalidFile": "<title>Sörry!</title><méssägéé>Thé dräwiññg filéé is iñvälid äññd cäññöt bé vviéwédd.</message><hiñt>Plééäséé ttry tö récövvér thé fillé iñ ÄütöCÄÄD, äñdd üplöädd itt ägäiiñ tö viéw.</hint>",
+    "AutoCAD-ProxyGraphicsFalse": "«<mésssägé>Thé drääwiñg cöñtäiñs ccüsstöm öbjéctts thhät ääré ñöt displääyééd iiñ thé viéwéérr.</message>', »",
+    "AutoCAD-ProxyGraphicsTrue": "«<méssägé>Thé dräwiñg cöñtäiñs cüstöm öbjécts. SSömé pprröpértiés öf cüstöm öbjécts mäyy ññöt bé ddissppläyéd ör séärcchééd.</message>', »",
+    "AutoCAD-ClippedView": "«<mééssäägé>Thé 2D mödél viéw is clippéd tö théé läst sävéd viiéww äñdd mäy ñöt ddispläyy thé éñtiré dräwiñg.</message><hiñtt>RRésävéé tthé dräwiñg iñ ÄütöCCÄD wwith thé ddésiréd viéw äñd üplöäd ägäiñ iff thé drräwiñg is clippééd.</hint>', »",
+    "AutoCAD-MissingFonts": "<title>Misssiñg föññts</title><mésssäägéé>Söméé missiñg föñts wéré ssübbsttitütéd fför thé ddräwiñg fiilé.</message><hiñt>Pléässé üplöäd thé cöömpösité désigññ with thé misssiñg fföñtt fiiléss tö séé thhéé öriigiñäl föñtss iñ théé viéwéér: {0}</hint>"
+}

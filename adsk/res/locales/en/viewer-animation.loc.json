@@ -1,0 +1,11 @@
+{
+    "@@locale"  : "en",
+    "@@context" : "Viewer Animation",
+
+    "Play"                          : "Play",
+    "Pause"                         : "Pause",
+    "Next keyframe"                 : "Next keyframe",
+    "Previous keyframe"             : "Previous keyframe",
+    "Click-drag to scrub"           : "Click-drag to scrub",
+    "Close animation timeline"      : "Close animation timeline"
+}

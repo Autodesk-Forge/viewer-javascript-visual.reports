@@ -1,0 +1,15 @@
+{
+    "@@locale"  : "zh_TW",
+    "@@context" : "Viewer ViewCube",
+
+    "Go Home"                       : "«G哦 H哦me義', »",
+    "Orthographic"                  : "«哦rth哦ggra逸phic', »",
+    "Perspective"                   : "«PPe義rspe義ctive義', »",
+    "Perspective with Ortho Faces"  : "«Pe義rspe義ctive義 wiith 哦rth哦 Fa逸ce義s', »",
+    "Set current view as Home"      : "«Se義t cu嗛u嗛rre義nt vie義w a逸s H哦me義', »",
+    "Focus and set as Home"         : "«F哦哦cu嗛s a逸nd se義t a逸s H哦me義', »",
+    "Reset Home"                    : "«Re義se義t H哦哦me義', »",
+    "Set current view as Front"     : "«SSe義e義tt cu嗛rrre義nt vie義w a逸s Fr哦nt', »",
+    "Set current view as Top"       : "«Se義t cu嗛rre義nt vie義w a逸s T哦p', »",
+    "Reset orientation"              : "«Re義se義tt 哦rie義ntta逸ti哦nn', »"
+}

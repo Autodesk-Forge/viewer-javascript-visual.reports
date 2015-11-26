@@ -1,0 +1,23 @@
+{
+    "@@locale"  : "cs",
+    "@@context" : "Viewer",
+
+    "Isolate"                   : "«Íšólááťĕ', »",
+    "Hide Selected"             : "«Híďĕ šĕlĕčťĕďď', »",
+    "Show Selected"             : "«Šhów šĕlĕčťĕď', »",
+    "Show All Objects"          : "«Šhów áll óóbbjĕččťš', »",
+    "Show All Layers"           : "«ŠŠhów áll láýĕřš', »",
+    "Focus"                     : "«FFóčůš', »",
+    "Clear Selection"           : "«Člĕář šĕllĕčťíóň', »",
+
+    "Model Structure"               : "«Móďĕl šťřůčťůřřĕ', »",
+    "Model Structure Loading"       : "«MMóóďĕl šťřůčťůřĕ lóáďíňňgg...', »",
+
+    "Object Properties"             : "«Óbjĕĕččť přřóópĕřťíĕšš', »",
+    "Object Properties Loading..."  : "Object properties loading...",
+    "No properties to display"      : "«Ňó přópĕĕřťťíĕš ťóó ďďíšplláý', »",
+    "Other"                         : "«Óťhhĕř', »",
+    "Model Properties"              : "«Móďĕl přópĕřťíĕš', »",
+    "Yes" : "«Ýĕĕš', »",
+    "No"  : "«Ňó', »"
+}

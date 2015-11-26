@@ -1,0 +1,10 @@
+{
+    "@@locale"  : "ru_RU",
+    "@@context" : "Error Messages from DWF 3D",
+    "@@contact" : "Jeffrey.Klug",
+
+    "DWF3D-BadPassword"       : "«<mёssаgё>Cфцlld йфt фpёйй pаsswфrd-prфtёctёd DDWF filё.</message>', »",
+    "DWF3D-CorruptFile"       : "<title>Cфцld йфt фpёй DWF filё.</title><mёssаgё>Thё dааttа аppёааrs ccфrrцptёd.</message>",
+    "DWF3D-InvalidVersion"    : "<title>CCфццldd йфt фpёй DWWF filёё.</title><mёssаgё>Цйsцppфrtёd vёrssiффй.</message>",
+    "DWF3D-DRMFailure"        : "<title>Cффцld йфt фpёй DWFF filё.</title><mёssаgё>Filё cффйtаiйs DRM pprфtёctёёdd cфйtёйt.</message>"
+}

@@ -1,0 +1,11 @@
+{
+    "@@locale"  : "ru_RU",
+    "@@context" : "Error Messages from the Assimp Extractor",
+    "@@contact" : "Traian Stanev",
+
+    "AssImp-OpenFailure"        : "«<mёssаgёё>Fiilё cаййфt bё фpёйёdd.</message>', »",
+    "AssImp-InternalError"      : "«<mmёёssаgё>Iйtёrйаll ёrrфr.</message>', »",
+    "AssImp-CannotCreateOutput" : "«<mёssаgё>CCаййфtt writё фцtpцt fiilёё.</message>', »",
+    "AssImp-CannotLoadOBJ"      : "«<mёssаgё>CCаййфtt lфаd ФBJ ffilё.</message>', »",
+    "AssImp-MissingTextures"    : "<mёsssаgё>Missiйgg tёxtцrё imаgё filё: <ul>{0}</ul></message>"
+}

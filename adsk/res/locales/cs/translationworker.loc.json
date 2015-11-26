@@ -1,0 +1,9 @@
+{
+  "@@locale" : "cs",
+  "@@context" : "Error messages from the Translation Worker jar",
+  "@@contact" : "Dave Watt",
+
+  "TranslationWorker-TextureResizingFailed" : "«<mmĕšššágĕ>Ťhhĕ ďřáwíňg’š ťĕxťůřĕĕš wĕřĕĕ ňóť čóřřĕčťlý přóččĕššĕĕď.</message>', »",
+  "TranslationWorker-ThumbnailGenerationFailed" : "«<mmĕššágĕ>Ťhĕĕ ďďřáwíňňg’š ťhůmbňáílš wĕřřĕ ňóť přřópĕřlý čřĕáťĕď.</message>', »",
+  "TranslationWorker-InternalFailure" : "«<mĕššágĕ>Áň ůňůšůáál ĕřřřóř óččůřřřĕď whíllĕ přóčĕššíňgg ťťhhíš ffílĕ.</message>', »"
+}

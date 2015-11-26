@@ -1,0 +1,18 @@
+{
+    "@@locale"  : "en",
+    "@@context" : "Error Messages from AutoCAD",
+    "@@contact" : "Mike Fottrell",
+
+
+    "AutoCAD-MissingReferences": "<title>Missing references</title><message>Some references were not uploaded, so the drawing may not be fully displayed.</message><hint>Please upload the composite design with all the missing referenced files: <ul>{0}</ul></hint>",
+    "AutoCAD-MissingReference": "<title>Missing reference</title><message>One reference was not uploaded, so the drawing may not be fully displayed.</message><hint>Please upload the composite design with the missing referenced file: {0}</hint>",
+    "AutoCAD-NoDWFxFilesGenerated": "<message>The drawing may not contain visible objects. No views have been generated.</message>",
+    "AutoCAD-PasswordProtectedFile": "<title>Sorry!</title><message>This item can't be viewed because it's password-protected.</message><hint>Please remove the password, and upload it again to view.</hint>",
+    "AutoCAD-InvalidFile": "<title>Sorry!</title><message>The drawing file is invalid and cannot be viewed.</message><hint>Please try to recover the file in AutoCAD, and upload it again to view.</hint>",
+    "AutoCAD-ProxyGraphicsFalse": "<message>The drawing contains custom objects that are not displayed in the viewer.</message>",
+    "AutoCAD-ProxyGraphicsTrue": "<message>The drawing contains custom objects. Some properties of custom objects may not be displayed or searched.</message>",
+    "AutoCAD-ClippedView": "<message>The 2D model view is clipped to the last saved view and may not display the entire drawing.</message><hint>Resave the drawing in AutoCAD with the desired view and upload again if the drawing is clipped.</hint>",
+    "AutoCAD-MissingShxFonts": "<title>Missing fonts</title><message>Some missing fonts were substituted for the drawing file.</message><hint>Please upload the composite design with the missing font files to see the original fonts in the viewer: {0}</hint>",
+    "AutoCAD-MissingTtfFonts": "<title>Missing fonts</title><message>Some missing fonts were substituted for the drawing file: {0}</message>",
+    "AutoCAD-MissingPlotStyleFiles": "<message>Missing plot style files: {0}</message>"
+}

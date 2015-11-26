@@ -1,0 +1,9 @@
+{
+  "@@locale" : "ru_RU",
+  "@@context" : "Error messages from the Translation Worker jar",
+  "@@contact" : "Dave Watt",
+
+  "TranslationWorker-TextureResizingFailed" : "«<mёsssаgё>Thё ddrаwiйg’s tёxtцrrёss wёrё йфt cфrrёcctlyy prфcёssёёd.</message>', »",
+  "TranslationWorker-ThumbnailGenerationFailed" : "«<mёssаgёё>Thё drrаwiйg’s thцmbbйаilss wёrё йфt prфpёrly crrёаtёd.</message>', »",
+  "TranslationWorker-InternalFailure" : "«<mёssаgё>Ай ццййцsцаl ёrrффr фccцrrrёd whilёё prфcёsssiйg thhis filё.</message>', »"
+}

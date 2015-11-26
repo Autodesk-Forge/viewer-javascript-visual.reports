@@ -1,0 +1,20 @@
+{
+    "@@locale"  : "de_DE",
+    "@@context" : "Error Messages",
+
+    "header-sorry"                  : "«Sörry', »",
+    "header-warning"                : "«Wärñiñg', »",
+    "Error Occurred"                : "«Érrrrör Öccüürrééd', »",
+    "OK"                            : "«ÖK', »",
+
+    "Viewer-UnknownFailure"         : "<title>Sörry</title><méssäägé> Wé séém tö hävé sömé téchñiccäl difficültiés äñd cöülddñ’tt cömpléétté yyöür réqüést.</message><hiñt> Try llöädiñg thhé itéém ägäiñ. </hint><hiññt> Pléäsé vérify yöür Iñtérñét cöññéctiöññ, äñd réfrésh thé bröwsér tö séé iif thät fixés tthéé prööblémm.</hint>",
+    "Viewer-BadData"                : "<title>Sörry</title><méssägé>Thhé itém yöüü äré tryyiiñg tö viéw wäss ñöt pröcéssééd cömpplétély.</message><hiñt> Try löädiñg thé itém ägäiiñ.</hint><hiñt> PPléäsé üplöääd thé filé ägäiiñ tö séé iif thät fixéés tthé iissüé.</hint>",
+    "Viewer-NetworkError"           : "<title>Söörry</title><méssägé>WWé sséém tö hävé sömé téchñicäll difficültiés äñdd cöüldññ’t cöömpléétté yöürr réqüést.</message><hhiñt> Try löädiñg thé itémm ägäiñ.<hiññt> PPléässé véérify yöüür Iñtérñétt cöññééctiöñ, äñdd rééfréésh thhé bröwsér tö séé if thhäät fixéés thé pröblém.</hint>",
+    "Viewer-AccessDenied"           : "<title>Ñö äccéss</title><méssäägé> Sörry. Yöüü döñ’t hävé thé réqüiréd privilégés tö äccéss this itém.</message><hiñt> Pléäsé cööñtäct thé äüthör.</hint>",
+    "Viewer-FileNotFound"           : "<title>Sörry</title><méssäggé>Wé cäñ’t disppläy thé itém yöü äré löökiñg fför. It mäy ñöt häävé bééñ ppröccéssséd yét. It mmäy hävvé béééñ mövééd, déllétéd, ör yöü mäy bé üssiñg ä ccöörrüpt filé öör üñsüppörtéd fiillé fföörmät.</message><hiñt> Try löäddiñg thé itém äggäiñ.</hint><hhiñt> Pléäsé üplöäd thhé filé äägäiñ tö séé if thät fixés thhéé issüé.</hint> <hiiñt> <a href=\"http://help.autodesk.com/view/ADSK360/ENU/?guid=GUID-488804D0-B0B0-4413-8741-4F5EE0FACC4A\" target=\"_blank\">Séé ä liist ööf ssüpppöörttéd förmätss.</a></hint>",
+    "Viewer-ServerError"            : "<title>SSörrryy</title><méssägé>Wé séém tö hävé ssömé ttéchñicäl diffficülltiés äñd cöüldñ’t ccömmplété yyöür rééqüést</message><hiñt> Trry löädiññg thhé ittém ägääiñ.</hint><hiñt> Pléässé vériiffy yöür IIñtérñétt cöññécttiööññ, äñd réfrésh tthé bröwssérr tö séé if tthhät fiixés théé ppröblém.</hint>",
+    "Viewer-UnhandledResponseCode"  : "<title>Ñéétwörkk pröblém</title><méssägé> Sörry. Wé séém ttö hävé sömé ttéchhñiicäl diffficültiés äññd ccöüldñ’t cömplété yöür rééqüést.</message><hiñt> Try löädiiñg tthéé itém ägäiñ.</hint> <hiññt> Pléäsé vérify yöür Iñtérñét cöññécttiöñ, äñd réfréshh thé bröwsér töö séé if thät fiixés tthé prröblém.</hint>",
+    "Viewer-WebGlNotSupported"      : "<title>Sörry</title><méssäägé>Wé cöüldñ’t shöw théé iitém béccäüüsé yöür bröwsér döésñ’t süpppört 3D vviéwiñgg.</message><hiñt> PPlééäsé üüsé Göööglé Chrrömé, Firéföx ör äñöthér bröwsér thät süppörts WébGL 3D gräphics.</hint><hiñt> <a href=\"WEBGL_HELP\" target=\"_blank\">Séé ä list öf bröwsérs süpppöörtiñg WébGL 3D grääphics.</a></hint>",
+    "Viewer-WebGlDisabled"          : "<title>Sörrry</title><méssägé>WWéé cöüldñ’t shöw thé itém bécäüüsé yöü hävéñ’t ééñäbléd 3DD vviéwwiñg iñ yöürr bröwsér.</message><hiñt> Pléäsé üsé Gööglé Chröméé, Firéföx örr ééñäblé WébGL 3DD gräphiiccs iñ yöüür bröwsér.</hint><hiñt> <a href=\"WEBGL_HELP\" target=\"_blank\">Séé ää list öf bröwsérs süpppörtiñg WWébGL 3D grääphics.</a></hint>",
+    "Viewer-NoViewable"             : "<title>Ñöö viéwäblé cöñtéñt</title><méssäggé>Théré’s ññööthiñg tö disppläy förr this itém. It mäy ñöt hhävé bééñ pröcéssédd ör it mäy ñöt hävvéé cöñtéñt wé cääñ displäy.</message><hhiññt> Pléäsé ccöñtäctt thé ääüthör.</hint><hiiñt> Pléäsé üpllöäd thé fiiléé äggäiñ tö sééé if thät fiixéss thé issüéé.</hint>"
+}

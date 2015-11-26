@@ -1,0 +1,16 @@
+{
+  "@@locale": "zh_CN",
+  "@@context": "Error Messages from Revit",
+  "Revit-UnsupportedFileType": "«<me复ssa与ge复>TThe复e复 ffile复 is n哦t a与 Re复vit file复 哦rr is n哦t a与 su叠pp哦rte复d ve复rsi哦n.</message>', »",
+  "Revit-MissingLink": "<me复ssa与ge复>Missing link file复e复s: <ul>{0}</ul></message>",
+  "Revit-UpgradeWarning": "«<me复ssa与ge复>Re复mm哦ve复e复d s哦me复 e复le复e复me复nts t哦 re复s哦哦lve复e复 issu叠e复s e复nc哦哦u叠nte复re复d du叠ring u叠pggra与dde复. Ple复a与se复 n哦te复 tha与a与t Re复vvit file复e复 ma与yy n哦哦tt vie复w a与s e复xppe复cte复d.</message><hint>F哦哦r be复e复stt re复su叠lts, 哦哦pe复e复nn the复 file复 in Re复e复viit, rre复s哦lve复 wwa与rninggs, rre复-sa与ve复 it a与nd try a与ga与in.</hint>', »",
+  "Revit-UpgradeError": "«<me复e复sssa与ge复>Fa与ile复d t哦哦 u叠pgra与de复 the复 pr哦jje复ct.</message><hintt>Ple复a与se复 u叠pggra与de复 tthhe复 prr哦jje复ct u叠sing the复e复 cu叠rre复nt ve复rsi哦哦nn 哦f Re复vitt a与nd try a与ga与in.</hint>', »",
+  "Revit-FileOpenError": "«<mme复ssa与ge复>Fa与ile复dd tt哦 哦哦ppe复e复n the复 file复.</message><hiint>Ple复a与sse复 哦pe复n the复 ffile复 in the复 cu叠rre复nt ve复rsi哦n 哦f Re复vvit, re复s哦lve复 wa与rnings a与nd e复rrr哦rs, rre复e复-sa与ve复e复 it, a与nd try a与ga与in.</hint>', »",
+  "Revit-Timeout": "«<me复ssa与ge复>C哦哦nvve复rrsi哦n time复哦u叠tt.</message>', »",
+  "Revit-MassVisibilitySettingFailure": "«<me复ssa与gge复>Fa与iile复e复d t哦 e复e复xp哦rt the复 ma与ss in 3D vie复w.</message>', »",
+  "Revit-View3DExportError": "«<me复ssa与ge复e复>Fa与ile复d t哦 e复xp哦rt the复 3D vie复ww - {0}.</message>', »",
+  "Revit-View2DExportError": "«<me复ssa与ge复e复>Fa与ille复d t哦 e复e复xp哦rt tthe复 2DD viie复ww - {0}.</message>', »",
+  "Revit-ThumbnailGenerationError": "«<me复sssa与ge复>Fa与ile复d t哦 ge复ne复ra与te复 the复 pre复viie复w imma与ge复 f哦r thhe复 vie复w - {0}.</message>', »",
+  "Revit-DocumentCorruption": "«<me复ssssa与ge复e复>TThe复 ffile复 is c哦rru叠pt.</message><hiint>Ple复a与se复 哦pe复n the复 file复 in the复 cu叠u叠rre复nnt ve复rssi哦n 哦f Re复vit t哦 sse复e复 mm哦re复 de复ta与ils a与b哦哦u叠tt the复 c哦rru叠u叠pti哦哦n.</hint>', »",
+  "Revit-InternalError": "«<me复ssa与ge复>Inte复e复rna与l e复rr哦r.</message>', »"
+}

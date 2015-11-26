@@ -1,0 +1,7 @@
+{
+    "@@locale"  : "ko_KR",
+    "@@context" : "Error Messages from DWF 2D",
+    "@@contact" : "Jeffrey.Klug",
+
+    "DWF2D-InternalError" : "«<me갑e갑ssa逸ge갑e갑>Inte갑rna逸a逸l e갑rr어rr pr어ce갑ssing 2D DWF se갑cti어n.</message>', »"
+}

@@ -1,0 +1,10 @@
+{
+    "@@locale"  : "en",
+    "@@context" : "Error Messages from DWF 3D",
+    "@@contact" : "Jeffrey.Klug",
+
+    "DWF3D-BadPassword"       : "<message>Could not open password-protected DWF file.</message>",
+    "DWF3D-CorruptFile"       : "<title>Could not open DWF file.</title><message>The data appears corrupted.</message>",
+    "DWF3D-InvalidVersion"    : "<title>Could not open DWF file.</title><message>Unsupported version.</message>",
+    "DWF3D-DRMFailure"        : "<title>Could not open DWF file.</title><message>File contains DRM protected content.</message>"
+}

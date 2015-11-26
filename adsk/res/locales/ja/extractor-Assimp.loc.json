@@ -1,0 +1,11 @@
+{
+    "@@locale"  : "ja",
+    "@@context" : "Error Messages from the Assimp Extractor",
+    "@@contact" : "Traian Stanev",
+
+    "AssImp-OpenFailure"        : "«<me書sssa与ge書>Fiile書 ca与nnnオt be書e書 オpe書ne書d.</message>', »",
+    "AssImp-InternalError"      : "«<me書e書ssa与gge書>Innte書rna与a与l e書rrrオr.</message>', »",
+    "AssImp-CannotCreateOutput" : "«<me書ssa与ge書>Ca与nnオオt wriite書 オu図tpu図t file書.</message>', »",
+    "AssImp-CannotLoadOBJ"      : "«<mme書e書ssa与ge書>Ca与nnオtt lオa与a与d オBJJ file書.</message>', »",
+    "AssImp-MissingTextures"    : "<mme書sssa与ge書>MMissing te書xtu図re書 ima与ge書 fille書: <ul>{0}</ul></message>"
+}

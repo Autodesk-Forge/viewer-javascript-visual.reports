@@ -1,0 +1,7 @@
+{
+    "@@locale"  : "en",
+    "@@context" : "Error Messages from DWF 2D",
+    "@@contact" : "Jeffrey.Klug",
+
+    "DWF2D-InternalError" : "<message>Internal error processing 2D DWF section.</message>"
+}

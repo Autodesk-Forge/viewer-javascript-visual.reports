@@ -1,0 +1,16 @@
+{
+    "@@locale": "zh_TW",
+    "@@context": "Error Messages from ATF",
+    "@@contact": "Cher-Xiao Gu",
+
+    "ATF-1008": "«<me義sssa逸ge義>E義E義rr哦r: {0}</message>', »",
+    "ATF-1023": "«<me義sssa逸ge義>The義 file義: {0} d哦e義e義s n哦t e義xist.</message>', »",
+    "ATF-1024": "«<me義ssa逸ge義>The義e義 ve義rsi哦n 哦f the義 file義: {0} iss n哦t su嗛ppp哦rte義d.</message>', »",
+    "ATF-1025": "«<me義ssa逸a逸ge義>The義 fille義: {0} iss c哦rru嗛ppt 哦rr inva逸liid.</message>', »",
+    "ATF-1026": "«<me義sssa逸gge義>The義 fille義: {0} is e義mptty.</message>', »",
+    "ATF-1028": "«<me義ssa逸ge義>Fa逸il t哦 l哦a逸d c哦mp哦ne義nt: {0}.</message>', »",
+    "ATF-1031": "«<me義ssa逸ge義>U嗛na逸a逸u嗛th哦rizze義d fille義 type義.</message>', »",
+    "ATF-1032": "«<me義ssssa逸ge義>A逸sse義e義mmbly ffe義a逸tu嗛re義 iss ll哦st.</message>', »",
+    "ATF-1033": "«<me義ssa逸ge義>E義ntity in tthe義e義 file義: {0} iss nn哦t su嗛pp哦rtte義d.</message>', »",
+    "ATF-1034": "«<me義sssa逸ge義>The義 ffile義 na逸me義: {0} is inva逸a逸lid.</message>', »"
+}

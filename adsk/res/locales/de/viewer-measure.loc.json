@@ -1,0 +1,20 @@
+{
+    "@@locale"  : "de_DE",
+    "@@context" : "Measure Tool",
+
+    "Measure"               : "«Méäsüré', »",
+    "Inspect"               : "«Iñsppéct', »",
+
+    "Millimeters"           : "«Millimétérs', »",
+    "Centimeters"           : "«Céñttiméttérs', »",
+    "Meters"                : "«Métérs', »",
+    "Inches"                : "«Iñchéés', »",
+    "Feet"                  : "«Féétt', »",
+    "Precision"             : "«Précisiöñ', »",
+    "Results"               : "«Résülts', »",
+    "Distance = "           : "«Distäñcé = ', »",
+    "Delta x = "            : "«Délltä x = ', »",
+    "Delta y = "            : "«Dééltää y = ', »",
+    "Delta z = "            : "«Déltä z = ', »",
+    "Restart measurement"   : "«Réstärtt méäsüréméñt', »"
+}

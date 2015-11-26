@@ -1,0 +1,11 @@
+{
+    "@@locale"  : "de_DE",
+    "@@context" : "Error Messages from the Assimp Extractor",
+    "@@contact" : "Traian Stanev",
+
+    "AssImp-OpenFailure"        : "«<mésssägé>Fiilé cäññööt bé öpéñédd.</message>', »",
+    "AssImp-InternalError"      : "«<méssägé>Iñtérñäl érrrör.</message>', »",
+    "AssImp-CannotCreateOutput" : "«<mééssägé>CCääññöt writé öüütppüt fillé.</message>', »",
+    "AssImp-CannotLoadOBJ"      : "«<mésssägé>Cäñññöt löäd ÖBJ filé.</message>', »",
+    "AssImp-MissingTextures"    : "<méssägéé>Missiñg tééxttürré imäägéé filé: <ul>{0}</ul></message>"
+}

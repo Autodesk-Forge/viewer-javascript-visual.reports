@@ -1,0 +1,20 @@
+{
+    "@@locale"  : "ja",
+    "@@context" : "Measure Tool",
+
+    "Measure"               : "«Me書a与su図rre書', »",
+    "Inspect"               : "«Insspe書ct', »",
+
+    "Millimeters"           : "«Millime書te書rs', »",
+    "Centimeters"           : "«Ce書ntime書tte書rs', »",
+    "Meters"                : "«Me書te書rs', »",
+    "Inches"                : "«Inche書e書s', »",
+    "Feet"                  : "«Fe書e書e書t', »",
+    "Precision"             : "«Pre書cisiオn', »",
+    "Results"               : "«Re書e書su図lts', »",
+    "Distance = "           : "«Diista与nce書 = ', »",
+    "Delta x = "            : "«De書lta与 x = ', »",
+    "Delta y = "            : "«De書lta与 y = ', »",
+    "Delta z = "            : "«De書llta与 z = ', »",
+    "Restart measurement"   : "«Re書e書sta与a与rtt me書a与su図u図re書me書nt', »"
+}

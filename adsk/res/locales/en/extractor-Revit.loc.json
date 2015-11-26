@@ -1,0 +1,16 @@
+﻿{
+  "@@locale": "en",
+  "@@context": "Error Messages from Revit",
+  "Revit-UnsupportedFileType": "<message>The file is not a Revit file or is not a supported version.</message>",
+  "Revit-MissingLink": "<message>Missing link files: <ul>{0}</ul></message>",
+  "Revit-UpgradeWarning": "<message>Removed some elements to resolve issues encountered during upgrade. Please note that Revit file may not view as expected.</message><hint>For best results, open the file in Revit, resolve warnings, re-save it and try again.</hint>",
+  "Revit-UpgradeError": "<message>Failed to upgrade the project.</message><hint>Please upgrade the project using the current version of Revit and try again.</hint>",
+  "Revit-FileOpenError": "<message>Failed to open the file.</message><hint>Please open the file in the current version of Revit, resolve warnings and errors, re-save it, and try again.</hint>",
+  "Revit-Timeout": "<message>Conversion timeout.</message>",
+  "Revit-MassVisibilitySettingFailure": "<message>Failed to export the mass in 3D view.</message>",
+  "Revit-View3DExportError": "<message>Failed to export the 3D view - {0}.</message>",
+  "Revit-View2DExportError": "<message>Failed to export the 2D view - {0}.</message>",
+  "Revit-ThumbnailGenerationError": "<message>Failed to generate the preview image for the view - {0}.</message>",
+  "Revit-DocumentCorruption": "<message>The file is corrupt.</message><hint>Please open the file in the current version of Revit to see more details about the corruption.</hint>",
+  "Revit-InternalError": "<message>Internal error.</message>"
+}

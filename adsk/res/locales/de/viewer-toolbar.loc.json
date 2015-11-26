@@ -1,0 +1,65 @@
+{
+    "@@locale"  : "de_DE",
+    "@@context" : "Viewer Toolbar",
+
+    "Orbit"                     : "«Örbiit', »",
+    "Free orbit"                : "«Frééé örbbit', »",
+    "Pan"                       : "«Päñ', »",
+    "Zoom"                      : "«Zööm', »",
+    "Walk to"                   : "«Wälk tö (dööübléé-cclick töö Wällk thrröügh)', »",
+
+    "Camera interactions"        : "«CCämérää iñtéräcttiöñs', »",
+    "Fit to view"                : "«Fit tö viiéw (F)', »",
+    "Focal length"               : "«Föcäl léñgth (Ctrl+Shiift drräg)', »",
+    "Focal Length"               : "«FFöcäl lléñgtth', »",
+    "Roll"                       : "«Rööll (Ältt+Shift dräg)', »",
+
+    "Model structure"            : "«Möddél strüctüré', »",
+    "Explode model"              : "«Éxplödé mödél', »",
+    "Layer Manager"              : "«Läyér määñägéér', »",
+    "Reset model"                : "«Rését mödél', »",
+    "Reset drawing"              : "«Rését ddrräwiñg', »",
+    "Properties"                 : "«PPröpéérttiés', »",
+    "Comments and Markers"       : "«Cöömmméñts äñd märkérs', »",
+    "Rendering options"          : "«Réñdériñg öptiöñs', »",
+    "Full screen"                : "«Füll scrééñ', »",
+    "Exit full screen"           : "«Éxxit füll sccrééñ', »",
+
+    "Layers"                     : "«Lääyyéérs', »",
+    "Enter filter term"          : "«Éñtér fiiltér térm', »",
+    "Show/hide all layers"       : "«Shöww/hidé äll läyérs', »",
+    "Show/hide this layer"       : "«SShöw/hidé this läyér', »",
+
+    "Background and lighting"    : "«Bäckkgröüüñd äñd ligghtiñg', »",
+    "Display Lines"              : "«Displläy liñés', »",
+    "Performance and appearance settings"       : "«Péérförmäñcé äññd äpppéäräñcé sétttiiñgs', »",
+    "Navigation and selection settings"         : "«Ñäävigätiöññ äñd sséélécttiöñ sétttiñgs', »",
+
+    "RaaS"                       : "«RääS', »",
+    "@RaaS"                      : { "description" : "RaaS stands for Rendering as a Service" },
+    "Gallery"                    : "«Gällléry', »",
+
+    "FPS statistics"             : "«FPS stätistiics', »",
+    "@FPS statistics"		     : { "description" : "FPS stands for Frames Per Seconds" },
+    "Model statistics"           : "«Möödél stäätistiics', »",
+    "Show search bar"            : "«Shöw séärcch bär', »",
+    "Search"                     : "«SSéärch', »",
+    "Language"                   : "«LLäñgüägé', »",
+    "Error"                      : "«Érrör', »",
+    "Search the currently displayed content" : "«Sééärch thé cürrréñtly ddispläyéd cöñtéñt', »",
+
+    "Comment and Markers"        : "«Cömméñtt äñd märkérs', »",
+    "Comment"                    : "«Cöömméñtt', »",
+    "Post"                       : "«Pöst', »",
+    "Hide Markers"               : "«Hidé märkérs', »",
+    "Show Markers:"              : "«Shöw mmärkérss:', »",
+
+    "Orthographic View Set"           : "«Örthöggrrääphic Viéww Séétt', »",
+    "The view is set to Orthographic" : "«TThé viéw iss ssét tö Örthögrääphic. Chäñgiñg théé föccääl léñgth willl switcch töö Pérsppéctivé.', »",
+    "Do not show this message again"  : "«Dö ñöt shöw tthis méssägé ägäiñ', »",
+
+    "The view is set to Orthographic Beeline" : "«TThé vviéww iss ssét töö Örthöggräphhicc. ÜÜssiñg this ttööl will switch tö Pérspéctivé.', »",
+
+    "Long Focal Length View Set"              : "«Löñg Föcäl Léñgth Viéw Sét', »",
+    "The view is set to a long focal length"  : "«This viéw häs ä löñgg föcäl léñgth. Üsiñg this töööl wwill sétt ä sshört föcäl lééññgth.', »"
+}

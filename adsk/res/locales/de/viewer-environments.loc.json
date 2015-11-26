@@ -1,0 +1,21 @@
+{
+    "@@locale"  : "de_DE",
+    "@@context" : "Viewer Environments",
+
+    "Riverbank"            : "«Rivérbäñkk', »",
+    "Simple Grey"          : "«Simplé Grréyy', »",
+    "Grey Room"            : "«Gréy Rööm', »",
+    "Photo Booth"          : "«Phötö Bööth', »",
+    "Sharp Highlights"     : "«Shärp Highlighhts', »",
+    "Contrast"             : "«Cöñträst', »",
+    "Infinity Pool"        : "«Iñfiñitty Pööl', »",
+    "Tranquility"          : "«TTräñqüilitty', »",
+    "Dark Sky"             : "«Därk Skyy', »",
+    "Simple White"         : "«Simpléé Whitéé', »",
+    "Plaza"                : "«PPlläzä', »",
+    "Field"                : "«FFiééld', »",
+    "Crossroads"           : "«CCrrössrröäds', »",
+    "Seaport"              : "«Sééäpört', »",
+    "Glacier"              : "«Gläciéér', »",
+    "Boardwalk"            : "«Böärdwälk', »"
+}

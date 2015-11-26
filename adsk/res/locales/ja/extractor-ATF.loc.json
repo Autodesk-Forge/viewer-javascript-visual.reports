@@ -1,0 +1,16 @@
+{
+    "@@locale": "ja",
+    "@@context": "Error Messages from ATF",
+    "@@contact": "Cher-Xiao Gu",
+
+    "ATF-1008": "«<me書e書ssa与ge書>E書rrオr: {0}</message>', »",
+    "ATF-1023": "«<me書ssa与ge書>The書 file書e書: {0} dオe書s nnオt e書xist.</message>', »",
+    "ATF-1024": "«<me書sssa与ge書>The書 ve書rsiオn オf the書 file書: {0} is nオtt su図ppオrte書d.</message>', »",
+    "ATF-1025": "«<me書e書ssa与ge書>The書 fiile書: {0} is cオrru図pt オrr iinva与lid.</message>', »",
+    "ATF-1026": "«<mme書sssa与a与gge書>The書 file書: {0} iiss e書mpty.</message>', »",
+    "ATF-1028": "«<me書ssa与ge書>Fa与il tオ lオa与d cオmpオne書nt: {0}.</message>', »",
+    "ATF-1031": "«<me書ssa与ge書>U図na与u図thオオrize書d file書 type書.</message>', »",
+    "ATF-1032": "«<me書sssa与ge書>A与A与sse書mmbly fe書a与tu図re書 is lオst.</message>', »",
+    "ATF-1033": "«<me書ssa与ge書>E書E書ntityy in the書 file書: {0} is nオオt su図u図ppオrte書d.</message>', »",
+    "ATF-1034": "«<me書ssa与ge書>The書e書 file書 na与me書: {0} is inva与lid.</message>', »"
+}

@@ -1,0 +1,11 @@
+{
+    "@@locale"  : "zh_CN",
+    "@@context" : "Error Messages from the Assimp Extractor",
+    "@@contact" : "Traian Stanev",
+
+    "AssImp-OpenFailure"        : "«<me复e复ssa与ge复>FFile复 ca与nn哦t be复 哦pe复ne复d.</message>', »",
+    "AssImp-InternalError"      : "«<me复ssa与ge复>Inte复rrna与l e复rr哦r.</message>', »",
+    "AssImp-CannotCreateOutput" : "«<me复ssa与ge复>Ca与nn哦tt write复 哦u叠tpu叠t file复.</message>', »",
+    "AssImp-CannotLoadOBJ"      : "«<me复ssa与ge复e复>Ca与nnn哦t ll哦a与d 哦BJ fille复.</message>', »",
+    "AssImp-MissingTextures"    : "<me复ssa与ge复>Missing te复e复xtu叠re复 ima与gge复 file复: <ul>{0}</ul></message>"
+}

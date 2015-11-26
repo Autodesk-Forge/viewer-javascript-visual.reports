@@ -1,0 +1,16 @@
+{
+    "@@locale": "en",
+    "@@context": "Error Messages from ATF",
+    "@@contact": "Cher-Xiao Gu",
+
+    "ATF-1008": "<message>Error: {0}</message>",
+    "ATF-1023": "<message>The file: {0} does not exist.</message>",
+    "ATF-1024": "<message>The version of the file: {0} is not supported.</message>",
+    "ATF-1025": "<message>The file: {0} is corrupt or invalid.</message>",
+    "ATF-1026": "<message>The file: {0} is empty.</message>",
+    "ATF-1028": "<message>Fail to load component: {0}.</message>",
+    "ATF-1031": "<message>Unauthorized file type.</message>",
+    "ATF-1032": "<message>Assembly feature is lost.</message>",
+    "ATF-1033": "<message>Entity in the file: {0} is not supported.</message>",
+    "ATF-1034": "<message>The file name: {0} is invalid.</message>"
+}

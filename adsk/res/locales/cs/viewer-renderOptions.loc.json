@@ -1,0 +1,28 @@
+{
+    "@@locale"  : "cs",
+    "@@context" : "Viewer Render Options",
+
+    "Rendering Options"         : "«Řĕňďĕĕříňg Ópťíóňš', »",
+
+    "Background Color"          : "«BBáčkgřóůňďď ččólóóř:', »",
+    "AO Enabled"                : "«ÁÓÓ Ĕňááblĕď:', »",
+    "@AO Enabled"               : {"description"  : "AO means Ambient Occlusion. Abbreviated to save space"},
+    "AO Radius"                 : "«ÁÓ Řáďíůš:', »",
+    "@AO Radius"                 : {"description" : "AO means Ambient Occlusion. Abbreviated to save space"},
+    "AO Intensity"              : "«ÁÓ Íňňťĕňšíťý:', »",
+    "@AO Intensity"             : {"description"  : "AO means Ambient Occlusion. Abbreviated to save space"},
+    "Shadow Alpha"              : "«Šháďóww Álphá:', »",
+    "Shadow Color"              : "«Šháďów Čólóř:', »",
+    "Reflection Alpha"          : "«Řĕfllĕčťíóň Álphá:', »",
+    "Reflection Color"          : "«Řĕflĕčťíóň Čólóř:', »",
+    "Environment"               : "«Ĕňvířřóňmĕňť:', »",
+    "Tonemap Method"            : "«Ťóňĕmápp mĕĕťhóóď:', »",
+    "Exposure Bias"             : "«Ĕxpóšůřĕ bíášš:', »",
+    "Light Intensity"           : "«LLíghť ÍÍňťĕňšíťýý:', »",
+    "FOV-degrees"               : "«FÓV (ďĕgřĕĕšš):', »",
+    "@FOV-degrees"              : {"description"  : "FOV is abbreviation for 'field of view angle'."},
+
+    "None"                      : "«Ňóňĕ', »",
+    "Canon-RGB"                 : "«Čáňňóň (ŘGGBB)', »",
+    "Canon-Lum"                 : "«Čáňóň (Lům)', »"
+}

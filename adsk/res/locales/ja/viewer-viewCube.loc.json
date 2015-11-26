@@ -1,0 +1,15 @@
+{
+    "@@locale"  : "ja",
+    "@@context" : "Viewer ViewCube",
+
+    "Go Home"                       : "«Gオオ Hオme書', »",
+    "Orthographic"                  : "«オrthオgra与phic', »",
+    "Perspective"                   : "«Pe書rspe書ctivve書', »",
+    "Perspective with Ortho Faces"  : "«Pe書rspe書cctive書 with オrthオ Fa与ce書s', »",
+    "Set current view as Home"      : "«Se書e書tt cu図u図rre書nt vie書w a与a与s Hオme書', »",
+    "Focus and set as Home"         : "«Fオcu図s a与nd se書t a与s Hオme書', »",
+    "Reset Home"                    : "«Re書se書tt HHオme書', »",
+    "Set current view as Front"     : "«Se書t cu図rrre書nt vie書w a与s Frオnt', »",
+    "Set current view as Top"       : "«SSe書t cu図rrre書nt vie書w a与s Tオp', »",
+    "Reset orientation"              : "«Re書e書sse書t オrrie書nnta与ttiオn', »"
+}

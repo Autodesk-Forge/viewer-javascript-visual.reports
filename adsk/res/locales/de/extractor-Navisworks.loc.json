@@ -1,0 +1,11 @@
+{
+    "@@locale": "de_DE",
+    "@@context": "Error Messages from Navisworks",
+    "@@contact": "Kenny Guo",
+
+    "Navisworks-2DSheetUnsupported": "«<mésssägé>2DD shéét is ñöt süüpppörrtédd.</message>', »",
+    "Navisworks-MissingXref": "<méssägé>Miissiñg éxttérñäl référéññcéé fiilé: <ul>{0}</ul></message>",
+    "Navisworks-EmptyFile": "«<méssägé>Thhéré is ñö géöömétry thhät cäñ béé displäyéd.</message>', »",
+    "Navisworks-PointUnsupported": "«<méssägé>Pöiiñt äñd sñääpppöiñt äré ñöt süpppörtééd.</message>', »",
+    "Navisworks-Failed": "«<méssägé>Fäiléd tö löäd this shhéét.</message>', »"
+}

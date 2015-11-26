@@ -1,0 +1,9 @@
+{
+  "@@locale" : "ja",
+  "@@context" : "Error messages from the Translation Worker jar",
+  "@@contact" : "Dave Watt",
+
+  "TranslationWorker-TextureResizingFailed" : "«<me書e書ssa与ge書>The書 dra与wing’ss te書xttu図re書s we書re書 nオt ccオrre書ctly pprオce書e書sse書d.</message>', »",
+  "TranslationWorker-ThumbnailGenerationFailed" : "«<me書ssa与gge書>The書 dra与wwing’s thu図mbna与ils we書re書 nオt prrオオpe書rlly cre書a与te書d.</message>', »",
+  "TranslationWorker-InternalFailure" : "«<me書ssa与ge書>A与n u図nu図su図a与l e書rrオr オcccu図rre書dd wwhile書 pprオce書ssing this ffille書.</message>', »"
+}

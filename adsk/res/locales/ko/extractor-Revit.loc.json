@@ -1,0 +1,16 @@
+{
+  "@@locale": "ko_KR",
+  "@@context": "Error Messages from Revit",
+  "Revit-UnsupportedFileType": "«<me갑ssa逸ge갑>The갑e갑 fiile갑 is n어t a逸 Re갑vit fille갑 어r iss n어t a逸 su삯ppp어rte갑d ve갑rssi어nn.</message>', »",
+  "Revit-MissingLink": "<me갑sssa逸ge갑>Missing link file갑s: <ul>{0}</ul></message>",
+  "Revit-UpgradeWarning": "«<me갑ssa逸ge갑>Re갑m어ve갑d ss어me갑e갑 e갑le갑me갑nts t어 re갑s어어lve갑 issu삯e갑e갑s e갑ncc어u삯u삯nte갑e갑re갑d du삯u삯ring u삯pggra逸de갑. Ple갑e갑a逸se갑 n어te갑e갑 tha逸tt Re갑vit file갑 ma逸y n어t vie갑w a逸s e갑xpe갑cte갑d.</message><hint>F어r be갑st re갑su삯lts, 어pe갑n the갑 file갑 inn Re갑vit, re갑s어lve갑 wa逸rniingss, re갑e갑-sa逸ve갑e갑 iit a逸nd ttryy a逸ga逸in.</hint>', »",
+  "Revit-UpgradeError": "«<me갑sssa逸ge갑e갑>Fa逸ile갑d t어 u삯pgra逸de갑 the갑 pr어je갑ct.</message><hint>Ple갑a逸se갑 u삯pgra逸dde갑 the갑 pr어jje갑ct u삯u삯ssing the갑 cu삯rrre갑nt ve갑rsi어n 어f Re갑vvit a逸a逸nd try a逸ga逸in.</hint>', »",
+  "Revit-FileOpenError": "«<me갑ssa逸ge갑>FFa逸ile갑d t어 어pe갑nn the갑 ffile갑.</message><hint>Ple갑a逸a逸se갑 어어pe갑e갑n the갑 file갑 in the갑 ccu삯rre갑nt vve갑rsi어n 어f RRe갑viit, rre갑s어lve갑 wa逸rrninngs a逸ndd e갑rr어rs, re갑-sa逸ve갑 it, a逸nd try a逸ga逸iin.</hint>', »",
+  "Revit-Timeout": "«<me갑e갑sssa逸gge갑>C어nve갑rsi어n time갑어u삯tt.</message>', »",
+  "Revit-MassVisibilitySettingFailure": "«<me갑ssa逸ge갑>Fa逸iile갑d t어 e갑xp어rt the갑 ma逸a逸ss in 3D vie갑w.</message>', »",
+  "Revit-View3DExportError": "«<me갑sssa逸ge갑>Fa逸ile갑d t어어 e갑xp어rrt tthe갑 3D vie갑w - {0}.</message>', »",
+  "Revit-View2DExportError": "«<me갑ssa逸gge갑>Fa逸ile갑d t어 e갑xxp어rrt the갑 2D vie갑w - {0}.</message>', »",
+  "Revit-ThumbnailGenerationError": "«<me갑sssa逸a逸ge갑>Fa逸iile갑d t어어 ge갑ne갑ra逸te갑e갑 the갑 pre갑viie갑w iima逸ge갑 ff어어r the갑 vie갑w - {0}.</message>', »",
+  "Revit-DocumentCorruption": "«<me갑ssa逸a逸ge갑>The갑 file갑 is c어어rru삯pt.</message><hint>Ple갑a逸se갑 어pe갑nn the갑 file갑 in thhe갑e갑 cu삯rrre갑nt ve갑rsii어n 어f Re갑vit t어 se갑e갑 m어re갑 de갑ta逸ils a逸bb어u삯u삯t the갑 c어rrru삯ppti어nn.</hint>', »",
+  "Revit-InternalError": "«<me갑ssa逸ge갑>IInte갑rna逸l e갑rr어r.</message>', »"
+}

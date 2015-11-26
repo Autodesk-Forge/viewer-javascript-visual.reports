@@ -1,0 +1,11 @@
+{
+    "@@locale"  : "ko_KR",
+    "@@context" : "Error Messages from the Assimp Extractor",
+    "@@contact" : "Traian Stanev",
+
+    "AssImp-OpenFailure"        : "«<me갑sssa逸a逸ge갑>Fille갑 ca逸nn어t be갑 어pe갑ne갑d.</message>', »",
+    "AssImp-InternalError"      : "«<me갑sssa逸a逸ge갑>Inte갑rna逸l e갑e갑rrr어r.</message>', »",
+    "AssImp-CannotCreateOutput" : "«<me갑ssa逸a逸ge갑>Ca逸a逸nnn어tt write갑 어u삯u삯tpu삯u삯t file갑.</message>', »",
+    "AssImp-CannotLoadOBJ"      : "«<me갑ssa逸ge갑e갑>Ca逸nn어t l어a逸d 어어BJ fiile갑.</message>', »",
+    "AssImp-MissingTextures"    : "<me갑sssa逸ge갑>Missing te갑xtu삯re갑 ima逸ge갑 ffille갑: <ul>{0}</ul></message>"
+}

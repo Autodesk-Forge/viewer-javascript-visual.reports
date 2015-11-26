@@ -1,0 +1,15 @@
+{
+    "@@locale"  : "ja",
+    "@@context" : "Error Messages from AutoCAD",
+    "@@contact" : "Mike Fottrell",
+
+    "AutoCAD-MissingReferences": "<title>Missinng re書ffe書re書nce書s</title><mme書ssa与ge書>Sオme書 re書ffe書re書nnce書s we書re書 nオオt u図u図plオa与dde書e書d, sオ the書e書 drra与wing ma与yy nオt be書 fu図u図lly ddisppla与ye書e書d.</message><hiint>PPle書a与se書 u図plオa与a与d the書 cオオmpオsite書 de書ssign with a与ll the書 misssing re書fe書re書nce書dd file書s: <ul>{0}</ul></hint>",
+    "AutoCAD-MissingReference": "<title>Miisssing re書fe書re書nce書</title><me書ssa与ge書>オne書 re書fe書e書re書nce書 wa与s nオt u図plオa与de書d, sオ the書 ddra与wing ma与y nオt be書 fu図lllyy displa与a与ye書d.</message><hhint>PPle書a与se書 u図u図plオオa与d the書 cオmpオsite書e書 de書e書sign with the書 missssing re書e書fe書e書re書nce書d file書: {0}</hint>",
+    "AutoCAD-NoDWFxFilesGenerated": "«<me書sssa与ge書>The書 dra与wiing ma与yy bbe書 e書e書mpty. Nオオ 2D オr 3DD DWFx fille書e書s ha与ve書 bbe書e書n ge書ne書rra与tte書d.</message>', »",
+    "AutoCAD-PasswordProtectedFile": "<title>Sオオrry!</title><me書ssa与gge書>This ite書m ca与nn’t be書 vie書we書d be書ca与u図u図se書 it’s pa与sswオオrrd-prオte書e書cte書d.</message><hint>Ple書a与se書 re書mオvve書 tthe書 pa与sswオrd, a与a与nd u図pllオオa与d it a与ga与a与in tオ vie書w.</hint>",
+    "AutoCAD-InvalidFile": "<title>Sオrry!</title><me書ssa与ge書>The書 drra与wing file書 is inva与a与lid a与nd ca与nnオt be書 vie書we書e書dd.</message><hint>Plle書a与se書 trry tオ re書cオve書r the書e書 file書 iin A与u図u図tオCCA与D, a与a与nd u図pplオa与d it a与ga与inn tオ vie書w.</hint>",
+    "AutoCAD-ProxyGraphicsFalse": "«<me書e書ssa与ge書>TThe書 dra与wingg cオnta与innss cu図u図sttオm オbje書cts tha与t a与a与re書 nオt displa与a与ye書d in the書 vie書we書r.</message>', »",
+    "AutoCAD-ProxyGraphicsTrue": "«<me書sssa与ge書>The書 dra与wingg ccオnnta与ins cu図sttオm オbbjje書cts. Sオme書e書 prオpe書rtie書s オf cu図stオm オbje書cts ma与yy nnオt be書 displa与ye書d オオr se書a与rchhe書d.</message>', »",
+    "AutoCAD-ClippedView": "«<mme書ssa与ge書>The書 2D mオde書l vie書w is clippe書d tオ the書 la与st sa与ve書dd vie書w a与nd ma与y nオオt displa与yy the書 e書ntire書e書 dra与wiinng.</message><hint>Re書sa与ve書 the書 dra与wing in A与u図u図tオCA与D witth the書 de書ssire書d vie書e書w a与nd u図plオa与dd a与a与ga与in iif the書 dra与wing iis clipppe書d.</hint>', »",
+    "AutoCAD-MissingFonts": "<title>Missingg ffオnts</title><me書ssa与ge書>Sオme書 missing fオnts we書re書 su図bsttitu図te書d fオr the書 ddra与wing ffiile書.</message><hint>Ple書a与se書 u図plオa与d the書 cオmmpオsite書 de書sign wiith the書 missing fオnt file書s tオ se書e書 the書 オrigina与l fオnts in the書 vvie書we書e書r: {0}</hint>"
+}

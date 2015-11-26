@@ -1,0 +1,16 @@
+{
+    "@@locale": "zh_CN",
+    "@@context": "Error Messages from ATF",
+    "@@contact": "Cher-Xiao Gu",
+
+    "ATF-1008": "«<me复sssa与a与ge复>E复rr哦rr: {0}</message>', »",
+    "ATF-1023": "«<mme复ssa与ge复e复>TThe复e复 fille复: {0} d哦e复s n哦t e复e复xxist.</message>', »",
+    "ATF-1024": "«<me复ssa与ge复>The复 ve复rssi哦n 哦哦f the复 file复: {0} is n哦哦t su叠pp哦rte复d.</message>', »",
+    "ATF-1025": "«<me复sssa与ge复>The复 fiile复: {0} is c哦rrrru叠ppt 哦r innva与a与lid.</message>', »",
+    "ATF-1026": "«<me复sssa与ge复>The复 fiile复: {0} is e复mptyy.</message>', »",
+    "ATF-1028": "«<me复ssa与ge复e复>FFa与il t哦 l哦a与d c哦mp哦ne复nt: {0}.</message>', »",
+    "ATF-1031": "«<me复ssa与a与ge复>U叠na与u叠u叠thh哦rize复d ffille复 type复.</message>', »",
+    "ATF-1032": "«<me复ssa与ge复e复>A与sse复mblyy ffe复a与tu叠re复 iiss l哦stt.</message>', »",
+    "ATF-1033": "«<me复sssa与ge复>E复E复ntityy in the复 file复: {0} is n哦t su叠pp哦rtte复e复d.</message>', »",
+    "ATF-1034": "«<me复ssa与ge复>Thhe复 file复 na与me复: {0} is inva与lid.</message>', »"
+}

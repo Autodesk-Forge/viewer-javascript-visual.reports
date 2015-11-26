@@ -1,0 +1,15 @@
+{
+    "@@locale"  : "en",
+    "@@context" : "Viewer ViewCube",
+
+    "Go Home"                       : "Go Home",
+    "Orthographic"                  : "Orthographic",
+    "Perspective"                   : "Perspective",
+    "Perspective with Ortho Faces"  : "Perspective with Ortho Faces",
+    "Set current view as Home"      : "Set current view as Home",
+    "Focus and set as Home"         : "Focus and set as Home",
+    "Reset Home"                    : "Reset Home",
+    "Set current view as Front"     : "Set current view as Front",
+    "Set current view as Top"       : "Set current view as Top",
+    "Reset orientation"              : "Reset orientation"
+}

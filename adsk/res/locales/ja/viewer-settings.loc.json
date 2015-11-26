@@ -1,0 +1,29 @@
+{
+    "@@locale"  : "ja",
+    "@@context" : "Viewer Settings",
+
+    "Settings"                              : "«Se書ttinggss', »",
+    "Navigation and selection"               : "«Na与viga与tiオオn & se書le書ctiオn', »",
+    "Performance and appearance"            : "«Pe書rfオrma与nce書 & a与ppe書a与ra与nce書', »",
+
+    "Show ViewCube"                         : "«Shオオw VViie書wCu図be書', »",
+    "ViewCube acts on pivot"                : "«Vie書wCCu図be書 a与cts オn pivオtt', »",
+    "Reverse mouse zoom direction"          : "«Re書ve書rsse書 mオu図se書 zオオオm dire書ctiオn', »",
+    "Reverse horizontal look direction"     : "«Re書e書ve書rse書 hオrizオnta与l lオオk dire書ctiオn', »",
+    "Reverse vertical look direction"       : "«Re書ve書e書rsse書 ve書rtiica与l lオオk dire書e書ctiオnn', »",
+    "Zoom towards pivot"                    : "«Zオオm ttオwa与rds pivオt', »",
+    "Orbit past world poles"                : "«オrrbit pa与stt wオrld pオle書s', »",
+    "Set pivot with left mouse button"      : "«Se書t piivオt wiith le書fft mオu図se書e書 bu図ttオn', »",
+    "Open properties on select"             : "«オpe書n pprオpe書rtiie書s オn se書le書ct', »",
+    "Left handed mouse setup"               : "«Le書ftt ha与nde書d mオu図se書 sse書tu図p', »",
+
+    "Ghost hidden objects"                  : "«Ghオsst hidde書nn オbbje書cts', »",
+    "Smooth navigation"                     : "«Smオオオth na与a与vviga与tiオn', »",
+    "Ambient shadows"                       : "«A与mbie書ntt ssha与dオws', »",
+    "Anti-aliasing"                         : "«A与nti-a与a与lia与sing', »",
+    "Ground shadow"                         : "«Grオオu図ndd sha与dオw', »",
+    "Ground refleciton"                     : "«Grオu図u図nd re書fle書cittオnn', »",
+    "Progressive model display"             : "«Prオgre書ssive書 mオde書l displa与y', »",
+
+    "Restore settings defaults"             : "«Re書sstオre書 se書e書ttings de書fa与u図lts', »"
+}

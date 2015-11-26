@@ -1,0 +1,26 @@
+{
+    "@@locale"  : "en",
+    "@@context" : "Viewer",
+
+    "Isolate"                   : "Isolate",
+    "Hide Selected"             : "Hide selected",
+    "Show Selected"             : "Show selected",
+    "Show All Objects"          : "Show all objects",
+    "Show All Layers"           : "Show all layers",
+    "Focus"                     : "Focus",
+    "Clear Selection"           : "Clear selection",
+
+    "Model browser"               : "Model browser",
+    "Browser"                     : "Browser",
+    "Filter by name"             : "Filter by name",
+    "Search"                      : "Search",
+
+    "Object Properties"             : "Object properties",
+    "Settings"                      : "Settings",
+    "Object Properties Loading..."  : "Object properties loading...",
+    "No properties to display"      : "No properties to display",
+    "Other"                         : "Other",
+    "Model Properties"              : "Model properties",
+    "Yes" : "Yes",
+    "No"  : "No"
+}

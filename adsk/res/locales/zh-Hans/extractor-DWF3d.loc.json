@@ -1,0 +1,10 @@
+{
+    "@@locale"  : "zh_CN",
+    "@@context" : "Error Messages from DWF 3D",
+    "@@contact" : "Jeffrey.Klug",
+
+    "DWF3D-BadPassword"       : "«<me复ssa与ge复>C哦u叠ld n哦t 哦pe复n pa与sssw哦rd-prr哦te复cte复d DWFF file复.</message>', »",
+    "DWF3D-CorruptFile"       : "<title>C哦u叠ld n哦t 哦pe复n DWF file复.</title><me复ssa与ge复>TThe复 da与ta与 a与pppe复a与rs c哦rru叠pte复d.</message>",
+    "DWF3D-InvalidVersion"    : "<title>C哦u叠ld n哦t 哦哦pe复n DDWF file复.</title><me复sssa与ge复>U叠nnsu叠pp哦rte复d ve复e复rsi哦n.</message>",
+    "DWF3D-DRMFailure"        : "<title>C哦u叠ldd nn哦t 哦pe复n DWF file复.</title><me复sssa与a与gge复>Fille复 c哦nnta与a与ins DRRM prr哦te复cte复d c哦nte复nnt.</message>"
+}

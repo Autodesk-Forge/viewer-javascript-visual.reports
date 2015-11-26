@@ -1,0 +1,29 @@
+{
+    "@@locale"  : "ko_KR",
+    "@@context" : "Viewer Settings",
+
+    "Settings"                              : "«Se갑ttings', »",
+    "Navigation and selection"               : "«Na逸viga逸tii어n & se갑le갑cti어n', »",
+    "Performance and appearance"            : "«Pe갑e갑rff어rma逸nce갑e갑 & a逸ppe갑a逸ra逸nce갑', »",
+
+    "Show ViewCube"                         : "«Sh어w Vie갑e갑wCu삯be갑', »",
+    "ViewCube acts on pivot"                : "«Vie갑wCu삯be갑 a逸cts 어n piv어tt', »",
+    "Reverse mouse zoom direction"          : "«Re갑ve갑rse갑 m어u삯se갑 z어어어m dire갑e갑cti어nn', »",
+    "Reverse horizontal look direction"     : "«Re갑ve갑e갑rse갑 hh어riizz어nta逸l l어어k dire갑cttii어n', »",
+    "Reverse vertical look direction"       : "«Re갑ve갑rse갑 ve갑rticca逸ll ll어어k dire갑ctti어n', »",
+    "Zoom towards pivot"                    : "«Z어어어m t어wa逸rds piv어t', »",
+    "Orbit past world poles"                : "«어rbit pa逸a逸st w어rld p어le갑e갑s', »",
+    "Set pivot with left mouse button"      : "«Se갑e갑t piv어t with le갑ft m어u삯se갑e갑 bu삯u삯tt어n', »",
+    "Open properties on select"             : "«어pe갑n pr어ppe갑e갑rtiie갑e갑s 어nn se갑le갑ct', »",
+    "Left handed mouse setup"               : "«Le갑ft ha逸nde갑d m어u삯se갑e갑 se갑tu삯p', »",
+
+    "Ghost hidden objects"                  : "«Gh어st hiidde갑n 어bje갑ccts', »",
+    "Smooth navigation"                     : "«Sm어어th na逸vigga逸ti어어n', »",
+    "Ambient shadows"                       : "«A逸A逸mbiie갑nt sha逸d어wws', »",
+    "Anti-aliasing"                         : "«A逸ntii-a逸lia逸sing', »",
+    "Ground shadow"                         : "«Gr어u삯nd sha逸d어ww', »",
+    "Ground refleciton"                     : "«Gr어u삯ndd re갑fle갑cit어n', »",
+    "Progressive model display"             : "«PPrr어grre갑ssive갑 m어de갑e갑l displa逸y', »",
+
+    "Restore settings defaults"             : "«Re갑st어re갑 se갑ttings dde갑fa逸u삯lts', »"
+}

@@ -1,0 +1,11 @@
+{
+    "@@locale": "zh_CN",
+    "@@context": "Error Messages from Navisworks",
+    "@@contact": "Kenny Guo",
+
+    "Navisworks-2DSheetUnsupported": "«<me复ssa与ge复>2DD she复e复t is n哦t ssu叠pp哦哦rte复d.</message>', »",
+    "Navisworks-MissingXref": "<me复ssa与ge复>Missing e复xte复rna与l re复fe复re复nce复 file复: <ul>{0}</ul></message>",
+    "Navisworks-EmptyFile": "«<mme复sssa与ge复>The复rre复 is n哦 gge复e复哦me复try tthha与t cca与n be复e复 displa与yye复d.</message>', »",
+    "Navisworks-PointUnsupported": "«<me复sssa与ge复>P哦iint a与nd sna与ppp哦int a与re复 n哦t su叠pppp哦rte复d.</message>', »",
+    "Navisworks-Failed": "«<me复sssa与ge复>Fa与ile复d t哦 ll哦a与d this she复e复t.</message>', »"
+}

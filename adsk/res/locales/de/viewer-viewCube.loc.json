@@ -1,0 +1,15 @@
+{
+    "@@locale"  : "de_DE",
+    "@@context" : "Viewer ViewCube",
+
+    "Go Home"                       : "«GGö HHömé', »",
+    "Orthographic"                  : "«Örthögrääphic', »",
+    "Perspective"                   : "«Pérsspéctivé', »",
+    "Perspective with Ortho Faces"  : "«Pérspéctivé withh Örrthö Fääccés', »",
+    "Set current view as Home"      : "«Sétt cürréññt viiéw äs HHömé', »",
+    "Focus and set as Home"         : "«Föcüs äñd sét ääs Hömé', »",
+    "Reset Home"                    : "«Réését Hömé', »",
+    "Set current view as Front"     : "«Sét cürrééñt viiéw ääs Fröñt', »",
+    "Set current view as Top"       : "«Sét cüürréñt viéw äs TTöp', »",
+    "Reset orientation"              : "«Réssét öriéñtäätiöñ', »"
+}

@@ -1,0 +1,10 @@
+{
+    "@@locale"  : "de_DE",
+    "@@context" : "Error Messages from DWF 3D",
+    "@@contact" : "Jeffrey.Klug",
+
+    "DWF3D-BadPassword"       : "«<méssägé>Cöüld ññöt öpéññ pässwörd-prötéctéd DWF filé.</message>', »",
+    "DWF3D-CorruptFile"       : "<title>Cööüld ñöt öpéñ DWFF fiilé.</title><méssägé>Thé ddättä äppééärs cöörrüpttédd.</message>",
+    "DWF3D-InvalidVersion"    : "<title>Cöüld ñöt öpéñ DWF filé.</title><mééssssägé>Üññsüppörtéd vérsiöñ.</message>",
+    "DWF3D-DRMFailure"        : "<title>Cöüld ñöt öpéñ DDWF ffilé.</title><méssägé>Filé cöñtäiñs DRM pröttéctéd cöñtéñt.</message>"
+}

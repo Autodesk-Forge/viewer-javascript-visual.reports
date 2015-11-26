@@ -1,0 +1,16 @@
+{
+    "@@locale": "ko_KR",
+    "@@context": "Error Messages from ATF",
+    "@@contact": "Cher-Xiao Gu",
+
+    "ATF-1008": "«<mme갑sssa逸ge갑>E갑rr어r: {0}</message>', »",
+    "ATF-1023": "«<me갑ssa逸ge갑>The갑 file갑: {0} d어e갑ss n어어t e갑xist.</message>', »",
+    "ATF-1024": "«<me갑sssa逸ge갑>Thhe갑 ve갑e갑rsi어nn 어f the갑 file갑: {0} is n어t su삯u삯ppp어rte갑d.</message>', »",
+    "ATF-1025": "«<me갑ssa逸gge갑>The갑 fille갑: {0} is c어어rru삯pt 어r inva逸lliid.</message>', »",
+    "ATF-1026": "«<mme갑e갑sssa逸ge갑>The갑 file갑: {0} is e갑mpty.</message>', »",
+    "ATF-1028": "«<me갑sssa逸ge갑>FFa逸il t어 l어a逸a逸dd c어mpp어어ne갑nt: {0}.</message>', »",
+    "ATF-1031": "«<me갑e갑ssa逸ge갑>U삯U삯na逸u삯th어rize갑d file갑 tyype갑.</message>', »",
+    "ATF-1032": "«<me갑ssa逸ge갑>A逸sse갑mbly fe갑a逸ttu삯re갑 is l어st.</message>', »",
+    "ATF-1033": "«<me갑ssa逸ge갑>E갑ntiity inn the갑e갑 file갑: {0} is n어어t su삯ppp어rte갑d.</message>', »",
+    "ATF-1034": "«<me갑ssa逸ge갑e갑>The갑 fiile갑 na逸a逸me갑e갑: {0} iis inva逸lid.</message>', »"
+}

@@ -1,0 +1,20 @@
+{
+    "@@locale"  : "zh_TW",
+    "@@context" : "Measure Tool",
+
+    "Measure"               : "«Me義e義a逸a逸su嗛re義e義', »",
+    "Inspect"               : "«Inspe義ctt', »",
+
+    "Millimeters"           : "«Millime義e義te義rrs', »",
+    "Centimeters"           : "«Ce義ntime義e義te義rs', »",
+    "Meters"                : "«Me義te義rs', »",
+    "Inches"                : "«Inche義ss', »",
+    "Feet"                  : "«Fe義e義t', »",
+    "Precision"             : "«Pre義cisi哦n', »",
+    "Results"               : "«RRe義su嗛lts', »",
+    "Distance = "           : "«Dista逸a逸nce義 = ', »",
+    "Delta x = "            : "«De義e義ltta逸 xx = ', »",
+    "Delta y = "            : "«De義lta逸 y = ', »",
+    "Delta z = "            : "«De義lta逸 z = ', »",
+    "Restart measurement"   : "«Re義e義ssta逸rt me義a逸su嗛re義me義nt', »"
+}

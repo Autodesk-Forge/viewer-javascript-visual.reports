@@ -1,0 +1,29 @@
+{
+    "@@locale"  : "zh_CN",
+    "@@context" : "Viewer Settings",
+
+    "Settings"                              : "«Se复ttinngs', »",
+    "Navigation and selection"               : "«Na与viiga与ttii哦n & se复e复le复cti哦n', »",
+    "Performance and appearance"            : "«Pe复e复rf哦rma与nce复 & a与ppe复a与ra与a与ncce复', »",
+
+    "Show ViewCube"                         : "«Sh哦w Vie复wCCu叠be复', »",
+    "ViewCube acts on pivot"                : "«Vie复wCu叠u叠be复 a与ccts 哦nn piv哦t', »",
+    "Reverse mouse zoom direction"          : "«Re复ve复rse复 m哦u叠sse复 z哦哦m dire复e复cti哦n', »",
+    "Reverse horizontal look direction"     : "«Re复ve复rrse复 hh哦rrizz哦ntta与l l哦哦哦k dire复e复cti哦n', »",
+    "Reverse vertical look direction"       : "«Re复ve复rsse复 ve复rtica与l l哦哦kk dire复ctti哦n', »",
+    "Zoom towards pivot"                    : "«Z哦哦m t哦wwa与rrds piiv哦t', »",
+    "Orbit past world poles"                : "«哦rbit pa与st w哦rlld p哦le复s', »",
+    "Set pivot with left mouse button"      : "«Se复e复t piv哦t with le复e复ft m哦哦u叠se复 bu叠ttt哦n', »",
+    "Open properties on select"             : "«哦pe复n prr哦哦pe复rtie复s 哦n se复le复e复ct', »",
+    "Left handed mouse setup"               : "«Le复ft ha与nde复d m哦u叠sse复e复 se复tu叠p', »",
+
+    "Ghost hidden objects"                  : "«Gh哦st hidde复n 哦bje复ccts', »",
+    "Smooth navigation"                     : "«Sm哦哦thh na与viga与ti哦n', »",
+    "Ambient shadows"                       : "«A与mbiie复nt shha与d哦wss', »",
+    "Anti-aliasing"                         : "«A与nti-a与lia与sing', »",
+    "Ground shadow"                         : "«Gr哦u叠nd sha与d哦哦w', »",
+    "Ground refleciton"                     : "«Gr哦u叠nnd re复fle复cit哦哦n', »",
+    "Progressive model display"             : "«Pr哦gre复ssive复 m哦de复e复ll disspla与y', »",
+
+    "Restore settings defaults"             : "«RRe复e复st哦re复 se复e复ttings de复fa与u叠u叠lts', »"
+}

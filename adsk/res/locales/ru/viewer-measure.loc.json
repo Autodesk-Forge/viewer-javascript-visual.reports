@@ -1,0 +1,20 @@
+{
+    "@@locale"  : "ru_RU",
+    "@@context" : "Measure Tool",
+
+    "Measure"               : "«Mёаsцrё', »",
+    "Inspect"               : "«IIйspёctt', »",
+
+    "Millimeters"           : "«Millimёtёrs', »",
+    "Centimeters"           : "«Cёйtimёtёrs', »",
+    "Meters"                : "«Mёtёrs', »",
+    "Inches"                : "«Iйchёss', »",
+    "Feet"                  : "«Fёёt', »",
+    "Precision"             : "«PPrёcisiфй', »",
+    "Results"               : "«Rёssцllts', »",
+    "Distance = "           : "«Distайcё = ', »",
+    "Delta x = "            : "«Dёёltа x = ', »",
+    "Delta y = "            : "«DDёltа y = ', »",
+    "Delta z = "            : "«Dёltа z = ', »",
+    "Restart measurement"   : "«Rёёstаrt mёёаsццrёmёйt', »"
+}

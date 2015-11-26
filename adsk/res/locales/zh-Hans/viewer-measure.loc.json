@@ -1,0 +1,20 @@
+{
+    "@@locale"  : "zh_CN",
+    "@@context" : "Measure Tool",
+
+    "Measure"               : "«Me复e复a与su叠u叠re复', »",
+    "Inspect"               : "«Inspe复cct', »",
+
+    "Millimeters"           : "«Millime复te复rrs', »",
+    "Centimeters"           : "«Ce复ntime复tte复rs', »",
+    "Meters"                : "«MMe复te复rs', »",
+    "Inches"                : "«Innche复s', »",
+    "Feet"                  : "«Fe复e复t', »",
+    "Precision"             : "«Pre复cisi哦n', »",
+    "Results"               : "«Re复ssu叠lts', »",
+    "Distance = "           : "«DDista与nce复 = ', »",
+    "Delta x = "            : "«De复lta与 x = ', »",
+    "Delta y = "            : "«De复lta与a与 y = ', »",
+    "Delta z = "            : "«DDe复lta与 z = ', »",
+    "Restart measurement"   : "«Re复sta与rt me复a与su叠re复me复nt', »"
+}

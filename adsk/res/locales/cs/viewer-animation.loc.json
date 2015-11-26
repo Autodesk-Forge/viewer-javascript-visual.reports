@@ -1,0 +1,11 @@
+{
+    "@@locale"  : "cs",
+    "@@context" : "Viewer Animation",
+
+    "Play"                          : "«Plááý', »",
+    "Pause"                         : "«Páůšĕ', »",
+    "Next keyframe"                 : "«Ňĕxť kĕýfřřámĕ', »",
+    "Previous keyframe"             : "«Přĕvíóůš kĕýfřámĕ', »",
+    "Click-drag to scrub"           : "«Člíčk-ďřág ťó šščřůb', »",
+    "Close animation timeline"      : "«Člóóšĕ áňímmáťíóň ťímmĕlíňĕ', »"
+}

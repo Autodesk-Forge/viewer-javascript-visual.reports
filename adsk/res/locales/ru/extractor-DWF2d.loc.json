@@ -1,0 +1,7 @@
+{
+    "@@locale"  : "ru_RU",
+    "@@context" : "Error Messages from DWF 2D",
+    "@@contact" : "Jeffrey.Klug",
+
+    "DWF2D-InternalError" : "«<mёёsssаgё>Iйttёrйаl ёrrфrr prфcёssiйg 2D DWF sёctiфй.</message>', »"
+}

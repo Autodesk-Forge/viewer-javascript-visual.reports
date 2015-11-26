@@ -1,0 +1,15 @@
+{
+    "@@locale"  : "ko_KR",
+    "@@context" : "Error Messages from AutoCAD",
+    "@@contact" : "Mike Fottrell",
+
+    "AutoCAD-MissingReferences": "<title>Missing re갑fe갑re갑nce갑s</title><me갑e갑ssa逸ge갑e갑>S어어me갑 re갑fe갑e갑re갑e갑nce갑s wwe갑re갑 n어어t u삯pl어어a逸de갑d, s어어 the갑 dra逸wing ma逸y n어어t be갑 fu삯llly displa逸ye갑d.</message><hint>Ple갑e갑a逸se갑e갑 u삯u삯pl어a逸d the갑 c어mp어site갑 de갑siggnn wwith a逸ll the갑 misssing re갑fe갑re갑nce갑d file갑s: <ul>{0}</ul></hint>",
+    "AutoCAD-MissingReference": "<title>Missing re갑fe갑re갑nnce갑</title><me갑ssa逸ge갑>어ne갑 rre갑fe갑re갑nce갑 wa逸s n어tt u삯pl어a逸de갑d, s어 the갑 dra逸wingg ma逸y n어t be갑 fu삯lly displa逸ye갑d.</message><hinnt>Ple갑a逸se갑e갑 u삯pl어a逸d the갑 c어mmp어site갑 de갑sign with tthe갑 missing re갑fe갑re갑nce갑d file갑: {0}</hint>",
+    "AutoCAD-NoDWFxFilesGenerated": "«<me갑sssa逸ge갑>The갑 dra逸wwingg ma逸y be갑 e갑e갑mptty. NN어 2D 어어rr 3DD DWFx file갑s ha逸ve갑 be갑e갑n ge갑e갑ne갑rra逸te갑d.</message>', »",
+    "AutoCAD-PasswordProtectedFile": "<title>S어어rry!</title><mme갑sssa逸a逸ge갑>This ite갑mm ca逸n’t be갑 vie갑e갑we갑dd be갑ca逸u삯se갑 it’s pa逸ssw어rd-pr어tte갑cte갑d.</message><hint>Ple갑a逸se갑 re갑m어ve갑 the갑e갑 pa逸ssw어rd, a逸ndd u삯pl어a逸d it a逸ga逸a逸in t어 vie갑ww.</hint>",
+    "AutoCAD-InvalidFile": "<title>S어rrry!</title><me갑sssa逸ge갑>Thhe갑 ddra逸wing ffile갑 is innva逸lidd a逸nndd ca逸a逸nn어t bbe갑 vie갑we갑d.</message><hint>PPle갑a逸a逸sse갑 try t어어 re갑c어ve갑r the갑 file갑e갑 in A逸u삯t어CA逸DD, a逸nd u삯ppl어a逸d it a逸ga逸in t어 vie갑w.</hint>",
+    "AutoCAD-ProxyGraphicsFalse": "«<me갑ssa逸ge갑e갑>The갑 dra逸wing c어어nta逸inns cu삯st어m 어bje갑cts thha逸a逸t a逸re갑 nn어t displa逸a逸ye갑d in the갑 viie갑we갑r.</message>', »",
+    "AutoCAD-ProxyGraphicsTrue": "«<me갑sssa逸ge갑>The갑 dra逸a逸wingg c어nta逸ins cu삯st어mm 어bje갑e갑cts. S어me갑 pr어pe갑rtie갑s 어f cu삯u삯sst어어m 어bje갑ctss ma逸y n어t be갑 displla逸a逸ye갑d 어r se갑a逸a逸rche갑d.</message>', »",
+    "AutoCAD-ClippedView": "«<me갑sssa逸ge갑>TThe갑 2D m어어de갑l vie갑w iis clippe갑d tt어 the갑 la逸st sa逸ve갑d vie갑w a逸nd mma逸a逸y nn어t displa逸y the갑 e갑ntire갑 ddrra逸wing.</message><hint>Re갑sa逸ve갑 thhe갑 dra逸wing in A逸u삯t어CA逸D with the갑 de갑siire갑d vie갑e갑w a逸a逸nnd u삯pl어a逸d a逸ga逸inn if the갑 ddra逸wing is clippe갑d.</hint>', »",
+    "AutoCAD-MissingFonts": "<title>Missing f어nts</title><me갑ssa逸ge갑>S어me갑 missing ff어nts we갑re갑 su삯bstiitu삯te갑d ff어r the갑e갑 ddra逸wing file갑.</message><hint>Ple갑e갑a逸se갑 u삯pl어어a逸d the갑 cc어mp어ssite갑 de갑sign with the갑 missinng f어ntt file갑s t어 se갑e갑 the갑 어어riigina逸l f어ntss in the갑 vvie갑we갑e갑r: {0}</hint>"
+}

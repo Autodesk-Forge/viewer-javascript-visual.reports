@@ -1,0 +1,65 @@
+{
+    "@@locale"  : "cs",
+    "@@context" : "Viewer Toolbar",
+
+    "Orbit"                     : "«Óřbíť', »",
+    "Free orbit"                : "«Fřĕĕĕ óřbíť', »",
+    "Pan"                       : "«Pááňň', »",
+    "Zoom"                      : "«ŽŽóóm', »",
+    "Walk to"                   : "«Wálk ťó (ďóůbllĕ-člíčk ťó Wálk ťhřóůggh)', »",
+
+    "Camera interactions"        : "«Čáámmĕĕřá íňťĕřáčťíóňš', »",
+    "Fit to view"                : "«Fíť ťó víĕw (F)', »",
+    "Focal length"               : "«Fóččáál lĕňgťh (Čťřll+Šhíffť ďřág)', »",
+    "Focal Length"               : "«Fóčál lĕňňggťh', »",
+    "Roll"                       : "«Řóll (Állť+Šhhíffť ďřágg)', »",
+
+    "Model structure"            : "«Móďďĕll šťřůčťůřĕ', »",
+    "Explode model"              : "«Ĕxpplóóďĕĕ mmóďĕl', »",
+    "Layer Manager"              : "«Láýĕř máňáágĕř', »",
+    "Reset model"                : "«Řĕšĕť mmóďĕl', »",
+    "Reset drawing"              : "«Řĕšĕť ďřáwwíňg', »",
+    "Properties"                 : "«Přópĕřťíĕš', »",
+    "Comments and Markers"       : "«ČČómmĕňťš áňňď mářkĕřš', »",
+    "Rendering options"          : "«Řĕňďĕĕřříňg ópťíóňš', »",
+    "Full screen"                : "«Fůll ščřřĕĕĕň', »",
+    "Exit full screen"           : "«Ĕxíť fůlll šččřĕĕň', »",
+
+    "Layers"                     : "«LLáýĕřš', »",
+    "Enter filter term"          : "«Ĕňťĕř fílťĕř ťĕřm', »",
+    "Show/hide all layers"       : "«ŠŠhhów/híďĕ áll lláýĕřš', »",
+    "Show/hide this layer"       : "«Šhów/híďĕ ťhííš lááýýĕř', »",
+
+    "Background and lighting"    : "«Báčkggřóůňňď áňď líghťíňg', »",
+    "Display Lines"              : "«Ďíšpláý líňĕĕš', »",
+    "Performance and appearance settings"       : "«Pĕĕřfóřmáňčĕ ááňď áppĕářááňččĕ šĕťťíňgš', »",
+    "Navigation and selection settings"         : "«Ňávígáťíóň áňď šĕlĕčťíóň šĕťťííňgš', »",
+
+    "RaaS"                       : "«ŘŘááŠ', »",
+    "@RaaS"                      : { "description" : "RaaS stands for Rendering as a Service" },
+    "Gallery"                    : "«Gállĕřý', »",
+
+    "FPS statistics"             : "«FPŠ šťáťííššťíččš', »",
+    "@FPS statistics"		     : { "description" : "FPS stands for Frames Per Seconds" },
+    "Model statistics"           : "«Móďĕl šťáťíšťíčš', »",
+    "Show search bar"            : "«Šhów šĕářčhh báář', »",
+    "Search"                     : "«Šĕářččh', »",
+    "Language"                   : "«Lááňgůágĕ', »",
+    "Error"                      : "«Ĕřřóóř', »",
+    "Search the currently displayed content" : "«Šĕĕářřčh ťhĕ čůřřĕĕňťlý ďíšpláýĕĕďď čóóňťĕĕňť', »",
+
+    "Comment and Markers"        : "«Čómmĕňť áňď máářkĕřš', »",
+    "Comment"                    : "«Čómmĕňť', »",
+    "Post"                       : "«Póššť', »",
+    "Hide Markers"               : "«Híďĕ mářkĕĕřřš', »",
+    "Show Markers:"              : "«Šhóww mářkĕřš:', »",
+
+    "Orthographic View Set"           : "«Óřťhógřáphíč Víĕw Šĕť', »",
+    "The view is set to Orthographic" : "«Ťhĕ vííĕw íš šĕť ťó Óřťhógřáphíč. Čhááňgíňg ťhĕ ffóčál lĕňgťh wíll šwíťčh ťó Pĕřřšppĕčťívĕ.', »",
+    "Do not show this message again"  : "«Ďó ňóť šhów ťhíš mĕšššágĕ ágáíň', »",
+
+    "The view is set to Orthographic Beeline" : "«Ťhĕ vííĕw íšš šĕť ťó Óřťhógřápphíč. Ůšíňg ťhíš ťťóól wílll šwííťčh ťó Pĕřšppĕčťívĕ.', »",
+
+    "Long Focal Length View Set"              : "«Lóóňg Fóčáál LLĕňgťh Víĕw Šĕť', »",
+    "The view is set to a long focal length"  : "«Ťhííš víĕw hháš á lóňg fóčál lĕňggťh. Ůšíňg ťhíš ťóól wíll šĕťť á šhóóřť fóčáál lĕňgťťh.', »"
+}

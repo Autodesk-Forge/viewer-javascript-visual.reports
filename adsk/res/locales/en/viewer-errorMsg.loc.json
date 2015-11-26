@@ -1,0 +1,26 @@
+{
+    "@@locale"  : "en",
+    "@@context" : "Error Messages",
+
+    "header-sorry"                  : "Sorry",
+    "header-warning"                : "Warning",
+    "Error Occurred"                : "Error Occurred",
+    "OK"                            : "OK",
+
+    "Viewer-UnknownFailure"         : "<title>Sorry</title><message> We seem to have some technical difficulties and couldn’t complete your request.</message><hint> Try loading the item again. </hint><hint> Please verify your Internet connection, and refresh the browser to see if that fixes the problem.</hint>",
+    "Viewer-BadData"                : "<title>Sorry</title><message>The item you are trying to view was not processed completely.</message><hint> Try loading the item again.</hint><hint> Please upload the file again to see if that fixes the issue.</hint>",
+    "Viewer-NetworkError"           : "<title>Sorry</title><message>We seem to have some technical difficulties and couldn’t complete your request.</message><hint> Try loading the item again.<hint> Please verify your Internet connection, and refresh the browser to see if that fixes the problem.</hint>",
+    "Viewer-AccessDenied"           : "<title>No access</title><message> Sorry. You don’t have the required privileges to access this item.</message><hint> Please contact the author.</hint>",
+    "Viewer-FileNotFound"           : "<title>Sorry</title><message>We can’t display the item you are looking for. It may not have been processed yet. It may have been moved, deleted, or you may be using a corrupt file or unsupported file format.</message><hint> Try loading the item again.</hint><hint> Please upload the file again to see if that fixes the issue.</hint> <hint> <a href=\"http://help.autodesk.com/view/ADSK360/ENU/?guid=GUID-488804D0-B0B0-4413-8741-4F5EE0FACC4A\" target=\"_blank\">See a list of supported formats.</a></hint>",
+    "Viewer-ServerError"            : "<title>Sorry</title><message>We seem to have some technical difficulties and couldn’t complete your request</message><hint> Try loading the item again.</hint><hint> Please verify your Internet connection, and refresh the browser to see if that fixes the problem.</hint>",
+    "Viewer-UnhandledResponseCode"  : "<title>Network problem</title><message> Sorry. We seem to have some technical difficulties and couldn’t complete your request.</message><hint> Try loading the item again.</hint> <hint> Please verify your Internet connection, and refresh the browser to see if that fixes the problem.</hint>",
+<<<<<<< HEAD
+    "Viewer-WebGlNotSupported"      : "<title>Sorry</title><message>We couldn’t show the item because your browser doesn’t support 3D viewing.</message><hint> Please use Google Chrome, Firefox or another browser that supports WebGL 3D graphics.</hint><hint> <a href=\"WEBGL_HELP\" target=\"_blank\">See a list of browsers supporting WebGL 3D graphics.</a></hint>",
+    "Viewer-WebGlDisabled"          : "<title>Sorry</title><message>We couldn’t show the item because you haven’t enabled 3D viewing in your browser.</message><hint> Please use Google Chrome, Firefox or enable WebGL 3D graphics in your browser.</hint><hint> <a href=\"WEBGL_HELP\" target=\"_blank\">See a list of browsers supporting WebGL 3D graphics.</a></hint>",
+=======
+    "Viewer-WebGlNotSupported"      : "<title>Sorry</title><message>We can't show this item because this browser doesn’t support WebGL.</message><hint>Try Google Chrome, Mozilla Firefox, or another browser that supports WebGL 3D graphics.</hint><hint>For more information, see the <a href=\"WEBGL_HELP\" target=\"_blank\">A360 browser requirements.</a></hint>",
+    "Viewer-WebGlDisabled"          : "<title>Sorry</title><message>We can't show this item because WebGL is disabled on this device.</message><hint> For more information see the <a href=\"WEBGL_HELP\" target=\"_blank\">A360 Help.</a></hint>",
+>>>>>>> a7c18fa1ee27831aaa3a764777d64e06c407cba9
+    "Viewer-NoViewable"             : "<title>No viewable content</title><message>There’s nothing to display for this item. It may not have been processed or it may not have content we can display.</message><hint> Please contact the author.</hint><hint> Please upload the file again to see if that fixes the issue.</hint>",
+    "Viewer-RTCError"               : "<title> Sorry </title><message>We couldn’t connect to the Collaboration server.</message><hint> Please verify your Internet connection, and refresh the browser to see if that fixes the problem.</hint>"
+}

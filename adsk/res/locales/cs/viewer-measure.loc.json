@@ -1,0 +1,20 @@
+{
+    "@@locale"  : "cs",
+    "@@context" : "Measure Tool",
+
+    "Measure"               : "«Mĕĕášůřĕ', »",
+    "Inspect"               : "«Íňšppĕčť', »",
+
+    "Millimeters"           : "«Mílllímĕťĕřš', »",
+    "Centimeters"           : "«Čĕĕňťíímĕťĕřš', »",
+    "Meters"                : "«Mĕťĕřš', »",
+    "Inches"                : "«Íňčhĕš', »",
+    "Feet"                  : "«Fĕĕť', »",
+    "Precision"             : "«Přĕčíšíóň', »",
+    "Results"               : "«Řĕšůlťš', »",
+    "Distance = "           : "«Ďíšťáňňčĕ = ', »",
+    "Delta x = "            : "«Ďĕlťá x = ', »",
+    "Delta y = "            : "«ĎĎĕlťá ý = ', »",
+    "Delta z = "            : "«Ďĕllťá ž = ', »",
+    "Restart measurement"   : "«Řĕšťářřť mĕáášůřĕmĕňť', »"
+}

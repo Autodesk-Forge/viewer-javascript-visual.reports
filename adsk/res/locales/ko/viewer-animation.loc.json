@@ -1,0 +1,11 @@
+{
+    "@@locale"  : "ko_KR",
+    "@@context" : "Viewer Animation",
+
+    "Play"                          : "«Pla逸y', »",
+    "Pause"                         : "«Pa逸u삯u삯se갑e갑', »",
+    "Next keyframe"                 : "«Ne갑xt kke갑yfra逸me갑', »",
+    "Previous keyframe"             : "«Pre갑vvi어u삯s kke갑yyfra逸me갑', »",
+    "Click-drag to scrub"           : "«Click-dra逸g t어 scru삯b', »",
+    "Close animation timeline"      : "«Cl어se갑 a逸nima逸ti어n time갑line갑', »"
+}

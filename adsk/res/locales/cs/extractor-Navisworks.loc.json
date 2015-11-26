@@ -1,0 +1,11 @@
+{
+    "@@locale": "cs",
+    "@@context": "Error Messages from Navisworks",
+    "@@contact": "Kenny Guo",
+
+    "Navisworks-2DSheetUnsupported": "«<mĕššággĕ>2ĎĎ šhĕĕť íšš ňóť šůůpppóřťĕď.</message>', »",
+    "Navisworks-MissingXref": "<mĕššáágĕ>Míššíňg ĕxťĕřňál řĕfĕřĕňčĕĕ fílĕ: <ul>{0}</ul></message>",
+    "Navisworks-EmptyFile": "«<mĕššágĕ>ŤŤhĕřĕĕ íš ňó gĕómĕťřý ťháť ččáň bbĕ ďďíšpláýýĕďď.</message>', »",
+    "Navisworks-PointUnsupported": "«<mĕššágĕ>Póíňť áňď šňáppóóíňť ářĕ ňóť šůppóóřťťĕď.</message>', »",
+    "Navisworks-Failed": "«<mĕššágĕ>Fáíílĕď ťó lóááďď ťhíš šhĕĕťť.</message>', »"
+}

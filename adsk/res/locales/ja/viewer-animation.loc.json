@@ -1,0 +1,11 @@
+{
+    "@@locale"  : "ja",
+    "@@context" : "Viewer Animation",
+
+    "Play"                          : "«Pla与y', »",
+    "Pause"                         : "«Pa与u図se書', »",
+    "Next keyframe"                 : "«Ne書xt ke書yfra与me書', »",
+    "Previous keyframe"             : "«Pre書vviオu図ss ke書yfra与me書', »",
+    "Click-drag to scrub"           : "«Click-dra与g tオオ scrru図b', »",
+    "Close animation timeline"      : "«Clオsse書 a与nima与ttiオn timme書liine書', »"
+}

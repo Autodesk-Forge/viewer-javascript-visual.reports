@@ -1,0 +1,11 @@
+{
+    "@@locale"  : "ru_RU",
+    "@@context" : "Viewer Animation",
+
+    "Play"                          : "«Plааy', »",
+    "Pause"                         : "«Pаццsё', »",
+    "Next keyframe"                 : "«Йёxt kёyffrааmёё', »",
+    "Previous keyframe"             : "«Prёvviфцs kёёyfrаmё', »",
+    "Click-drag to scrub"           : "«Click-drаg tфф scrцb', »",
+    "Close animation timeline"      : "«CClфsё аййimаtiфй timmёliйё', »"
+}

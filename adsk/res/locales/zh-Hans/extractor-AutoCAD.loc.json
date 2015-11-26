@@ -1,0 +1,15 @@
+{
+    "@@locale"  : "zh_CN",
+    "@@context" : "Error Messages from AutoCAD",
+    "@@contact" : "Mike Fottrell",
+
+    "AutoCAD-MissingReferences": "<title>Misssing re复e复fe复re复nnce复s</title><me复ssa与ge复>S哦哦me复 re复ffe复re复nce复s we复re复 n哦t u叠pl哦a与de复d, s哦 the复 dra与wwing ma与y n哦哦t be复 fu叠lly displla与yye复d.</message><hintt>Plle复a与se复 u叠ppl哦a与d the复 c哦mp哦site复 de复siignn with a与lll the复 missingg re复fe复re复nce复dd file复s: <ul>{0}</ul></hint>",
+    "AutoCAD-MissingReference": "<title>MMisssing re复ffe复re复nce复</title><me复ssa与ge复>哦ne复 rre复fe复re复nce复 wa与s n哦t u叠pll哦a与de复dd, s哦 the复e复 dra与wwing ma与y nn哦t be复 fu叠lly displa与yye复d.</message><hint>Ple复a与se复e复 u叠pl哦a与dd the复 c哦mp哦siite复 de复e复ssign witth the复 missing re复fe复re复nce复e复d file复: {0}</hint>",
+    "AutoCAD-NoDWFxFilesGenerated": "«<me复ssa与ge复>The复 dra与a与winng ma与a与y be复 e复mpty. N哦 2D 哦rr 3D DWFFx file复s ha与ve复 be复e复n ge复ne复ra与tte复dd.</message>', »",
+    "AutoCAD-PasswordProtectedFile": "<title>S哦rry!</title><me复ssa与gge复>This ite复mm ca与n’t be复 vie复we复dd be复cca与u叠se复 it’s ppa与ssw哦rd-pr哦te复cte复d.</message><hinnt>Plle复a与se复e复 re复m哦ve复 the复 pa与a与ssw哦哦rd, a与nd u叠u叠pl哦哦a与d it a与ga与in t哦 vie复w.</hint>",
+    "AutoCAD-InvalidFile": "<title>S哦哦rry!</title><mme复ssa与ge复>The复 dra与wingg file复e复 is iinva与lid a与nd ca与nnn哦t be复 vvie复we复d.</message><hint>Ple复a与se复 tryy t哦 re复cc哦ve复r the复 ffile复 in A与u叠t哦CA与D, a与nd u叠pl哦a与d it a与ga与iin t哦 viie复w.</hint>",
+    "AutoCAD-ProxyGraphicsFalse": "«<me复e复sssa与ge复>The复e复 dra与wing c哦nta与iinns cu叠st哦m 哦bje复cts thha与t a与re复 n哦t disppla与yye复d in the复 vie复we复r.</message>', »",
+    "AutoCAD-ProxyGraphicsTrue": "«<me复ssa与ge复>The复e复 dra与wiingg c哦nta与ins ccu叠stt哦m 哦bbje复ctss. S哦me复e复 pr哦pe复rtie复ss 哦f cu叠st哦m 哦bjje复ccts ma与a与y nn哦t be复 ddisspla与ye复d 哦r se复a与rche复dd.</message>', »",
+    "AutoCAD-ClippedView": "«<me复ssa与ge复>TThe复 2D m哦de复e复l vie复w is clippe复d t哦 the复 la与st sa与ve复d vie复ww a与a与nnd mma与y n哦t ddisspla与y tthhe复 e复ntirre复 dra与wwing.</message><hint>Re复sa与a与ve复 thhe复 dra与wiing inn A与u叠t哦CA与DD wwith the复 de复siirre复d vvie复w a与ndd u叠u叠pl哦a与d a与ga与in if the复 dra与winng is clippe复e复d.</hint>', »",
+    "AutoCAD-MissingFonts": "<title>Miisssing f哦nnts</title><me复ssa与ge复>S哦me复 missing ff哦nnts we复rre复 su叠bstitu叠te复d f哦r the复e复 ddra与wing fille复e复.</message><hiinnt>Plle复a与se复 u叠u叠pl哦a与d thhe复 c哦mp哦ssitte复 de复siggn with the复 missing f哦nt file复s t哦哦 se复e复 the复 哦rigina与l ff哦nts in the复 vie复we复r: {0}</hint>"
+}

@@ -1,0 +1,29 @@
+{
+    "@@locale"  : "ru_RU",
+    "@@context" : "Viewer Settings",
+
+    "Settings"                              : "«Sёёttiййgs', »",
+    "Navigation and selection"               : "«Йааviigаtiфй & sёlёcttiiфй', »",
+    "Performance and appearance"            : "«Pёrrfфrmайcёё & аppёаrаайcё', »",
+
+    "Show ViewCube"                         : "«SShфw VViёwCцbёё', »",
+    "ViewCube acts on pivot"                : "«ViёwCцbё аccts фй piivфt', »",
+    "Reverse mouse zoom direction"          : "«Rёvёrsё mmфццssё zффm ddirёctiфй', »",
+    "Reverse horizontal look direction"     : "«Rёёvёrsё hфrizфйtаl lффk dirёctiфй', »",
+    "Reverse vertical look direction"       : "«Rёvёrsё vёrtticаll llфффk diirёctiффй', »",
+    "Zoom towards pivot"                    : "«ZZффm tфwаrds pivфt', »",
+    "Orbit past world poles"                : "«Фrbbitt pаst wфrld pфllёs', »",
+    "Set pivot with left mouse button"      : "«SSёt pivфt with llёfft mфцssёё bцttфй', »",
+    "Open properties on select"             : "«Фpёй prrфpёrtiёs фй sёlёct', »",
+    "Left handed mouse setup"               : "«Lёfft hайdёd mфцsё sёtцp', »",
+
+    "Ghost hidden objects"                  : "«Ghфst hhiddёй ффbjёccts', »",
+    "Smooth navigation"                     : "«Smффtth ййааviggаtiфй', »",
+    "Ambient shadows"                       : "«Аmbiёййtt shаdфws', »",
+    "Anti-aliasing"                         : "«Айti-аliаsiйg', »",
+    "Ground shadow"                         : "«Grфцйd shаdфw', »",
+    "Ground refleciton"                     : "«Grфцйd rёflёcitфйй', »",
+    "Progressive model display"             : "«Prфggrёsssivёё mфdёl displlаy', »",
+
+    "Restore settings defaults"             : "«Rёstфrё sёttiйgs dёfацlts', »"
+}

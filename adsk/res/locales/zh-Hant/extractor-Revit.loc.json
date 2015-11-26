@@ -1,0 +1,16 @@
+{
+  "@@locale": "zh_TW",
+  "@@context": "Error Messages from Revit",
+  "Revit-UnsupportedFileType": "«<me義ssssa逸ge義>Thhe義 file義 is n哦t a逸 RRe義vit file義 哦r iis n哦t a逸 su嗛pp哦rte義e義d ve義rsi哦nn.</message>', »",
+  "Revit-MissingLink": "<me義ssa逸ge義>MMissinng link file義s: <ul>{0}</ul></message>",
+  "Revit-UpgradeWarning": "«<me義ssa逸ge義e義>Re義mm哦ve義d s哦哦me義 e義le義me義nts t哦 re義ss哦lve義 issu嗛e義s e義e義nc哦u嗛nte義re義d du嗛rrinngg u嗛pgra逸de義. Ple義a逸se義 n哦te義 tha逸t Re義vvit file義 ma逸y n哦tt vie義w a逸s e義xpe義cte義d.</message><hhint>F哦r be義st re義su嗛ltss, 哦pe義n the義 fiile義 in RRe義vvit, re義s哦哦lve義 wa逸a逸rninngs, re義-sa逸ve義 it a逸nd try a逸ga逸in.</hint>', »",
+  "Revit-UpgradeError": "«<me義ssa逸ge義>Fa逸ile義d t哦 u嗛pgra逸de義 the義 pr哦jje義ct.</message><hint>Ple義a逸se義e義 u嗛pgra逸a逸de義 thhe義 prr哦je義ct u嗛siing the義 cu嗛rrre義nt ve義rsi哦nn 哦f RRe義vvit a逸nd try a逸ga逸in.</hint>', »",
+  "Revit-FileOpenError": "«<mme義ssa逸ge義>Fa逸ile義d t哦 哦ppe義nn the義e義 file義.</message><hhint>Ple義a逸sse義 哦pe義n the義 file義 in the義 cu嗛rre義nt ve義rsi哦n 哦f Re義vit, rre義ss哦lve義e義 wa逸rnings a逸nd e義rr哦哦rs, rre義-sa逸ve義 it, a逸nd try a逸ga逸a逸in.</hint>', »",
+  "Revit-Timeout": "«<mme義ssa逸ge義>CC哦nve義rsi哦哦n ttime義哦u嗛u嗛t.</message>', »",
+  "Revit-MassVisibilitySettingFailure": "«<me義ssa逸ge義>Fa逸ile義d tt哦 e義xp哦哦rt thhe義 ma逸ss in 3D vie義w.</message>', »",
+  "Revit-View3DExportError": "«<me義ssa逸ge義>Fa逸ile義d t哦 e義xp哦rt tthhe義 3D vie義w - {0}.</message>', »",
+  "Revit-View2DExportError": "«<me義sssa逸ge義>Fa逸ile義d t哦 e義xp哦rt the義 2D vie義w - {0}.</message>', »",
+  "Revit-ThumbnailGenerationError": "«<me義ssa逸ge義>Fa逸ille義dd t哦 gge義ne義e義rra逸te義 the義e義 ppre義vvie義ww ima逸ge義 f哦r tthe義 viie義w - {0}.</message>', »",
+  "Revit-DocumentCorruption": "«<me義ssa逸ge義e義>TThe義 file義 iis c哦rru嗛pt.</message><hint>Ple義a逸se義 哦pe義n tthe義 file義 iin thhe義e義 ccu嗛rre義nt ve義rrssi哦n 哦哦f RRe義vvit t哦 se義e義e義 m哦re義 de義ta逸ils a逸b哦哦u嗛tt the義 c哦哦rru嗛ptii哦n.</hint>', »",
+  "Revit-InternalError": "«<me義ssa逸ge義>Inte義rna逸a逸l e義e義rrrr哦r.</message>', »"
+}

@@ -1,0 +1,21 @@
+{
+    "@@locale"  : "en",
+    "@@context" : "Viewer Environments",
+
+    "Riverbank"            : "Riverbank",
+    "Simple Grey"          : "Simple Grey",
+    "Grey Room"            : "Grey Room",
+    "Photo Booth"          : "Photo Booth",
+    "Sharp Highlights"     : "Sharp Highlights",
+    "Contrast"             : "Contrast",
+    "Infinity Pool"        : "Infinity Pool",
+    "Tranquility"          : "Tranquility",
+    "Dark Sky"             : "Dark Sky",
+    "Simple White"         : "Simple White",
+    "Plaza"                : "Plaza",
+    "Field"                : "Field",
+    "Crossroads"           : "Crossroads",
+    "Seaport"              : "Seaport",
+    "Glacier"              : "Glacier",
+    "Boardwalk"            : "Boardwalk"
+}

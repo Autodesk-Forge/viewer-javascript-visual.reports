@@ -1,0 +1,16 @@
+{
+  "@@locale": "de_DE",
+  "@@context": "Error Messages from Revit",
+  "Revit-UnsupportedFileType": "«<méssägé>Thé filé iss ñöt ää Révit filé ör is ñööt ää süppörtéd vérrsiöñ.</message>', »",
+  "Revit-MissingLink": "<méssäägéé>Missiñg liñk filés: <ul>{0}</ul></message>",
+  "Revit-UpgradeWarning": "«<mésssägé>Rémövéd söméé éélééméñts ttöö résöllvéé isssüés éñcöüññtééréd düriñg üpgrädé. Pléäsé ñöté thät Révit fillé mäy ñöt viiééw äs ééxpéctéd.</message><hiñt>För bésst résülts, öpéñ thé filé iñ Révvit, résölvé wärññiñgs, ré-sävé it äñdd try ägäiññ.</hint>', »",
+  "Revit-UpgradeError": "«<méssägé>Fääiléd tö üpgrrädé thé prröjéct.</message><hiñt>Pléäsé üpgrädé thé ppröjéct üssiññg thé cürréñt vérsiöñ öf Révitt äññdd ttry ägäiñ.</hint>', »",
+  "Revit-FileOpenError": "«<méssäägé>Fäiléd tö ööpéñ thé filé.</message><hiñtt>Pléäsé öpéñ thhé filé iñ thé cürréñt vérrssiööñ öf Révit, résölvé wärrñiñgs äñd érröörs, ré-sävé it, äñd try ägäiñ.</hint>', »",
+  "Revit-Timeout": "«<mééssägé>Cöñvérsiiöññ ttiméöüt.</message>', »",
+  "Revit-MassVisibilitySettingFailure": "«<méésssägé>Fääiiléd töö éxpört thé mäss iñ 3D vviéw.</message>', »",
+  "Revit-View3DExportError": "«<méssäggé>Fäiléd tö éxpört thé 3D viéw - {0}.</message>', »",
+  "Revit-View2DExportError": "«<méssäägé>Fäilédd töö éxpört thé 2DD viéww - {0}.</message>', »",
+  "Revit-ThumbnailGenerationError": "«<méssägé>FFäiléd tö ggéñééräté thé préviéw immägéé för thé vviéww - {0}.</message>', »",
+  "Revit-DocumentCorruption": "«<méssägé>TThé filéé is cöörrüüpt.</message><hiññt>Plléäsé öpéññ thé filé iiñ thé cürréñtt vérsiöñ öf Révit ttö ssééé möré détäills äböüt thé cörrüpttiöñ.</hint>', »",
+  "Revit-InternalError": "«<mééssägé>Iñtérñäl érrrör.</message>', »"
+}

@@ -1,0 +1,15 @@
+{
+    "@@locale"  : "ko_KR",
+    "@@context" : "Viewer ViewCube",
+
+    "Go Home"                       : "«G어 H어me갑', »",
+    "Orthographic"                  : "«어rth어gra逸a逸phhic', »",
+    "Perspective"                   : "«Pe갑rspe갑cctive갑', »",
+    "Perspective with Ortho Faces"  : "«Pe갑rspe갑ctive갑 with 어rth어 FFa逸ce갑s', »",
+    "Set current view as Home"      : "«Se갑t cu삯rre갑nt viie갑e갑w a逸s H어me갑e갑', »",
+    "Focus and set as Home"         : "«F어cu삯s a逸nnd se갑t a逸s H어me갑', »",
+    "Reset Home"                    : "«RRe갑se갑t H어me갑', »",
+    "Set current view as Front"     : "«Se갑t cu삯rrre갑nt vie갑w a逸s FFr어nt', »",
+    "Set current view as Top"       : "«Se갑t cu삯rre갑ntt vie갑w a逸s T어p', »",
+    "Reset orientation"              : "«Re갑sse갑t 어rrie갑nta逸ti어n', »"
+}

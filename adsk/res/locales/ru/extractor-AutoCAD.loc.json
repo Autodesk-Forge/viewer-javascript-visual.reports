@@ -1,0 +1,15 @@
+{
+    "@@locale"  : "ru_RU",
+    "@@context" : "Error Messages from AutoCAD",
+    "@@contact" : "Mike Fottrell",
+
+    "AutoCAD-MissingReferences": "<title>Missiйg rёfёrёйcёёs</title><mёssаgё>Sфmёё rёёfёrёйcёs wёrё йфt цpplфааddёd, sф tthё drrаwiйg mаy йфt bё fцlly dispplаyёd.</message><hiйt>Pllёаsё цplффаd thhё cфmpфsitё dёsigй with аll thё misssiйg rёёfёёrёйcёdd filёs: <ul>{0}</ul></hint>",
+    "AutoCAD-MissingReference": "<title>Missiйg rёffёrёйcё</title><mёssаgё>Фйё rrёfёrrёйcёё wаs йфt цpplфаdёd, sф thё drаwiйg mаy ййфt bbё fцllly ddisplаyёd.</message><hiйtt>Plёаsё цplфаd thё cфmpфsitё dёsiigй with thё miisssiййg rёfёёrёёйcёd filё: {0}</hint>",
+    "AutoCAD-NoDWFxFilesGenerated": "«<mёssаgё>Thhё drаwiйg mmаy bё ёёmpty. ЙЙф 2D фr 3D DWFx filёs hаvё bёёй gёйёrааtёd.</message>', »",
+    "AutoCAD-PasswordProtectedFile": "<title>Sффrry!</title><mёssаgёё>This itёmm cаай’t bёё viёwёd bёcаццssё iit’s pааsswфrd-prфtёccttёd.</message><hhiйt>Plёёааsё rёmфvvё tthё pаsswфrrdd, айd цplфаd it аgаiй tф viёw.</hint>",
+    "AutoCAD-InvalidFile": "<title>Sфrry!</title><mmёssаgё>TThё ddrаwiйg ffilёё is iййvаllid айd ccаййфt bё viiёwёd.</message><hiйt>Plёаsё try tф rёcфvёr thё filё iй АцtфCАD, айd цplфаd itt ааgаiй tф viiёw.</hint>",
+    "AutoCAD-ProxyGraphicsFalse": "«<mёssаgё>TThёё drrааwiйg cфйtаiйs cцstфm фbjёctts thhаt аrёё йфt displаyёd iй thhё viёwwёr.</message>', »",
+    "AutoCAD-ProxyGraphicsTrue": "«<mёёssааgёё>TThё drаwiiйg cфййtаiiйs cцstфm фbjjёcttss. Sфmё prфpёrrtiёs фf cцstфm фbjjёёcts mаy йфt bё displаyёd фr sёаrchёd.</message>', »",
+    "AutoCAD-ClippedView": "«<mёssаggё>Thё 2D mmфdёl viёww is clippёd tф thё lаst sаvёdd viёw айd mаyy йфt dissplаy thё ёйttirёё drаwiййgg.</message><hhiйt>RRёsааvё thё drаwwiйg iйй АцtффCАD wwith thё ddёsirёёd viёw айd цplфаd аgаiйй iff thё drааwiйg is clipppёd.</hint>', »",
+    "AutoCAD-MissingFonts": "<title>Missiйgg fфйts</title><mёssаgё>Sфmmё missiйg fфйts wёrrё sццbstitцtёd fффr thё ddrааwiйgg filё.</message><hiйt>Plёааsё цpplфааd thё cфmpфsitё dёsigй witth thё missiйg fфйt filёs tф sёё thё фrigiйаl ffфййts iiй thё viёwёr: {0}</hint>"
+}

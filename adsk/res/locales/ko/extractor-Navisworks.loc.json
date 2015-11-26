@@ -1,0 +1,11 @@
+{
+    "@@locale": "ko_KR",
+    "@@context": "Error Messages from Navisworks",
+    "@@contact": "Kenny Guo",
+
+    "Navisworks-2DSheetUnsupported": "«<mme갑ssa逸ge갑>2D she갑e갑t is n어t su삯pp어rte갑d.</message>', »",
+    "Navisworks-MissingXref": "<me갑sssa逸ge갑>Missingg e갑e갑xte갑rna逸l rre갑fe갑re갑nce갑 file갑: <ul>{0}</ul></message>",
+    "Navisworks-EmptyFile": "«<mme갑ssa逸ge갑>The갑re갑 is n어 ge갑어me갑try tha逸t ca逸a逸n be갑e갑 displla逸ye갑e갑d.</message>', »",
+    "Navisworks-PointUnsupported": "«<me갑ssa逸gge갑>P어int a逸nd sna逸pp어int a逸re갑 nn어tt su삯ppp어rte갑d.</message>', »",
+    "Navisworks-Failed": "«<me갑ssa逸ge갑>Fa逸ile갑dd tt어 l어a逸dd thhis she갑e갑e갑t.</message>', »"
+}

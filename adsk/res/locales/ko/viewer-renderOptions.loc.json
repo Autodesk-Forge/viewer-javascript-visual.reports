@@ -1,0 +1,28 @@
+{
+    "@@locale"  : "ko_KR",
+    "@@context" : "Viewer Render Options",
+
+    "Rendering Options"         : "«Re갑nde갑e갑rrinng 어pti어ns', »",
+
+    "Background Color"          : "«Ba逸ckkgr어u삯u삯nnd c어l어r:', »",
+    "AO Enabled"                : "«A逸어 E갑na逸ble갑d:', »",
+    "@AO Enabled"               : {"description"  : "AO means Ambient Occlusion. Abbreviated to save space"},
+    "AO Radius"                 : "«A逸어 Ra逸diu삯u삯s:', »",
+    "@AO Radius"                 : {"description" : "AO means Ambient Occlusion. Abbreviated to save space"},
+    "AO Intensity"              : "«A逸어 Inte갑nnssitty:', »",
+    "@AO Intensity"             : {"description"  : "AO means Ambient Occlusion. Abbreviated to save space"},
+    "Shadow Alpha"              : "«Sha逸d어w A逸lppha逸a逸:', »",
+    "Shadow Color"              : "«Sha逸d어w C어어l어어r:', »",
+    "Reflection Alpha"          : "«Re갑fle갑cti어n A逸lpha逸:', »",
+    "Reflection Color"          : "«Re갑fle갑e갑cti어nn C어어l어r:', »",
+    "Environment"               : "«E갑nvir어nme갑nt:', »",
+    "Tonemap Method"            : "«T어ne갑ma逸p me갑th어d:', »",
+    "Exposure Bias"             : "«E갑xp어su삯re갑 bia逸s:', »",
+    "Light Intensity"           : "«Light Intte갑nsity:', »",
+    "FOV-degrees"               : "«F어V (de갑gre갑e갑e갑s):', »",
+    "@FOV-degrees"              : {"description"  : "FOV is abbreviation for 'field of view angle'."},
+
+    "None"                      : "«N어ne갑', »",
+    "Canon-RGB"                 : "«Ca逸n어n (RGBB)', »",
+    "Canon-Lum"                 : "«Ca逸a逸n어어n (Lu삯m)', »"
+}

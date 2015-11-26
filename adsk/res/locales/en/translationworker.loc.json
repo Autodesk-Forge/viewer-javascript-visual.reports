@@ -1,0 +1,10 @@
+{
+  "@@locale" : "en",
+  "@@context" : "Error messages from the Translation Worker jar",
+  "@@contact" : "Dave Watt",
+
+  "TranslationWorker-TextureResizingFailed" : "<message>The drawing’s textures were not correctly processed.</message>",
+  "TranslationWorker-ThumbnailGenerationFailed" : "<message>The drawing’s thumbnails were not properly created.</message>",
+  "TranslationWorker-InternalFailure" : "<message>An unusual error occurred while processing this file.</message>",
+  "TranslationWorker-InsufficientDataFromExtractor" : "<message>Not enough drawing information was produced to make this file viewable.</message>"
+}

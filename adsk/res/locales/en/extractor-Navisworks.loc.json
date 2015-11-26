@@ -1,0 +1,11 @@
+{
+    "@@locale": "en",
+    "@@context": "Error Messages from Navisworks",
+    "@@contact": "Kenny Guo",
+
+    "Navisworks-2DSheetUnsupported": "<message>2D sheet is not supported.</message>",
+    "Navisworks-MissingXref": "<message>Missing external reference file: <ul>{0}</ul></message>",
+    "Navisworks-EmptyFile": "<message>There is no geometry that can be displayed.</message>",
+    "Navisworks-PointUnsupported": "<message>Point and snappoint are not supported.</message>",
+    "Navisworks-Failed": "<message>Failed to load this sheet.</message>"
+}

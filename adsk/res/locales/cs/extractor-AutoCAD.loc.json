@@ -1,0 +1,15 @@
+{
+    "@@locale"  : "cs",
+    "@@context" : "Error Messages from AutoCAD",
+    "@@contact" : "Mike Fottrell",
+
+    "AutoCAD-MissingReferences": "<title>Míššíňňg řĕfĕřřĕňčĕš</title><mĕššágĕ>Šómĕ řĕĕffĕřĕňčĕšš wĕřĕ ňňóť ůpllóááďĕď, šó ťhĕ ďřáwíňg máý ňóť bbĕ fůllý ďíšplláýĕĕď.</message><híňť>Plĕášĕ ůplóáď ťhĕ čóómpóšíťĕ ďĕšígň wíťh áll ťhĕ mííššíňg řĕfĕřĕňčĕď fíllĕš: <ul>{0}</ul></hint>",
+    "AutoCAD-MissingReference": "<title>Míššíňg řĕfĕřĕĕňčĕ</title><mĕššágĕ>Óňĕ řĕĕfĕřĕňčĕ wáš ňóť ůplóáďĕď, ššó ťhĕ ďřáwííňg mmáý ňóť bĕ fůllý ďííšpláýĕď.</message><híňňť>Plĕášĕ ůůpllóáď ťťhhĕ čómpóšííťĕ ďĕšíggň wíťh ťhĕ míššíňg řĕfĕřĕňčĕď ffílĕ: {0}</hint>",
+    "AutoCAD-NoDWFxFilesGenerated": "«<mĕššáágĕ>Ťhĕ ďřááwíňňg máý bĕĕ ĕmpťý. Ňó 2Ď óř 3Ď ĎWFFx fílĕš hávĕ bbĕĕĕň gĕňňĕřřáťĕď.</message>', »",
+    "AutoCAD-PasswordProtectedFile": "<title>Šóóřřý!</title><mĕššágĕ>ŤŤhíš íťĕm čáň’ť bĕ víĕwĕĕď bĕčáůššĕ íť’š pášššwóřď-přřóťĕčťĕď.</message><híňť>PPlĕášĕ řřĕmóvĕ ťťhĕ ppáššwóřď, áňď ůplóááď íť ágááíň ťó víĕw.</hint>",
+    "AutoCAD-InvalidFile": "<title>ŠŠóřřý!</title><mĕššágĕ>Ťhĕ ďřáwwíňňg fílĕ íš íňválíď áňďď čáňňóť bĕ víĕwĕď.</message><híňť>Plĕĕášĕ ťřý ťó řĕčóvĕř ťhĕ fílĕĕ íň ÁůťóČČÁĎ, áňď ůůpllóáď íť ágáíň ťó víĕw.</hint>",
+    "AutoCAD-ProxyGraphicsFalse": "«<mĕššágĕ>Ťhhĕ ďřáwíňňg čóňťáíňňš čůšťóm óbjĕčťšš ťháť ářĕ ňňóť ďíšpláýýĕď íň ťhhĕ vvíĕwĕřř.</message>', »",
+    "AutoCAD-ProxyGraphicsTrue": "«<mĕššágĕ>Ťhĕ ďřáwwíňg čóóňťáííňš čůšťóóm óbjĕčťš. Šómĕ přópĕřťíĕš óff čůšťóm óbjĕčťš máý ňóť bĕ ďíšplááýĕď óř ššĕářčhĕď.</message>', »",
+    "AutoCAD-ClippedView": "«<mĕššágĕ>Ťhĕ 2Ď móďĕĕl vvíĕw íš čllíppĕĕď ťó ťťhĕ llášťť šávĕĕď víĕww áňď mááý ňóť ďíšpláý ťhĕ ĕňťířĕ ďřáwíňg.</message><híňť>Řĕššávĕ ťhĕ ďřáwíňg ííňň ÁůťóČÁĎ wíťh ťhĕ ďďĕšířĕď víĕw áňňď ůplóóááď ágáíň íf ťhĕ ďřáwíňňg íš člíppĕď.</hint>', »",
+    "AutoCAD-MissingFonts": "<title>Míššíňg fóňťťš</title><mĕššágĕ>Šómĕ míšššíňg fóňňťš wĕřĕ šůbšťíťůťĕďď fóř ťhhĕ ďřáwíňg fílĕ.</message><híňť>PPlĕášĕ ůplóáď ťhĕĕ čómpóšíťĕ ďĕšígň wíťh ťhĕ míššíňg fóňť fílĕĕš ťó šĕĕĕ ťhĕ óříígíňál fóňťš íň ťhĕ víĕwĕř: {0}</hint>"
+}
