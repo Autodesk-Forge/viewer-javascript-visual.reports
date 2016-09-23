@@ -16,7 +16,7 @@
     <meta content="Autodesk" name="author" />
     <meta content="3D Model Viewer" name="keywords" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700" rel="stylesheet" type="text/css" />
     <link href="stylesheets/libs/normalize.css" rel="stylesheet" type="text/css" />
     <link href="./stylesheets/app.css" rel="stylesheet" type="text/css" />
@@ -58,7 +58,7 @@
           <!-- Options filled in by function in Report_PieChart.js -->
         </select>
       </div>
-      
+
       <div id="reportinput"></div>
       <div class="svgcanvas">
         <div id="pieChart">
@@ -85,53 +85,36 @@
         <div id="themecanvas">
         </div>
       </div>
-   
     </div>
-
   </div>
 
-  <!-- 3D Model Viewer -->
   <div id="viewer-group">
-    <div class="project-container group" id="viewerMain-panel">
-      <div id="handle">Handle</div>
-      <div class="project-view-column">
-          <div id="viewerMain">
-          <!-- Upon the viewer initialization, it will append a div to the above div to insert the viewer.  It
-               will use 100% width and height so that it will fill up whatever the above div's dimensions are.
-               NOTE: Height must be set for this object. -->
-          </div>
-      </div>
-    </div>
-
-    <!-- 2D Model Viewer -->
-    <div class="project-container group" id="viewerSecondary-panel">
+      <!-- 3D Model Viewer -->
+      <div class="project-container group" id="viewerMain-panel">
+        <div id="handle">Handle</div>
         <div class="project-view-column">
-          <div id="viewerSecondary">
-              <!-- Upon the viewer initialization, it will append a div to the above div to insert the viewer.  It
-                   will use 100% width and height so that it will fill up whatever the above div's dimensions are.
-                   NOTE: Height must be set for this object. -->
-          </div>
+            <div id="viewerMain">
+            <!-- Upon the viewer initialization, it will append a div to the above div to insert the viewer.  It
+                 will use 100% width and height so that it will fill up whatever the above div's dimensions are.
+                 NOTE: Height must be set for this object. -->
+            </div>
+        </div>
+      </div>
+
+      <!-- 2D Model Viewer -->
+      <div class="project-container group" id="viewerSecondary-panel">
+          <div class="project-view-column">
+            <div id="viewerSecondary">
+                <!-- Upon the viewer initialization, it will append a div to the above div to insert the viewer.  It
+                     will use 100% width and height so that it will fill up whatever the above div's dimensions are.
+                     NOTE: Height must be set for this object. -->
+            </div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <link href="./stylesheets/libs/nv.d3.css" rel="stylesheet">
   <link rel="stylesheet" href="adsk/style.css" type="text/css">
   <script src="adsk/viewer3D.min.js"></script>
-  <script src="./scripts/MyAuthToken.js"></script>
-  <script src="scripts/app.js"></script>
-
-  <script src="./scripts/libs/d3/d3.min.js"></script>
-  <script src="./scripts/libs/d3pie/d3pie.min.js"></script>
-  <script src="./scripts/libs/nvd3/nv.d3.min.js"></script>
-  <script src="./scripts/LoadModel.js"></script>
-  <script src="./scripts/ReportData.js"></script>
-  <script src="./scripts/Report_BarChart.js"></script>
-  <script src="./scripts/Report_PieChart.js"></script>
-  <script src="./scripts/Relationships.js"></script>
-  <script src="./scripts/Themes.js"></script>
-  <script src="./scripts/CameraPin.js"></script>
-  <script src="./scripts/PinData.js"></script>
-  <script src="./scripts/PinUI.js"></script>
+  <script src="dist/app.bundle.js" charset="utf-8"></script>
 </body>

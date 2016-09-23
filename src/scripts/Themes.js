@@ -3,9 +3,10 @@
 // Override the model color(material) according to a specifc theme(property/type).
 // Overriding are mainly done in overrideColorOnObjects and overrideColorOnFragment.
 // This script also creates the theme tables in HTML
-//
 
-var _themeOptions = [
+const reportData = require('./ReportData.js');
+
+let _themeOptions = [
     { label : "*NONE*",           type: "Original"   },
     { label : "Type",             type: "ModelType"  },
     { label : "Level",            type: "Property "  },
@@ -14,19 +15,19 @@ var _themeOptions = [
     { label : "Material",         type: "Property"   }
 ];
 
-var _colorIndex = -1;
-var _colorDict = [
+let _colorIndex = -1;
+let _colorDict = [
     "#FFA500", "#FA8072", "#32CD32", "#1E90FF", "#EE82EE", "#40E0D0", "#F5DEB3", "#FFC0CB", "#FFD700",
     "#00FFFF", "#FF0000", "#CD853F", "#008080", "#DA70D6", "#000080", "#800000", "#FF00FF", "#00FF00",
     "#FFFF00", "#800080", "#0000FF", "#FF7F50", "#A52A2A", "#00FFFF", "#008000", "#B22222", "#4B0082",
     "#E6E6FA", "#FAF0E6"
 ];
 
-var _originalFragMaterial;
-var _applicabledbIds;
+let _originalFragMaterial;
+let _applicabledbIds;
 
-var _ambientLight;
-var _directionalLight;
+let _ambientLight;
+let _directionalLight;
 
 function unitializeThemePanel() {
     if (_originalFragMaterial) {
@@ -80,18 +81,18 @@ function applyTheme(index) {
     _viewerMain.impl.scene.remove(_directionalLight);
 
     switch (_themeOptions[index].type) {
-        case "Original": 
+        case "Original":
             restoreToOriginal();
             break;
         case "ModelType":
-            var modelTypes = groupDataByType();
+            var modelTypes = reportData.groupDataByType();
             wrapColorData(modelTypes);
             break;
         case "Custom":
             overrideColorOnObjects(_savedThemes[_themeOptions[index].label]);
             break;
         default:
-            groupDataByProperty(_themeOptions[index].label, wrapColorData);
+            reportData.groupDataByProperty(_themeOptions[index].label, wrapColorData);
     };
 }
 
@@ -144,8 +145,8 @@ function overrideColorOnObjects(colorMap) {
         // record original materials for the first time
         if (!(_originalFragMaterial)) {
             _originalFragMaterial = {};
-            for (var i = _modelLeafNodes.length - 1; i >= 0; i--) {
-                objTree.enumNodeFragments(_modelLeafNodes[i], function(fragId) {
+            for (var i = reportData._modelLeafNodes.length - 1; i >= 0; i--) {
+                objTree.enumNodeFragments(reportData._modelLeafNodes[i], function(fragId) {
                     var mat = _viewerMain.impl.getRenderProxy(_viewerMain.model, fragId).material;
                     _originalFragMaterial[fragId] = mat;
                 });
@@ -204,12 +205,12 @@ function overrideColorOnFragment(fragId, hexColorStr) {
     // using mesh phong preserves the shadows and other functionalities
     vizmesh.material = new THREE.MeshPhongMaterial({
         specular: "#000000",
-        color: hexColorStr, 
+        color: hexColorStr,
         emissive: "#000000",
         reflectivity: 0,
-        shininess: 100,            
+        shininess: 100,
     });
-    frglst.setMesh(fragId, vizmesh);  
+    frglst.setMesh(fragId, vizmesh);
 }
 
 
@@ -254,10 +255,10 @@ function loadThemeChart(colorMap) {
         .attr("fill", function(d, i) { return d.color})
         .attr("opacity", 1)
         .style("cursor", "pointer");
-        
+
     var labels = contents.selectAll("text").data(colorMap)
         .enter().append("text");
-    
+
     labels.attr("x", "20%")
         .attr("y", function(d, i) { return 25 + i*50; })
         .text(function(d) { return d.label; })
@@ -276,8 +277,8 @@ function loadThemeChart(colorMap) {
     });
 }
 
-var _prev_isolated = [];
-var _selected_label = null;
+let _prev_isolated = [];
+let _selected_label = null;
 
 function colorBarClicked(obj) {
 
@@ -285,7 +286,7 @@ function colorBarClicked(obj) {
         var toBeIsolated = _prev_isolated.concat(obj.dbIds);
         _viewerMain.isolate(toBeIsolated);
         _prev_isolated = toBeIsolated;
-    } else {        
+    } else {
         if (_selected_label === obj.label) {
             _viewerMain.isolate(_applicabledbIds);
             _selected_label = null;
@@ -296,6 +297,10 @@ function colorBarClicked(obj) {
             _prev_isolated = obj.dbIds;
         }
     }
+}
+
+module.exports = {
+  unitializeThemePanel
 }
 
 
@@ -319,7 +324,7 @@ function addCustomizedTheme() {
     _colorIndex = -1;
     $("#pu_colorTheme").prop('selectedIndex', 0);
     restoreToOriginal();
-    
+
     $('#pu_colorTheme').attr("disabled", true);
     $('#nonpropchckbx').attr("disabled", true);
 
@@ -351,7 +356,7 @@ function addCustomizedTheme() {
     themeTable.id = "themetable";
     themeTable.className = "tablelist";
     themecanvas.append(themeTable);
-    
+
     var btnRow = document.createElement("div");
     btnRow.style.textAlign = "center";
     btnRow.style.margin = "10px";
@@ -365,7 +370,7 @@ function addCustomizedTheme() {
         themeObj.label = "undefined";
         themeObj.divid = "themerowdivid" + _customizedTheme.length;
         themeObj.dbIds = [];
-        
+
         _customizedTheme.push(themeObj);
         _currentRow = _customizedTheme.length - 1;
         _viewerMain.clearSelection(true);
@@ -380,7 +385,7 @@ function addCustomizedTheme() {
         _customizedTheme = [];
         _currentRow = -1;
         _viewerMain.removeEventListener(Autodesk.Viewing.SELECTION_CHANGED_EVENT, updateThemeSelection);
-        
+
         $('#pu_colorTheme').attr("disabled", false);
         $('#nonpropchckbx').attr("disabled", false);
         _viewerMain.clearSelection(true);
@@ -391,7 +396,7 @@ function addCustomizedTheme() {
     doneBtn.innerHTML = "Done";
     doneBtn.onclick = function() {
         var themeId = $("#themetitle :first-child").html();
-       
+
         _savedThemes[themeId] = _customizedTheme;
 
         $("#themetitle").empty();
@@ -400,7 +405,7 @@ function addCustomizedTheme() {
         _currentRow = -1;
         $("#pu_colorTheme").append($("<option>", {
             value: _themeOptions.length,
-            text: themeId 
+            text: themeId
         }));
         _themeOptions.push({"label":themeId, "type":"Custom"});
 
@@ -428,7 +433,7 @@ function updateThemeSelection() {
 
 function reloadTable(tableid) {
 
-    var themeTable = $("#"+tableid).empty();    
+    var themeTable = $("#"+tableid).empty();
 
     for (var i = 0; i < _customizedTheme.length; i++) {
         var theme = _customizedTheme[i];
@@ -482,7 +487,7 @@ function reloadTable(tableid) {
 
         row.appendChild(colorBtn);
         row.appendChild(label);
-        
+
         themeTable.append(row);
     }
 }

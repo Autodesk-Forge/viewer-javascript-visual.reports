@@ -1,9 +1,11 @@
 //
 //  Camera Pin
-//  Location bookmarks for presentaion mode. Data for the pins are wrapped in a class 
+//  Location bookmarks for presentaion mode. Data for the pins are wrapped in a class
 //  contained in PinData.js, functions for creating the UI on the page are in PinUI.js
 //  This script handles init/uninit and click behavior, as well as the view transition.
 //
+
+const pinData = require('./PinData.js');
 
 var _viewerPin;
 var _currentPin;
@@ -26,7 +28,7 @@ function startTour(index) {
 function initializePinPanel() {
 
         // initialize the pin data
-    _viewerPin = new ViewerPin($("#pu_modelToLoad :selected").text());
+    _viewerPin = new pinData.ViewerPin($("#pu_modelToLoad :selected").text());
 
         // need to update local storage of pins before tab close
     window.addEventListener("beforeunload", function() {
@@ -38,7 +40,7 @@ function initializePinPanel() {
     _viewerMain.container.addEventListener("click", handleViewerClick);
     _viewerMain.addEventListener(Autodesk.Viewing.CAMERA_CHANGE_EVENT, updatePinsOnView);
     _viewerMain.addEventListener(Autodesk.Viewing.VIEWER_RESIZE_EVENT, updatePinsOnView);
-    
+
         // initialize the pin ui
     initPinOverlay();
     initPinTablelist();
@@ -58,7 +60,7 @@ function uninitializePinPanel() {
     _viewerMain.container.removeEventListener("click", handleViewerClick);
     _viewerMain.removeEventListener(Autodesk.Viewing.CAMERA_CHANGE_EVENT, updatePinsOnView);
     _viewerMain.removeEventListener(Autodesk.Viewing.VIEWER_RESIZE_EVENT, updatePinsOnView);
-    
+
     _viewerPin = null;
     _shouldAddNewPin = false;
 }
@@ -95,12 +97,12 @@ function createNewPin(client, world, label) {
         viewport: true,
         renderOptions: true
     };*/
-    
+
         // update the pin data
-    var curViewerState = _viewerMain.getState(/*optionsFilter*/);  
+    var curViewerState = _viewerMain.getState(/*optionsFilter*/);
     console.log("ViewerState", curViewerState);
 
-    _viewerPin.addPin(divid, world, label, curViewerState); 
+    _viewerPin.addPin(divid, world, label, curViewerState);
 
         // update the pin ui
     pushPinToOverlay(divid, client);
@@ -121,7 +123,7 @@ function viewPinClicked(evt) {
 
     var viewport = _viewerPin.getViewState(this.id);
     _viewerMain.restoreState(viewport);     // NOTE: we can pass in a filter if we only want certain values like Camera position
-    
+
         //  NOTE:  In the above call, we are just relying on the ViewerState function to capture everything in a JSON object and
         // the restore it when asked.  We could do a more controlled way and only worry about the Camera and try to do some effects
         // on our own, but that usually isn't necessary.
@@ -169,7 +171,7 @@ function viewPinClicked(evt) {
 
 
 
-        // Uncomment for headsup display, this will set the 
+        // Uncomment for headsup display, this will set the
         // text/position/visibility of the headsup div
     /*
 
@@ -229,7 +231,7 @@ function handleViewerClick(evt) {
     if (_shouldAddNewPin) {
 
         var viewport = _viewerMain.navigation.getScreenViewport();
-            
+
             // calculate  relative positon on the canvas, not in window
         var clientPos =  {
             x: evt.clientX - viewport.left,
@@ -245,7 +247,7 @@ function handleViewerClick(evt) {
         var hitPoint = _viewerMain.utilities.getHitPoint(normedpos.x, normedpos.y);
         if (hitPoint === null)
             hitPoint = _viewerMain.navigation.getWorldPoint(normedpos.x, normedpos.y);
-        createNewPin(clientPos, hitPoint, "undefined");        
+        createNewPin(clientPos, hitPoint, "undefined");
     }
 
 }
@@ -274,3 +276,7 @@ $(document).ready(function() {
         $("#pushpinOverlay").toggle();
     });
 });
+
+module.exports = {
+  uninitializePinPanel
+}

@@ -8,6 +8,16 @@ Additionally, you can view charts representing the quantity of the objects based
 
 Note that not all report types (attributes) work for every model type. For instance, a Fusion model doesn't have an attribute for "Level" unlike a Revit model. In general, the initial half of the reports is suitable for Revit models and the latter half is suitable for Manufacturing models (Fusion, Solidworks, Inventor, etc.).
 
+## Setup
+`cd` into the directory and type `npm install`
+
+## Develop
+This demo uses webpack to bundle `.js` files
+__Writing JavaScript__: add your file in `src/scripts` and require it in `src/scripts/app.js`
+
+## To Build
+`gulp`
+
 ##Deployment
 
 Open index.html in your browser to see the application in action.

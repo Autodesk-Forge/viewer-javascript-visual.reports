@@ -1,3 +1,6 @@
+const themes = require('./Themes.js');
+const cameraPin = require('./CameraPin.js');
+
 var _lastPanel;
 
 // resize panel vars
@@ -5,7 +8,6 @@ var isResizing = false,
     lastDownX = 0;
 
 $(function() {
-
 
     // resize panel
     var container = $('#viewer-group'),
@@ -20,9 +22,9 @@ $(function() {
 
     $(document).on('mousemove', function (e) {
         // we don't want to do anything if we aren't resizing.
-        if (!isResizing) 
+        if (!isResizing)
             return;
-        
+
         var scrollTop = $(window).scrollTop();
         top.css('height', e.clientY - container.offset().top + scrollTop);
         bottom.css('height', container.height() - (e.clientY - container.offset().top) - scrollTop);
@@ -32,14 +34,12 @@ $(function() {
         isResizing = false;
     });
 
-
-
   $('.tab-buttons a').on('click', function(){
     $(this).closest('li').addClass('active').siblings().removeClass('active');
     $('.tab-panel').removeClass('active').filter(this.hash).addClass('active');
 
     if (_lastPanel === "tab_button_5")
-    	uninitializePinPanel();
+    	cameraPin.uninitializePinPanel();
     // else if (_lastPanel ==="tab_button_4" && this.id !== "tab_button_4")
     // 	unitializeThemePanel();
 

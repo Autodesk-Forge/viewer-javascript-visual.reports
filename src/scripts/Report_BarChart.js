@@ -32,7 +32,7 @@ function loadBarChart(lmvData) {
                     values: lmvData.content
                 }
             ];
-        
+
         barChart.height((lmvData.content.length + 2) * 15); // give each line 15px + add a header and footer
 
         var svg = d3.select("#barChart").append("svg")
@@ -59,4 +59,8 @@ function handleBarClick(evt) {
         _viewerMain.isolate(evt.lmvIds);
         _viewerSecondary.select(evt.lmvIds);
     }
+}
+
+module.exports = {
+  loadBarChart
 }

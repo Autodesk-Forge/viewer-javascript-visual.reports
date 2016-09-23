@@ -6,8 +6,8 @@
 //
 // NOTE: there is another way to accomplish this by just calling the API function with a token without
 // worrying about whether it has expired, and then if it returns "Invalid Token", then get a new token
-// and retry.  This is possible with jQuery, but only works with the .success()/.error() constructs and 
-// not with .done(), .fail() (at least not without a lot of convoluted extra work).  For now, I am 
+// and retry.  This is possible with jQuery, but only works with the .success()/.error() constructs and
+// not with .done(), .fail() (at least not without a lot of convoluted extra work).  For now, I am
 // happier doing it this way, but am open to suggestions on best practices.
 //
 // Jim Awe
@@ -21,8 +21,7 @@
 // to your service (either locally, or deployed on something like Heroku).
 
 
-function MyAuthToken(env)
-{
+function MyAuthToken(env) {
     if (env === "PROD") {
         //this.tokenService = "http://localhost:5000/auth";
         this.tokenService = "https://salty-caverns-3017.herokuapp.com/auth";
@@ -38,7 +37,7 @@ function MyAuthToken(env)
     else {
         alert("DEVELOPER ERROR: No valid environment set for MyAuthToken()");
     }
-    
+
     this.token = "";
     this.expires_in = 0;
     this.timestamp = 0;
@@ -58,7 +57,7 @@ MyAuthToken.prototype.value = function()
             // get current timestamp and see if we've expired yet
         var curTimestamp = Math.round(new Date() / 1000);   // time in seconds
         var secsElapsed = curTimestamp - this.timestamp;
-        
+
         if (secsElapsed > (this.expires_in - 10)) { // if we are within 10 secs of expiring, get new token
             console.log("AUTH TOKEN: expired, refreshing...");
             this.get();
@@ -68,8 +67,8 @@ MyAuthToken.prototype.value = function()
             console.log("AUTH TOKEN: still valid (" + secsLeft + " secs)");
         }
     }
-    
-    return this.token;      
+
+    return this.token;
 };
 
 // FUNC get():
@@ -81,7 +80,7 @@ MyAuthToken.prototype.get = function()
     var expires_in = 0;
 
     console.log("getting from url " + this.tokenService );
-    
+
     var jqxhr = $.ajax({
         url: this.tokenService,
         type: 'GET',
@@ -97,9 +96,12 @@ MyAuthToken.prototype.get = function()
             alert("AUTH TOKEN: Failed to get new auth token!");
         }
     });
-    
+
     this.token = retVal;
     this.expires_in = expires_in;
     this.timestamp = Math.round(new Date() / 1000);  // get time in seconds when we retrieved this token
 };
 
+module.exports = {
+  MyAuthToken
+}

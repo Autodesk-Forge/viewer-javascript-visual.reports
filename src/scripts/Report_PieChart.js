@@ -1,8 +1,10 @@
+const reportData = require('./ReportData.js');
+const barChartReport = require('./Report_BarChart.js');
 
-var _pieChart = null;
-var _sortOrder = "value-desc";
+let _pieChart = null;
+window._sortOrder = "value-desc";
 
-var _reportOptions = [
+let _reportOptions = [
     { label : "Qty - Type",             fieldName: "",                  fieldType : "ModelType"},
     { label : "Qty - Level",            fieldName: "Level",             fieldType : "Properties"},
     { label : "Qty - Base Constraint",  fieldName: "Base Constraint",   fieldType : "Properties"},
@@ -22,9 +24,9 @@ function loadReportMenuOptions() {
         // add the new options for models
     var sel = $("#pu_reportToRun");
     $.each(_reportOptions, function(i, item) {
-        sel.append($("<option>", { 
+        sel.append($("<option>", {
             value: i,
-            text : item.label 
+            text : item.label
         }));
     });
 }
@@ -40,12 +42,12 @@ function disableReportMenu() {
 }
 
 function runReport(index) {
-    
+
         // if they pass in a negative index, look up the current one
     if (typeof (index) === "undefined" || index === -1)
         index = parseInt($("#pu_reportToRun option:selected").val(), 10);
 
-    var reportObj = _reportOptions[index]; 
+    var reportObj = _reportOptions[index];
     console.log("Running report: " + reportObj.label);
 
     $("#reportinput").empty();
@@ -53,28 +55,28 @@ function runReport(index) {
     _currentBound = null;
 
     if (reportObj.fieldName === "") {
-        var modelTypes = groupDataByType();
+        var modelTypes = reportData.groupDataByType();
         wrapDataForPieChart(modelTypes);
     }
     else if (reportObj.fieldType === "Quantity") {
 
-        getQtyDataByProperty(reportObj.fieldName, function(Qty, misCount, bound){
+        reportData.getQtyDataByProperty(reportObj.fieldName, function(Qty, misCount, bound){
             var initrange = 100;
 
             createReportUserInput(bound, initrange);
             _currentQty = Qty;
             _currentBound = bound;
 
-            groupQtyDataByRange(Qty, bound, initrange, wrapDataForPieChart);
+            reportData.groupQtyDataByRange(Qty, bound, initrange, wrapDataForPieChart);
         });
     }
     else {
-        groupDataByProperty(reportObj.fieldName, wrapDataForPieChart);
+        reportData.groupDataByProperty(reportObj.fieldName, wrapDataForPieChart);
      }
 }
 
-var _currentQty = null;
-var _currentBound = null;
+let _currentQty = null;
+let _currentBound = null;
 
     // Create user input div for quantity type
 function createReportUserInput(bound, initVal) {
@@ -88,7 +90,7 @@ function createReportUserInput(bound, initVal) {
     slider.value = initVal;
     slider.onchange = function() {
         $("#qtyfield").val(slider.value);
-        groupQtyDataByRange(_currentQty, _currentBound, slider.value, wrapDataForPieChart);
+        reportData.groupQtyDataByRange(_currentQty, _currentBound, slider.value, wrapDataForPieChart);
     };
 
     var preLabel = document.createElement("label");
@@ -110,7 +112,7 @@ function createReportUserInput(bound, initVal) {
             var inputVal = parseFloat(this.value);
             if (inputVal <= parseFloat(slider.max) && inputVal >= 0) {
                 $("#qtyslider").val(this.value);
-                groupQtyDataByRange(_currentQty, _currentBound, this.value, wrapDataForPieChart);
+                reportData.groupQtyDataByRange(_currentQty, _currentBound, this.value, wrapDataForPieChart);
             }
         }
     };
@@ -148,22 +150,22 @@ function wrapDataForPieChart(buckets, misCount) {
 $(document).ready(function() {
 
     console.log("Document Ready: excuting func in pieChart.js");
-    
+
     loadReportMenuOptions();
-    
+
         // user selected a new model to load
     $("#pu_reportToRun").change(function(evt) {
 
-        // Only calls when user selection changes  
+        // Only calls when user selection changes
 
         evt.preventDefault(); // The event.preventDefault() method stops the default action of an element from happening
 
         var index = parseInt($("#pu_reportToRun option:selected").val(), 10);
-        
+
         runReport(index);
     });
-    
-    $("#pu_sortOrder").change(function(evt) {  
+
+    $("#pu_sortOrder").change(function(evt) {
         evt.preventDefault();
 
         _sortOrder = $("#pu_sortOrder option:selected").val();
@@ -179,7 +181,7 @@ function loadReportDataPieChart(pieOpts) {
         // free up anything that is already there
     if (_pieChart)
         _pieChart.destroy();
-    
+
     $("#barChart").empty();
 
     if (pieOpts.data.content.length === 0) {
@@ -188,7 +190,7 @@ function loadReportDataPieChart(pieOpts) {
     else {
         // if we have a lot of buckets, don't let the pie chart get out of control, condense anything with 2 or less
         // into an "Other" wedge.
-        
+
         //pieOpts.data.sortOrder = "value-desc";
         pieOpts.data.content.sort(function (a, b) {
             if (a.value < b.value) return 1;
@@ -203,9 +205,9 @@ function loadReportDataPieChart(pieOpts) {
             var thresholdObj = pieOpts.data.content[19];
             pieOpts.data.smallSegmentGrouping.value = thresholdObj.value;
         }
-        
+
         _pieChart = new d3pie("pieChart", pieOpts);
-        loadBarChart(pieOpts.data);
+        barChartReport.loadBarChart(pieOpts.data);
     }
 }
 
@@ -221,9 +223,9 @@ function initPieOpts(fieldName, reportIndex) {
             "enabled": true,
             "value": 1,
             "valueType": "value"   // percentage or value
-        },  
+        },
     };
-    
+
     return pieOpts;
 }
 
@@ -299,7 +301,7 @@ function initPieDefaults(fieldName) {
     return pieDefaults;
 }
 
-var _selectedWedge;
+let _selectedWedge;
 
 function clickPieWedge(evt) {
 
@@ -312,7 +314,7 @@ function clickPieWedge(evt) {
         else {
             ids = evt.data.lmvIds;
         }
-        
+
         _viewerMain.isolate(ids);
         _viewerSecondary.select(ids);
         _selectedWedge = evt.data.label;
@@ -325,3 +327,8 @@ function clickPieWedge(evt) {
 
 }
 
+module.exports = {
+  disableReportMenu,
+  enableReportMenu,
+  runReport
+}

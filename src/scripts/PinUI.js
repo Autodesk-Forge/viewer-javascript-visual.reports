@@ -6,11 +6,11 @@
 //  than jQuery's $('<div>')
 //
 
-var _selected = null;
-var _prev_x = 0;
-var _prev_y = 0;
-var _bounding_left = 0;
-var _bounding_top = 0;
+let _selected = null;
+let _prev_x = 0;
+let _prev_y = 0;
+let _bounding_left = 0;
+let _bounding_top = 0;
 
     // creating headsup div
 function createHeadsUpDiv() {
@@ -18,7 +18,7 @@ function createHeadsUpDiv() {
     var headsupDiv = document.createElement("div");
     headsupDiv.id = "headsup";
     headsupDiv.style.zIndex = "999";
-    headsupDiv.style.pointerEvents = "auto";    // need to set pointerEvents to auto to receieve mouse action 
+    headsupDiv.style.pointerEvents = "auto";    // need to set pointerEvents to auto to receieve mouse action
 
     headsupDiv.onmousedown = function (evt) {
         _prev_x = evt.clientX;
@@ -70,7 +70,7 @@ function createHeadsUpDiv() {
 
     // hide headsup div
 function hideHeadesUpDiv(animated) {
-    var headsupDiv = $("#headsup"); 
+    var headsupDiv = $("#headsup");
     if (headsupDiv.is(":visible")) {
         if (animated)
             headsupDiv.fadeToggle(300, "linear");
@@ -94,7 +94,7 @@ function setHeadsUpDisplay(content, x, y, animated) {
         y += deltaY;
     else
         y = y - headsupDiv.height() - deltaY;
-    
+
     headsupDiv.css({left:x, top:y});
     $("#headsup :first-child").next().text(content);
     if (animated)
@@ -184,7 +184,7 @@ function pushPinToOverlay(pinid, client) {
         d3.select(this).style("fill", "#66c");
     })
     .on("mouseout", function() {
-        d3.select(this).style("fill", "#c66"); 
+        d3.select(this).style("fill", "#c66");
     });
 
     d3.select("#pushpinOverlay")
@@ -208,7 +208,7 @@ function initPinTablelist() {
     _viewerPin.each(function(pinid, label, position) {
         pushPinToTableList(pinid, label, table);
     });
-    
+
     pintable.append(table);
 }
 
@@ -346,7 +346,7 @@ function pushPinToTableList(pinid, pinlabel, table) {
 
             _viewerPin.reorder(pinid, index);
 
-            return false; 
+            return false;
         };
         document.addEventListener("mouseup", setrow);
 

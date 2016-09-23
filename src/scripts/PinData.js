@@ -35,7 +35,7 @@ ViewerPin.prototype.reorder = function(pinid, newIndex) {
         if (this.pinobjs[i].pinid === pinid) {
             index = i;
             break;
-        }            
+        }
     };
 
     if (index !== -1) {
@@ -68,7 +68,7 @@ ViewerPin.prototype.removePin = function(pinid) {
         if (this.pinobjs[i].pinid === pinid) {
             index = i;
             break;
-        }            
+        }
     };
     if (index !== -1) {
         var deletedPin = this.pinobjs.splice(index, 1);
@@ -99,7 +99,7 @@ ViewerPin.prototype.changePinLabel = function(pinid, newLabel) {
 		pinObj.label = newLabel;
 }
 
-	// update browser localStorage, for each model, the pin data is 
+	// update browser localStorage, for each model, the pin data is
 	// stored as a whole JSON stirng
 ViewerPin.prototype.updateLocalStorage = function() {
 	var parsedObj = {
@@ -108,6 +108,9 @@ ViewerPin.prototype.updateLocalStorage = function() {
 	};
 
 	var dataStr = JSON.stringify(parsedObj);
-	localStorage.setItem(this.dbkey, dataStr);	
+	localStorage.setItem(this.dbkey, dataStr);
 };
 
+module.exports = {
+	ViewerPin
+}

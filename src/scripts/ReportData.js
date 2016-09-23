@@ -15,17 +15,19 @@ function startReportDataLoader(callback) {
     getModelRoot(function (rootNode) {
         getModelLeafNodes(rootNode, _modelLeafNodes);
 
-        if (callback)
-            callback();
+        if (callback) {
+          callback();
+        }
     });
 }
 
 function getModelRoot(callback) {
-    _viewerMain.getObjectTree(function(objTree) {
+    window._viewerMain.getObjectTree(function(objTree) {
         _root = objTree.root;
 
-        if (callback)
-            callback(_root);
+        if (callback) {
+          callback(_root);
+        }
     });
 }
 
@@ -53,8 +55,10 @@ function getModelLeafNodes(root, leafNodes) {
 function groupDataByType(treeNode) {
     var subTypes = {};
 
-    if (treeNode === undefined || treeNode === null) {
-        treeNode = _root;
+    if (!treeNode) {
+        getModelRoot(() => {
+          treeNode = _root;
+        });
     }
 
         // if the treeNode contains only one child, dig deeper to see if there're more branches
@@ -88,7 +92,7 @@ function groupDataByProperty(propertyName, callback) {
 
         // iterate through the preloaded leafNodes to check their properties
     $.each(_modelLeafNodes, function(index, dbId) {
-        _viewerMain.getProperties(dbId, function(propObj) {
+        window._viewerMain.getProperties(dbId, function(propObj) {
             for (var i = 0; i < propObj.properties.length; i++) {
                 if (propObj.properties[i].displayName === propertyName && (!propObj.properties[i].hidden)) {
                     var formatVal = Autodesk.Viewing.Private.formatValueWithUnits(propObj.properties[i].displayValue, propObj.properties[i].units, propObj.properties[i].type);
@@ -128,7 +132,7 @@ function getQtyDataByProperty(propertyName, callback) {
 
     // console.time("getQtyByProperty");
     $.each(_modelLeafNodes, function(index, dbId) {
-        _viewerMain.getProperties(dbId, function(propObj) {
+        window._viewerMain.getProperties(dbId, function(propObj) {
 
             for(var i = 0; i < propObj.properties.length; i++) {
                 if (propObj.properties[i].displayName === propertyName) {
@@ -156,7 +160,7 @@ function getQtyDataByProperty(propertyName, callback) {
 }
 
 
-    // group the quantity array by range, returned is a buckets object that uses the range label 
+    // group the quantity array by range, returned is a buckets object that uses the range label
     // as key and the dbIds as value, range is  calculated based on the min value and the range value,
     // the array does not has to be sorted
 function groupQtyDataByRange(qtyArr, bound, range, callback) {
@@ -185,5 +189,11 @@ function groupQtyDataByRange(qtyArr, bound, range, callback) {
         callback(buckets);
 }
 
-
-
+module.exports = {
+  startReportDataLoader,
+  groupDataByType,
+  groupDataByProperty,
+  getQtyDataByProperty,
+  groupQtyDataByRange,
+  _modelLeafNodes
+}

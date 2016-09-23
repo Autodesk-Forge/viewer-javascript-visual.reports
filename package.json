@@ -1,0 +1,28 @@
+{
+  "name": "lmv-visual-reports",
+  "version": "1.0.1",
+  "description": "Visual Reports",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shiya/lmv-visual-reports.git"
+  },
+  "author": "Autodesk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shiya/lmv-visual-reports/issues"
+  },
+  "homepage": "https://github.com/shiya/lmv-visual-reports#readme",
+  "devDependencies": {
+    "browser-sync": "^2.16.0",
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.7",
+    "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4"
+  }
+}
