@@ -2,47 +2,31 @@
 //  Getting relevant data for Report_barChart.js and Scheming.js
 //  The returned data format is only an object that uses label text(type/property value) as keys
 //  and the dbIds as the associated values. Some data wrapping might be necessary before use.
-//
 
 var _modelLeafNodes;
 var _root;
+var instanceTree;
 
     // Preloading steps
     // called by LoadModel.js to preload all the leaf nodes whenever a new model is loaded,
     // get and keep all the leaf nodes of this model for future use.
 function startReportDataLoader(callback) {
     _modelLeafNodes = [];
-    getModelRoot(function (rootNode) {
-        getModelLeafNodes(rootNode, _modelLeafNodes);
+    instanceTree = window._viewerMain.model.getData().instanceTree;
+    let modelRoot = instanceTree.getRootId();
 
-        if (callback) {
-          callback();
-        }
-    });
-}
-
-function getModelRoot(callback) {
-    window._viewerMain.getObjectTree(function(objTree) {
-        _root = objTree.root;
-
-        if (callback) {
-          callback(_root);
-        }
-    });
-}
-
-    // recursively add all the leaf nodes
-function getModelLeafNodes(root, leafNodes) {
-    if (!root.children) {
-        leafNodes.push(root.dbId);
-        return;
-    } else {
-        $.each(root.children, function(i, treeNode) {
-            getModelLeafNodes(treeNode, leafNodes);
-        });
+    getModelLeafNodes(modelRoot, _modelLeafNodes);
+    if (callback) {
+      callback();
     }
 }
 
+    // recursively add all the leaf nodes
+function getModelLeafNodes(rootId, leafNodes, callback) {
+  instanceTree.enumNodeChildren(rootId, (childId) => {
+    leafNodes.push(childId);
+  }, true);
+}
 
 //****************************************************************************************
 //
@@ -56,10 +40,17 @@ function groupDataByType(treeNode) {
     var subTypes = {};
 
     if (!treeNode) {
-        getModelRoot(() => {
-          treeNode = _root;
-        });
+      treeNode = {};
+      treeNode.id = window._viewerMain.model.getData().instanceTree.getRootId();
     }
+    console.log(treeNode);
+
+    treeNode.children = [];
+
+    // add all the types into subTypes
+    instanceTree.enumNodeChildren(treeNode.id, (childId) => {
+      treeNode.children.push(childId);
+    });
 
         // if the treeNode contains only one child, dig deeper to see if there're more branches
     while (treeNode.children && treeNode.children.length === 1) {
@@ -69,7 +60,7 @@ function groupDataByType(treeNode) {
     $.each(treeNode.children, function(i, childNode) {
         var leafNodes = [];
         getModelLeafNodes(childNode, leafNodes);
-        subTypes[childNode.name] = leafNodes;
+        subTypes[instanceTree.getNodeName(childNode)] = leafNodes;
     });
 
     return subTypes;

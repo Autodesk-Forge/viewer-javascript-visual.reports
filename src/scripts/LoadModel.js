@@ -371,11 +371,11 @@ function loadInitialModel() {
 
     loadModelMenuOptions();                  // populate the list of available models for the user
 
-    var options = {};
-    options.env = _viewerEnv;                // AutodeskProduction, AutodeskStaging, or AutodeskDevelopment (set in global var in this project)
-    options.getAccessToken = getAccessToken;
-    options.refreshToken   = getAccessToken;
-
+    var options = {
+      env: _viewerEnv, // AutodeskProduction, AutodeskStaging, or AutodeskDevelopment (set in global var in this project)
+      getAccessToken: getAccessToken,
+      refreshToken: getAccessToken
+    };
     Autodesk.Viewing.Initializer(options, function() {
         loadDocument(_lmvModelOptions[0].urn);   // load first entry by default
     });

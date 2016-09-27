@@ -13,6 +13,7 @@ Note that not all report types (attributes) work for every model type. For insta
 
 ## Develop
 This demo uses webpack to bundle `.js` files
+
 __Writing JavaScript__: add your file in `src/scripts` and require it in `src/scripts/app.js`
 
 ## To Build

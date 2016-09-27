@@ -140,31 +140,55 @@ function overrideColorOnObjects(colorMap) {
         return;
     }
 
-    _viewerMain.getObjectTree(function(objTree) {
+    let instanceTree = window._viewerMain.model.getData().instanceTree;
 
-        // record original materials for the first time
-        if (!(_originalFragMaterial)) {
-            _originalFragMaterial = {};
-            for (var i = reportData._modelLeafNodes.length - 1; i >= 0; i--) {
-                objTree.enumNodeFragments(reportData._modelLeafNodes[i], function(fragId) {
-                    var mat = _viewerMain.impl.getRenderProxy(_viewerMain.model, fragId).material;
-                    _originalFragMaterial[fragId] = mat;
-                });
-            };
-        }
-
-        for (var index = 0; index < colorMap.length; index++) {
-            var objects = colorMap[index]["dbIds"];
-            var hexColorStr = colorMap[index]["color"];
-            for (var i = 0; i < objects.length; i++) {
-                // override the color on each fragment
-                objTree.enumNodeFragments(objects[i], function(fragId) {
-                    overrideColorOnFragment(fragId, hexColorStr);
-                });
-            };
+    if (!(_originalFragMaterial)) {
+        _originalFragMaterial = {};
+        for (var i = reportData._modelLeafNodes.length - 1; i >= 0; i--) {
+            instanceTree.enumNodeFragments(reportData._modelLeafNodes[i], function(fragId) {
+                var mat = _viewerMain.impl.getRenderProxy(_viewerMain.model, fragId).material;
+                _originalFragMaterial[fragId] = mat;
+            });
         };
-        loadThemeChart(colorMap);
-    });
+    }
+
+    for (var index = 0; index < colorMap.length; index++) {
+        var objects = colorMap[index]["dbIds"];
+        var hexColorStr = colorMap[index]["color"];
+        for (var i = 0; i < objects.length; i++) {
+            // override the color on each fragment
+            instanceTree.enumNodeFragments(objects[i], function(fragId) {
+                overrideColorOnFragment(fragId, hexColorStr);
+            });
+        };
+    };
+    loadThemeChart(colorMap);
+
+    // _viewerMain.getObjectTree(function(objTree) {
+    //
+    //     // record original materials for the first time
+    //     if (!(_originalFragMaterial)) {
+    //         _originalFragMaterial = {};
+    //         for (var i = reportData._modelLeafNodes.length - 1; i >= 0; i--) {
+    //             objTree.enumNodeFragments(reportData._modelLeafNodes[i], function(fragId) {
+    //                 var mat = _viewerMain.impl.getRenderProxy(_viewerMain.model, fragId).material;
+    //                 _originalFragMaterial[fragId] = mat;
+    //             });
+    //         };
+    //     }
+    //
+    //     for (var index = 0; index < colorMap.length; index++) {
+    //         var objects = colorMap[index]["dbIds"];
+    //         var hexColorStr = colorMap[index]["color"];
+    //         for (var i = 0; i < objects.length; i++) {
+    //             // override the color on each fragment
+    //             objTree.enumNodeFragments(objects[i], function(fragId) {
+    //                 overrideColorOnFragment(fragId, hexColorStr);
+    //             });
+    //         };
+    //     };
+    //     loadThemeChart(colorMap);
+    // });
 
     // record the applicable dbIds of current themes, used for click event and isolation
     var isolateIds = [];

@@ -9773,47 +9773,31 @@
 	//  Getting relevant data for Report_barChart.js and Scheming.js
 	//  The returned data format is only an object that uses label text(type/property value) as keys
 	//  and the dbIds as the associated values. Some data wrapping might be necessary before use.
-	//
 
 	var _modelLeafNodes;
 	var _root;
+	var instanceTree;
 
 	    // Preloading steps
 	    // called by LoadModel.js to preload all the leaf nodes whenever a new model is loaded,
 	    // get and keep all the leaf nodes of this model for future use.
 	function startReportDataLoader(callback) {
 	    _modelLeafNodes = [];
-	    getModelRoot(function (rootNode) {
-	        getModelLeafNodes(rootNode, _modelLeafNodes);
+	    instanceTree = window._viewerMain.model.getData().instanceTree;
+	    let modelRoot = instanceTree.getRootId();
 
-	        if (callback) {
-	          callback();
-	        }
-	    });
-	}
-
-	function getModelRoot(callback) {
-	    window._viewerMain.getObjectTree(function(objTree) {
-	        _root = objTree.root;
-
-	        if (callback) {
-	          callback(_root);
-	        }
-	    });
-	}
-
-	    // recursively add all the leaf nodes
-	function getModelLeafNodes(root, leafNodes) {
-	    if (!root.children) {
-	        leafNodes.push(root.dbId);
-	        return;
-	    } else {
-	        $.each(root.children, function(i, treeNode) {
-	            getModelLeafNodes(treeNode, leafNodes);
-	        });
+	    getModelLeafNodes(modelRoot, _modelLeafNodes);
+	    if (callback) {
+	      callback();
 	    }
 	}
 
+	    // recursively add all the leaf nodes
+	function getModelLeafNodes(rootId, leafNodes, callback) {
+	  instanceTree.enumNodeChildren(rootId, (childId) => {
+	    leafNodes.push(childId);
+	  }, true);
+	}
 
 	//****************************************************************************************
 	//
@@ -9827,10 +9811,17 @@
 	    var subTypes = {};
 
 	    if (!treeNode) {
-	        getModelRoot(() => {
-	          treeNode = _root;
-	        });
+	      treeNode = {};
+	      treeNode.id = window._viewerMain.model.getData().instanceTree.getRootId();
 	    }
+	    console.log(treeNode);
+
+	    treeNode.children = [];
+
+	    // add all the types into subTypes
+	    instanceTree.enumNodeChildren(treeNode.id, (childId) => {
+	      treeNode.children.push(childId);
+	    });
 
 	        // if the treeNode contains only one child, dig deeper to see if there're more branches
 	    while (treeNode.children && treeNode.children.length === 1) {
@@ -9840,7 +9831,7 @@
 	    $.each(treeNode.children, function(i, childNode) {
 	        var leafNodes = [];
 	        getModelLeafNodes(childNode, leafNodes);
-	        subTypes[childNode.name] = leafNodes;
+	        subTypes[instanceTree.getNodeName(childNode)] = leafNodes;
 	    });
 
 	    return subTypes;
@@ -10419,11 +10410,11 @@
 
 	    loadModelMenuOptions();                  // populate the list of available models for the user
 
-	    var options = {};
-	    options.env = _viewerEnv;                // AutodeskProduction, AutodeskStaging, or AutodeskDevelopment (set in global var in this project)
-	    options.getAccessToken = getAccessToken;
-	    options.refreshToken   = getAccessToken;
-
+	    var options = {
+	      env: _viewerEnv, // AutodeskProduction, AutodeskStaging, or AutodeskDevelopment (set in global var in this project)
+	      getAccessToken: getAccessToken,
+	      refreshToken: getAccessToken
+	    };
 	    Autodesk.Viewing.Initializer(options, function() {
 	        loadDocument(_lmvModelOptions[0].urn);   // load first entry by default
 	    });
@@ -10578,31 +10569,55 @@
 	        return;
 	    }
 
-	    _viewerMain.getObjectTree(function(objTree) {
+	    let instanceTree = window._viewerMain.model.getData().instanceTree;
 
-	        // record original materials for the first time
-	        if (!(_originalFragMaterial)) {
-	            _originalFragMaterial = {};
-	            for (var i = reportData._modelLeafNodes.length - 1; i >= 0; i--) {
-	                objTree.enumNodeFragments(reportData._modelLeafNodes[i], function(fragId) {
-	                    var mat = _viewerMain.impl.getRenderProxy(_viewerMain.model, fragId).material;
-	                    _originalFragMaterial[fragId] = mat;
-	                });
-	            };
-	        }
-
-	        for (var index = 0; index < colorMap.length; index++) {
-	            var objects = colorMap[index]["dbIds"];
-	            var hexColorStr = colorMap[index]["color"];
-	            for (var i = 0; i < objects.length; i++) {
-	                // override the color on each fragment
-	                objTree.enumNodeFragments(objects[i], function(fragId) {
-	                    overrideColorOnFragment(fragId, hexColorStr);
-	                });
-	            };
+	    if (!(_originalFragMaterial)) {
+	        _originalFragMaterial = {};
+	        for (var i = reportData._modelLeafNodes.length - 1; i >= 0; i--) {
+	            instanceTree.enumNodeFragments(reportData._modelLeafNodes[i], function(fragId) {
+	                var mat = _viewerMain.impl.getRenderProxy(_viewerMain.model, fragId).material;
+	                _originalFragMaterial[fragId] = mat;
+	            });
 	        };
-	        loadThemeChart(colorMap);
-	    });
+	    }
+
+	    for (var index = 0; index < colorMap.length; index++) {
+	        var objects = colorMap[index]["dbIds"];
+	        var hexColorStr = colorMap[index]["color"];
+	        for (var i = 0; i < objects.length; i++) {
+	            // override the color on each fragment
+	            instanceTree.enumNodeFragments(objects[i], function(fragId) {
+	                overrideColorOnFragment(fragId, hexColorStr);
+	            });
+	        };
+	    };
+	    loadThemeChart(colorMap);
+
+	    // _viewerMain.getObjectTree(function(objTree) {
+	    //
+	    //     // record original materials for the first time
+	    //     if (!(_originalFragMaterial)) {
+	    //         _originalFragMaterial = {};
+	    //         for (var i = reportData._modelLeafNodes.length - 1; i >= 0; i--) {
+	    //             objTree.enumNodeFragments(reportData._modelLeafNodes[i], function(fragId) {
+	    //                 var mat = _viewerMain.impl.getRenderProxy(_viewerMain.model, fragId).material;
+	    //                 _originalFragMaterial[fragId] = mat;
+	    //             });
+	    //         };
+	    //     }
+	    //
+	    //     for (var index = 0; index < colorMap.length; index++) {
+	    //         var objects = colorMap[index]["dbIds"];
+	    //         var hexColorStr = colorMap[index]["color"];
+	    //         for (var i = 0; i < objects.length; i++) {
+	    //             // override the color on each fragment
+	    //             objTree.enumNodeFragments(objects[i], function(fragId) {
+	    //                 overrideColorOnFragment(fragId, hexColorStr);
+	    //             });
+	    //         };
+	    //     };
+	    //     loadThemeChart(colorMap);
+	    // });
 
 	    // record the applicable dbIds of current themes, used for click event and isolation
 	    var isolateIds = [];
