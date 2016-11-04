@@ -19,6 +19,7 @@
   "devDependencies": {
     "browser-sync": "^2.16.0",
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
     "gulp-util": "^3.0.7",
     "webpack": "^1.13.2"
   },
