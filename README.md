@@ -1,6 +1,6 @@
-#Visual Reports
+# Visual Reports
 
-##Description
+## Description
 
 This example demonstrates the reporting capability of Autodesk Forge Viewer. Select the model from the dropdown box in the right pane to see the 2D and 3D representations of the model in the left pane. If the model has a 2D sheet, it will also be loaded along with a visual report showing the vital statistics of the model.
 
@@ -19,7 +19,7 @@ __Writing JavaScript__: add your file in `src/scripts` and require it in `src/sc
 ## To Build
 `gulp`
 
-##Deployment
+## Deployment
 
 Open index.html in your browser to see the application in action.
 

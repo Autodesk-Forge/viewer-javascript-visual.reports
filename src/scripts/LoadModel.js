@@ -27,37 +27,14 @@ const authToken = require('./MyAuthToken.js');
 const themes = require('./Themes.js');
 const cameraPin = require('./CameraPin.js');
 
-    // setup for STAGING
-/*var _viewerEnv = "AutodeskStaging";
-var _myAuthToken = new MyAuthToken("STG");
-
-var _lmvModelOptions = [
-    { label : "Urban House (Revit)",        urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3N0Zy9VcmJhbiUyMEhvdXNlJTIwLSUyMG5ldy5ydnQ="},
-    { label : "rme-basic-sample (Revit)",   urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0My9ybWVfYmFzaWNfc2FtcGxlX3Byb2plY3QucnZ0"},
-    { label : "ViewTest1 (Revit)",          urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0My9WaWV3VGVzdDEucnZ0"},
-    { label : "Factory (Navisworks)",       urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0My9Db21wbGV0ZWQlMjBQbGFudCUyMExheW91dCUyMGNvbnN0cnVjdGlvbi5ud2Q="},
-    { label : "Lego Guy (Fusion)",          urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0My9sZWdvX2d1eTIwMTQwMTMxMDkxOTU4LmYzZA=="},
-    { label : "Utility Knife (Fusion)",     urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6am1hYnVja2V0My9VdGlsaXR5X0tuaWZlMjAxNDAxMjkxNDAwNDEuZjNk"},
-    { label : "Bomba KSB ETA 80-20.f3d (Fusion)",     urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3N0Zy9Cb21iYSUyMEtTQiUyMEVUQSUyMDgwLTIwJTIwLSUyMDVDViUyMC0lMjAxNzAwcnBtJTIwLSUyMCUyMHY1LmYzZA=="},
-    { label : "F10K (Fusion)",          urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3N0Zy9GMTBLLmYzZA=="},
-    { label : "KAW_48_3D _2 (DWG)",        urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3N0Zy9LQVdfNDhfM0QlMjBfMi5kd2c="},
-    { label : "2D Floorplan (DWG)",        urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3N0Zy8yRCUyMEZsb29ycGxhbi5kd2c="}
-];*/
-
     // setup for PRODUCTION
 var _viewerEnv = "AutodeskProduction";
 var _myAuthToken = new authToken.MyAuthToken("PROD");
 
 var _lmvModelOptions = [
-    // { label : "House",        urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bW9kZWwyMDE1LTA2LTE2LTE4LTE2LTUxLWhucHM0dG45ZDdmaTR3bnFhY2Fjdzl4b2poeHAvR2F0ZUhvdXNlLm53ZA=="},
-    // { label : "RobotArm",     urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bW9kZWwyMDE1LTA2LTE2LTE4LTEwLTUyLWhucHM0dG45ZDdmaTR3bnFhY2Fjdzl4b2poeHAvUm9ib3RBcm0uZHdmeA=="},
-    // { label : "Seat",         urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bW9kZWwyMDE1LTA2LTE2LTE4LTM4LTE0LWhucHM0dG45ZDdmaTR3bnFhY2Fjdzl4b2poeHAvU2VhdC5kd2Y="},
-
     { label : "Urban House (Revit)",        urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3Byb2QvVXJiYW4lMjBIb3VzZSUyMC0lMjBuZXcucnZ0"},
     { label : "Church (Revit)",             urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3Byb2QvQ2h1cmNoUmVub3ZhdGlvbjIucnZ0"},
     { label : "SaRang - Struct (Revit)",    urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3Byb2QvU2FSYW5nLVN0cnVjdHVyZS0yMDE1LnJ2dA=="},
-    //{ label : "SaRang - ArchBase (Revit)",  urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3Byb2QvU2FSYW5nLUFyY2gtQmFzZS0yMDE1LnJ2dA=="},
-    //{ label : "SaRang - ArchSkin (Revit)",  urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3Byb2QvU2FSYW5nLUFyY2gtU2tpbi0yMDE1LnJ2dA=="},
     { label : "rme-basic-sample (Revit)",   urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3Byb2Qvcm1lX2Jhc2ljX3NhbXBsZV9wcm9qZWN0LnJ2dA=="},
     { label : "Audubon Structure (Revit)",  urn: "dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bG12ZGJnX3Byb2QvQXVkb2JvbiUyMC0lMjBTdHJ1Y3R1cmUucnZ0"},
 
