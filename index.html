@@ -25,6 +25,30 @@
 
 <body onload="loadInitialModel();" oncontextmenu="return debugging;">
 
+  <div id="viewer-group">
+    <!-- 3D Model Viewer -->
+    <div class="project-container group" id="viewerMain-panel">
+      <div class="project-view-column">
+          <div id="viewerMain">
+          <!-- Upon the viewer initialization, it will append a div to the above div to insert the viewer.  It
+                will use 100% width and height so that it will fill up whatever the above div's dimensions are.
+                NOTE: Height must be set for this object. -->
+          </div>
+      </div>
+    </div>
+
+    <!-- 2D Model Viewer -->
+    <div class="project-container group" id="viewerSecondary-panel">
+        <div class="project-view-column">
+          <div id="viewerSecondary">
+              <!-- Upon the viewer initialization, it will append a div to the above div to insert the viewer.  It
+                    will use 100% width and height so that it will fill up whatever the above div's dimensions are.
+                    NOTE: Height must be set for this object. -->
+          </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Inspector column -->
   <div class="project-info-column">
 
@@ -88,29 +112,7 @@
     </div>
   </div>
 
-  <div id="viewer-group">
-      <!-- 3D Model Viewer -->
-      <div class="project-container group" id="viewerMain-panel">
-        <div class="project-view-column">
-            <div id="viewerMain">
-            <!-- Upon the viewer initialization, it will append a div to the above div to insert the viewer.  It
-                 will use 100% width and height so that it will fill up whatever the above div's dimensions are.
-                 NOTE: Height must be set for this object. -->
-            </div>
-        </div>
-      </div>
 
-      <!-- 2D Model Viewer -->
-      <div class="project-container group" id="viewerSecondary-panel">
-          <div class="project-view-column">
-            <div id="viewerSecondary">
-                <!-- Upon the viewer initialization, it will append a div to the above div to insert the viewer.  It
-                     will use 100% width and height so that it will fill up whatever the above div's dimensions are.
-                     NOTE: Height must be set for this object. -->
-            </div>
-        </div>
-      </div>
-    </div>
 
   <link href="./stylesheets/libs/nv.d3.css" rel="stylesheet">
 
