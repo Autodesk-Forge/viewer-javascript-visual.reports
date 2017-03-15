@@ -350,12 +350,15 @@ svg .nv-bar.clicked {
 
 #barChart {
     width: 100%;
-/*    height: 300px;*/
     margin: 0px; }
     #barChart svg {
       width: 100%;
       height: 100%;
     }
+
+#pieChart {
+  height: 500px;
+}
 
 #themecanvas svg {
   width: 100%;
