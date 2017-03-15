@@ -1,11 +1,11 @@
 /* Icons */
 @font-face {
   font-family: 'icomoon';
-  src:url('../fonts/icomoon.eot?f2xm0g');
-  src:url('../fonts/icomoon.eot?#iefixf2xm0g') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?f2xm0g') format('truetype'),
-    url('../fonts/icomoon.woff?f2xm0g') format('woff'),
-    url('../fonts/icomoon.svg?f2xm0g#icomoon') format('svg');
+  src:url('../fonts/icomoon.eot');
+  src:url('../fonts/icomoon.eot') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -51,13 +51,11 @@
   vertical-align: -15%; }
 
 /* Global Elements */
-html {
-  height: 100%; }
 
 body {
   font: 400 14px/1.2 'Open Sans', sans-serif;
   color: #4b4b4b;
-  height: 100%; }
+  }
 
 a {
   color: #4b4b4b; }
@@ -134,7 +132,7 @@ label + .select-light {
 .project-container {
   width: 60%;
   float: left;
-  height: 500px;
+  height: 50vh;
   position: relative;
   background: url("../images/loader.gif") no-repeat center;
   border-right: 1px solid #bbb;
@@ -166,7 +164,7 @@ label + .select-light {
   width: 40%;
   overflow-y: scroll;
   text-align: center;
-  height: 1000px;
+  height: 100vh;
   padding: 30px 10px 10px 10px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -438,7 +436,7 @@ svg .nv-bar.clicked {
 /* Viewer Group */
 
 #viewer-group {
-	height: 1000px;
+	height: 100vh;
 }
 
 #viewer-group:after {
@@ -522,10 +520,6 @@ svg .nv-bar.clicked {
 }
 .adsk-toolbar{
 	bottom: 16px;
-}
-
-#viewerSecondary {
-	padding-top: 5px;
 }
 
 #nonpropchckbx {
