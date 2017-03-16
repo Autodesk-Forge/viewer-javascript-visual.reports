@@ -514,3 +514,20 @@ svg .nv-bar.clicked {
 #nonpropchckbx {
     display: none;
 }
+
+/* change behavior when screen is small */
+@media (max-width: 1000px) {
+  html {
+    overflow-y: scroll;
+  }
+  #viewer-group {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    position:relative;
+  }
+  .project-info-column {
+    float: none;
+    width: 100%;
+  }
+}
