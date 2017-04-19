@@ -23,7 +23,7 @@
 
 function MyAuthToken(env) {
     if (env === "PROD") {
-        this.tokenService = "https://salty-caverns-3017.herokuapp.com/auth";
+        this.tokenService = "https://autodesk-auth.herokuapp.com/";
     } else {
         alert("DEVELOPER ERROR: No valid environment set for MyAuthToken()");
     }
