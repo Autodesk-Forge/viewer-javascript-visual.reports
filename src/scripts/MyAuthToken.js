@@ -72,14 +72,13 @@ MyAuthToken.prototype.get = function()
     console.log("getting from url " + this.tokenService );
 
     var jqxhr = $.ajax({
-        url: this.tokenService,
+        url: "https://autodesk-auth.herokuapp.com/",
         type: 'GET',
         async: false,
         success: function(ajax_data) {
-            console.log("AUTH TOKEN: " + ajax_data.access_token);
-            retVal = ajax_data.access_token;  // NOTE: this only works because we've made the ajax call Synchronous (and "this" is not valid in this scope!)
+            console.log("AUTH TOKEN: " + JSON.parse(ajax_data).access_token);
+            retVal = JSON.parse(ajax_data).access_token;  // NOTE: this only works because we've made the ajax call Synchronous (and "this" is not valid in this scope!)
             expires_in = ajax_data.expires_in;
-
         },
         error: function(jqXHR, textStatus) {
             console.log(jqXHR);
