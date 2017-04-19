@@ -9926,7 +9926,7 @@
 	MyAuthToken.prototype.value = function()
 	{
 	        // if we've never retrieved it, do it the first time
-	    if (this.token === "") {
+	    if (!this.token) {
 	        console.log("AUTH TOKEN: Getting for first time...");
 	        this.get();
 	    }
