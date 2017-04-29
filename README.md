@@ -22,7 +22,7 @@ __Writing JavaScript__: add your file in `src/scripts` and require it in `src/sc
 
 ## To build and run browsersync
 
-`gulp`
+`npm run gulp`
 
 ## Deployment
 
