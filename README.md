@@ -1,5 +1,12 @@
 # Visual Reports
 
+# NOTE: This sample has been outdated for quite sometime and it has been move into maintance mode. We have 2 samples that create the similar workflow you are looking for. 
+
+![Visual Reports](https://forge-rcdb.autodesk.io/configurator?id=57f3739777c879f48ad54a44)
+![BIM 360 Visual Reports](https://bim360reports.autodesk.io/)
+
+# You can find the github repositories for either sample linked in the top right.
+
 [![Viewer](https://img.shields.io/badge/Viewer-v2.14-green.svg)](http://developer.autodesk.com/)
 
 ![thumbnail](https://cloud.githubusercontent.com/assets/3713384/24001560/b345d76c-0a1b-11e7-8a25-b084652f7730.png)
